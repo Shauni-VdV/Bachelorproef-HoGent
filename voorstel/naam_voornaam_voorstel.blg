@@ -1,0 +1,21 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'naam_voornaam_voorstel.blg'
+[39] biber-darwin:315> INFO - === Thu Dec  5, 2019, 13:04:22
+[59] Biber.pm:371> INFO - Reading 'naam_voornaam_voorstel.bcf'
+[146] Biber.pm:889> INFO - Found 6 citekeys in bib section 0
+[157] Biber.pm:4093> INFO - Processing section 0
+[167] Biber.pm:4254> INFO - Looking for bibtex format file 'voorstel.bib' for section 0
+[168] bibtex.pm:1523> INFO - LaTeX decoding ...
+[184] bibtex.pm:1340> INFO - Found BibTeX data source 'voorstel.bib'
+[197] Utils.pm:193> WARN - month field 'sep' in entry 'Pitkow2002' is not an integer - this will probably not sort properly.
+[202] Utils.pm:193> WARN - month field 'mar' in entry 'Telang2005' is not an integer - this will probably not sort properly.
+[206] Utils.pm:193> WARN - month field 'mar' in entry 'Resnick1997' is not an integer - this will probably not sort properly.
+[213] Utils.pm:193> WARN - month field 'jun' in entry 'Smith1999' is not an integer - this will probably not sort properly.
+[229] Utils.pm:193> WARN - ISBN '1594203008, 9781594203008' in entry 'Pariser2011' is invalid - run biber with '--validate_datamodel' for details.
+[248] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[248] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[248] Biber.pm:3921> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[248] Biber.pm:3927> INFO - No sort tailoring available for locale 'nl-NL'
+[254] bbl.pm:636> INFO - Writing 'naam_voornaam_voorstel.bbl' with encoding 'UTF-8'
+[259] bbl.pm:739> INFO - Output to naam_voornaam_voorstel.bbl
+[259] Biber.pm:110> INFO - WARNINGS: 5
