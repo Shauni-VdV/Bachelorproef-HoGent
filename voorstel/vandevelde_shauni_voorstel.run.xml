@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>naam_voornaam_voorstel.bcf</file>
+      <file>vandevelde_shauni_voorstel.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>naam_voornaam_voorstel.bbl</file>
+      <file>vandevelde_shauni_voorstel.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -70,19 +70,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>naam_voornaam_voorstel</infile>
+      <infile>vandevelde_shauni_voorstel</infile>
     </cmdline>
     <input>
-      <file>naam_voornaam_voorstel.bcf</file>
+      <file>vandevelde_shauni_voorstel.bcf</file>
     </input>
     <output>
-      <file>naam_voornaam_voorstel.bbl</file>
+      <file>vandevelde_shauni_voorstel.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>naam_voornaam_voorstel.bbl</file>
+      <file>vandevelde_shauni_voorstel.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>naam_voornaam_voorstel.bcf</file>
+      <file>vandevelde_shauni_voorstel.bcf</file>
     </requires>
     <requires type="editable">
       <file>voorstel.bib</file>
