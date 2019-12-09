@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=latex 2019.12.3)  5 DEC 2019 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=latex 2019.12.3)  5 DEC 2019 20:18
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -987,6 +987,9 @@ LaTeX Info: Redefining \nameref on input line 71.
 \openout4 = `vandevelde_shauni_voorstel.out'.
 
 
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -1221,12 +1224,12 @@ Package logreq Info: Writing requests to 'vandevelde_shauni_voorstel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28000 strings out of 492617
- 500196 string characters out of 6129507
- 1131639 words of memory out of 5000000
- 31669 multiletter control sequences out of 15000+600000
+ 28002 strings out of 492617
+ 500242 string characters out of 6129507
+ 1131629 words of memory out of 5000000
+ 31671 multiletter control sequences out of 15000+600000
  565655 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,12n,65p,1573b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on vandevelde_shauni_voorstel.dvi (2 pages, 31776 bytes).
+Output written on vandevelde_shauni_voorstel.dvi (2 pages, 31780 bytes).
