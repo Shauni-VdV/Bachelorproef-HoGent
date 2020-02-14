@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  6 FEB 2020 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  14 FEB 2020 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,10 +1189,10 @@ Package logreq Info: Writing requests to 'vandevelde_shauni_voorstel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28613 strings out of 492616
- 507862 string characters out of 6129481
+ 28614 strings out of 492616
+ 507872 string characters out of 6129481
  1126195 words of memory out of 5000000
- 32055 multiletter control sequences out of 15000+600000
+ 32056 multiletter control sequences out of 15000+600000
  588820 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,14n,65p,1656b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
