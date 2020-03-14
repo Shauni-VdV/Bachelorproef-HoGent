@@ -69,4 +69,33 @@
   isbn      = {1594203008, 9781594203008},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@Article{Dehkordi2012,
+  author    = {Dehkordi, Goodarz Javadian and Rezvani, Samin and Rahman, Muhammad Sabbir and Nahid, Firoozeh Fouladivanda Neda and Jouya, Samaneh Faramarzi},
+  title     = {A conceptual study on E-marketing and its operation on firm's promotion and understanding customer's response},
+  journal   = {International Journal of Business and Management},
+  year      = {2012},
+  volume    = {7},
+  number    = {19},
+  pages     = {114},
+  publisher = {Canadian Center of Science and Education},
+}
+
+@Article{10.1109/MIC.2003.1167344,
+  author     = {Linden, Greg and Smith, Brent and York, Jeremy},
+  title      = {Amazon.Com Recommendations: Item-to-Item Collaborative Filtering},
+  journal    = {IEEE Internet Computing},
+  year       = {2003},
+  volume     = {7},
+  number     = {1},
+  month      = jan,
+  pages      = {76–80},
+  issn       = {1089-7801},
+  doi        = {10.1109/MIC.2003.1167344},
+  url        = {https://doi.org/10.1109/MIC.2003.1167344},
+  address    = {USA},
+  issue_date = {January 2003},
+  numpages   = {5},
+  publisher  = {IEEE Educational Activities Department},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
