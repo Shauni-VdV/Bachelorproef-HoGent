@@ -1,3 +1,3 @@
 # Bachelorproef-HoGent
 
-[PDF versie](Bachelorproef-HoGent/tree/master/bachproef/bachproef-tin.pdf)
+[PDF versie](https://github.com/Shauni-VdV/Bachelorproef-HoGent/blob/master/bachproef/bachproef-tin.pdf)
