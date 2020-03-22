@@ -25,21 +25,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Wat is Graph?}{17}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Wat is ElasticSearch?}{17}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.2.1}SQL}{17}{subsection.2.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{19}{chapter.3}% 
+\contentsline {subsection}{\numberline {2.2.2}NoSQL}{18}{subsection.2.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{21}{chapter.4}% 
+\contentsline {subsubsection}{Document}{19}{section*.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{23}{appendix.A}% 
+\contentsline {subsubsection}{Key-Value}{20}{section*.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{23}{section.A.1}% 
+\contentsline {subsubsection}{Graph}{21}{section*.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{23}{section.A.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Neo4j}{22}{subsection.2.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{24}{section.A.3}% 
+\contentsline {section}{\numberline {2.3}Wat is ElasticSearch?}{22}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{25}{section.A.4}% 
+\contentsline {chapter}{\numberline {3}Methodologie}{23}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{25}{section.A.5}% 
+\contentsline {chapter}{\numberline {4}Conclusie}{25}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{27}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introductie}{27}{section.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}State-of-the-art}{27}{section.A.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Methodologie}{28}{section.A.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{29}{section.A.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{29}{section.A.5}% 
 \contentsfinish 

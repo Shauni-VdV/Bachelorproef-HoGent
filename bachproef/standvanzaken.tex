@@ -53,13 +53,81 @@ In de realiteit hoeven de technologieën voor aanbevelingen van producten niet z
 Een voorbeeld van een relatie tussen twee artikels is de welbekende 'Anderen bekeken ook' blok die vaak zichtbaar is bij het bekijken van een detailpagina van een product. 
 Een simpelere methode van dergelijke relaties is het aanbieden van verwante producten op basis van categorieën of tags. Tags zijn een manier om kenmerken van een product weer te geven die specifieker zijn dan een categorie. Een categorie kan dan 'schoenen' zijn, terwijl een tag 'lage sneakers' is. 
 
+
 \section{Wat is Graph?}
 \label{sec:wat is Graph?}
 
+In de context van deze bachelorproef zal er met 'Graph' steeds verwezen worden naar een Graph databank. In dit onderdeel zullen we wat dieper ingaan op wat dit soort databank precies inhoudt om een volledig begrijpen van de precieze werking te verzekeren. 
+
+\subsection{SQL}
+\label{sec:SQL}
+SQL is de afkorting voor Structured Query Language. Dit verwijst eigenlijk naar de programmeertaal die gebruikt wordt om data op te halen of te schrijven naar een databank. Met een SQL-databank wordt dus eigenlijk een relationele databank bedoeld. 
+Deze databankstructuur is relationeel opgebouwd, dit wil zeggen dat we gebruik maken van een schema waarin een aantal tabellen met onderlinge relaties staan die gevuld worden door attributen. 
+
+	\includegraphics[width=\linewidth]{img/3-0.jpg}
+	
+Bovenstaande figuur is een voorbeeld van dergelijk schema, de relaties tussen te tabellen zijn eenvoudig af te leiden aan de hand van de lijnen.
+
+Het opvragen van data gebeurt aan de hand van query's, letterlijk vertaald uit het Engels betekent dit 'vraag'. Een query wordt bijvoorbeeld als volgt opgebouwd: 
+
+SELECT name 
+FROM boeken b
+JOIN auteurs a
+WHERE b.auteurnummer = a.nummer
+ORDER BY titel
+
+Deze query zal een lijst van namen van alle boeken in de databank van een bepaalde auteur weergeven, gesorteerd op titel.
+
+Merk hierbij op dat we het woord  'JOIN' gebruiken om aan het systeem duidelijk te maken dat we de data uit zowel de tabel 'boeken' als de tabel 'auteurs' nodig hebben. Dit is handig op kleine schaal, maar wanneer we data uit een groot aantal verschillende tabellen nodig hebben, kunnen deze query's zeer complex en traag worden. Dit soort scenario's is waar NoSQL uitblinkt.
+
+
+\subsection{NoSQL}
+\label{sec:NoSQL}
+Graph is een NoSQL databank. een NoSQL databank laat toe tot het opslaan en ophalen van data via een model dat de limitaties van relationele (SQL) databanken zoals hierboven besproken overbrugt. 
+Het grote verschil hierbij is dat NoSQL databanksystemen niet altijd vaste schema's volgen, er hoeft dus niet op voorhand gedefinieerd te worden hoe de data gestructureerd zal zijn, en er hoeven dus bijgevolg ook geen relaties gedefinieerd te worden, dit systeem is dus veel flexibeler. 
+
+
+	\includegraphics[width=\linewidth]{img/5_things_you_must_consider_before_nosql1.jpg}
+	
+NoSQL maakt gebruik van diverse opslagmethodes, enkele veelvoorkomende methodes worden hieronder verder uitgelegd. 
+
+
+\subsubsection{Document}
+\label{sec:Document}
+
+Bij een Document store //REF wordt data opgeslagen op een semi-gestructureerde wijze. Ze laten toe dat er verschillende types documenten binnen dezelfde opslag mogelijk zijn, dat er bepaalde velden optioneel zijn of een ander coderingssysteem gebruiken.
+
+	\includegraphics[width=\linewidth]{img/documentStoreExample.png}
+	
+\subsubsection{Key-Value}
+\label{sec:Key-Value}
+
+Deze opslagmethode is vooral geschikt wanneer data vaak uitgelezen moet worden. Het idee hiervan is hetzelfde als een Hashmap, waarbij een functie een sleutel omzet in een hash-waarde om die key-value combinatie snel te kunnen vinden. Dit wordt in onderstaande figuur geïllustreerd. Doordat de data enkel via deze waarde te vinden is, kan deze in een constante tijd worden opgehaald. Deze structuur blinkt dus uit in gevallen waarbij er zeer veel data is om te doorzoeken.
+
+	\includegraphics[width=\linewidth]{img/hashMapExample.png}
+
+\subsubsection{Graph}
+\label{sec:Graph}
+
+Dit is de structuur die verder in dit onderzoek gebruikt zal worden. Deze structuur maakt gebruik van een wiskundige graaf om data op te slaan. Een graaf bestaat uit een aantal knopen (genaamd nodes) die al dan niet verbonden zijn. Een groot voordeel hiervan is dat deze databanken sneller zijn dan relationele databanken omdat ze snel naar een bepaalde node kunnen verwijzen, waarbij we bij een relationele databank een JOIN zouden moeten gebruiken. 
+
+	\includegraphics[width=\linewidth]{img/Customer-Order-Example-Graph.png}
+	
+\subsection{Neo4j}
+\label{sec:Neo4j}
+
+Er bestaan verschillende platformen voor SQL, alsook verschillende platformen voor de hierboven beschreven NoSQL databanken. Neo4j is een van de meer bekende platformen voor graph databanken, dit platform zal gebruikt worden in dit onderzoek.
+
+Walmart maakt gebruik van Neo4j om de aanbevelingen voor hun klanten op hun online webservices te optimaliseren \autocite{neo4jWalmart2014}. Zij gebruiken dit omdat graph databanken zeer snel over een gebruiker zijn koophistorie kunnen traverseren, en ook direct nieuwe mogelijke interesses kunnen halen uit het gedrag van de gebruiker. Daarmee wordt bedoeld dat er in real-time nieuwe connecties worden gelegd tussen de gebruiker en de producten, en hij de nieuwe aanbevelingen meteen zal zien, en niet enkele dagen of uren later. Er wordt dus historische data gematcht met real-time data, hier blinkt Neo4j in uit. 
+
+
+% TODO: Info van hieruit gebruiken en bronnen vermelden (zie pdf's van use cases)
+% https://bbvaopen4u.com/en/actualidad/neo4j-what-graph-database-and-what-it-used
 
 
 \section{Wat is ElasticSearch?}
 \label{sec:wat is ElasticSearch?}
 
+Elasticsearch op zichzelf is eigenlijk een zoekmachine die data kan analyseren, of dit nu nummers, tekst, gestructureerd of ongestructureerd is. Elasticsearch is een component van de Elastic stack, ook wel ELK-Stack genoemd. Dit staat voor Elasticsearch, Logstash en Kibana. Logstash wordt gebruikt om data te verwerken uit meerdere bronnen en te versturen naar Elasticsearch. Kibana is een tool om de gebruikers een visueel beeld te geven van de data in de vorm van grafieken of tabellen.
 
-
+In Elasticsearch is het mogelijk gewichten toe te kennen aan de resultaten van een zoekopdracht, zo kunnen meer relevante resultaten hoger in de lijst staan, dit is een belangrijke factor in dit onderzoek, namelijk of deze technologie gebruikt kan worden in E-Commerce toepassingen. In het artikel van \cite{Vavliakis2019} wordt beweerd dat het systeem dat zij implementeerden op een performante manier de gewenste resultaten gaf, alsook dat dit een oplossing kan zijn voor real-time zoekopdrachten in commerciële toepassingen.

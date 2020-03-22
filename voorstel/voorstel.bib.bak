@@ -80,7 +80,7 @@
   publisher = {Canadian Center of Science and Education},
 }
 
-@Article{10.1109/MIC.2003.1167344,
+@Article{Linden2003,
   author     = {Linden, Greg and Smith, Brent and York, Jeremy},
   title      = {Amazon.Com Recommendations: Item-to-Item Collaborative Filtering},
   journal    = {IEEE Internet Computing},
@@ -96,6 +96,27 @@
   issue_date = {January 2003},
   numpages   = {5},
   publisher  = {IEEE Educational Activities Department},
+}
+
+@Article{Shadbolt2006,
+  author   = {N. {Shadbolt} and T. {Berners-Lee} and W. {Hall}},
+  title    = {The Semantic Web Revisited},
+  journal  = {IEEE Intelligent Systems},
+  year     = {2006},
+  volume   = {21},
+  number   = {3},
+  month    = {Jan},
+  pages    = {96-101},
+  issn     = {1941-1294},
+  doi      = {10.1109/MIS.2006.62},
+  keywords = {multi-agent systems;semantic Web;semantic Web;intelligent agents;heterogeneous data;agent-based mediation;Semantic Web;Ontologies;Artificial intelligence;Web sites;Humans;Intelligent systems;Genomics;Bioinformatics;Search engines;Recruitment;Semantic Web;semantic networks;standards;e-science;Web services},
+}
+
+@Electronic{neo4jWalmart2014,
+  author = {NeoTechnology},
+  title  = {Case Study: Walmart uses Neo4j to give customers best web experience through relevant and personal recommendations},
+  year   = {2014},
+  url    = {http://dev.assets.neo4j.com.s3.amazonaws.com/wp-content/uploads/Neo4j_CS_Walmart.pdf?_ga=1.189104616.2108618949.1430736703},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
