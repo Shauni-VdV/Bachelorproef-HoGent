@@ -23,21 +23,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.4}Verwante inhoud personalisatie}{17}{subsection.2.1.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Wat is Graph?}{17}{section.2.2}% 
+\contentsline {section}{\numberline {2.2}Recommender Systems}{17}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}SQL}{17}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.1}Haalbaarheid}{18}{subsection.2.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}NoSQL}{18}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.2}Algoritmen voor aanbevelingssystemen}{18}{subsection.2.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Document}{19}{section*.6}% 
+\contentsline {subsubsection}{Collaborative Filtering}{19}{section*.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Key-Value}{20}{section*.7}% 
+\contentsline {subsubsection}{Content Based}{20}{section*.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Graph}{21}{section*.8}% 
+\contentsline {section}{\numberline {2.3}Wat is Graph?}{20}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Neo4j}{22}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Graph}{20}{subsection.2.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Wat is ElasticSearch?}{22}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.2}Neo4j}{20}{subsection.2.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Wat is ElasticSearch?}{21}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodologie}{23}{chapter.3}% 
 \defcounter {refsection}{0}\relax 

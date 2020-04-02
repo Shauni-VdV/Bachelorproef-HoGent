@@ -53,60 +53,50 @@ In de realiteit hoeven de technologieën voor aanbevelingen van producten niet z
 Een voorbeeld van een relatie tussen twee artikels is de welbekende 'Anderen bekeken ook' blok die vaak zichtbaar is bij het bekijken van een detailpagina van een product. 
 Een simpelere methode van dergelijke relaties is het aanbieden van verwante producten op basis van categorieën of tags. Tags zijn een manier om kenmerken van een product weer te geven die specifieker zijn dan een categorie. Een categorie kan dan 'schoenen' zijn, terwijl een tag 'lage sneakers' is. 
 
+\section{Recommender Systems}
+\label{sec:Recommender Systems}
+Recommender Systems \autocite{Resnick1997} zijn aanbevelingen vanuit het systeem die rekening houden met de beschikbare informatie van gebruikers en hun voorkeuren om zo een filter te plaatsen op de informatie die weergegeven wordt. Verder zullen we deze benoemen aan de hand  van hun Nederlandse naam 'aanbevelingssystemen'.
+
+Aanbevelingssystemen worden vooral gebruikt in een e-commerce toepassingen waar een zeer groot en verscheiden aanbod aan producten is, en het al vaak lastig wordt om precieze aanbevelingen aan de klant te geven. Hierbij wordt allerlei informatie van een gebruiker verzameld, zoals historische aankopen, items op het verlanglijstje, items waar de gebruiker op geklikt heeft, etc.
+
+In dit onderdeel zullen we kort wat dieper ingaan op de werking van dergelijke aanbevelingssystemen en de achterliggende algoritmen.
+
+\subsection{Haalbaarheid}
+\label{sec:Haalbaarheid}
+Een degelijk systeem biedt een grote meerwaarde voor een bedrijf, zo heeft Netflix  een competitie gehouden die 1 miljoen dollar bood aan degene die een aanbevelingssysteem kon maken dat 10\% beter presteerde dan hun bestaande systeem. Deze wedstrijd liep van oktober 2006 tot minstens oktober 2011. De wedstrijd werd de \cite{NetflixPrize} genoemd, Netflix stelde hiervoor een dataset beschikbaar. Enkele groepen hebben het doel behaald, maar het algoritme van de winnende groep is uiteindelijk nooit in productie gebracht, omdat de mogelijke opbrengst niet kon opwegen tegen de extra gevraagde rekenkracht. 
+
+Een aanbevelingssysteem moet dus niet enkel de juiste waarden kunnen aangeven, het moet ook haalbaar zijn qua rekenkracht en extra kosten. Het ontwerpen van dergelijk systeem is dus niet eenvoudig.
+
+\subsection{Algoritmen voor aanbevelingssystemen}
+\label{sec:Algoritmen voor aanbevelingssystemen}
+
+We spreken over twee grote categorieën in algoritmen van aanbevelingssystemen: 'collaborative filtering'-algoritmen en 'content based'-algoritmen.  \cite{Adamovicius2005} Door de evolutie en groeiende ontwikkeling van beter presterende systemen zijn er ondertussen ook enkele algoritmen die niet echt binnen een van deze twee koepels vallen. In de onderstaande figuur wordt een simpele representatie gegeven van de werking van deze soorten algoritmes.
+
+	\includegraphics[width=\linewidth]{img/Content-based-filtering-and-Collaborative-filtering-recommendation}
+	
+\subsubsection{Collaborative Filtering}
+\label{sec:Collaborative Filtering}
+
+Het kernidee bij Collaborative Filtering \autocite{Schafera} is om aanbevelingen te maken gebaseerd op de voorkeuren van een andere gebruiker met een gelijkaardig gedrag. Zoals de figuur hierboven aantoont dat als gebruiker 1 en 2 hetzelfde artikel gelezen hebben, gebruiker 2 een artikel als aanbeveling zal krijgen dat gelezen werd door gebruiker 1. 
+Hetzelfde idee kan toegepast worden op allerlei interacties van de gebruikers met een website zoals likes, shares, verlanglijstjes, etc.
+
+In de praktijk geeft deze techniek zeer goede resultaten, maar zoals verwacht brengt deze techniek ook enkele problemen met zich mee. Het meest merkwaardige probleem is een zogenaamde cold start, dit komt onder andere voor bij de eerste interactie van een nieuwe gebruiker met een applicatie die aanbevelingen biedt. Het algoritme heeft dan onvoldoende informatie om een correcte en nuttige aanbeveling op te leveren aan de gebruiker. Een andere oorzaak kan zijn dat er een nieuw product wordt toegevoegd aan het systeem, er kan dan nog niet geweten zijn welk type gebruiker hierin geïnteresseerd zou kunnen zijn. 
+
+Een andere factor voor het succes van een Collaborative Filtering algoritme is het aantal gebruikers van een systeem, met andere woorden, hoe meer gebruikers er zijn, hoe correcter de aanbevelingen aan een specifieke gebruiker zal zijn. \autocite{Sarwar2001}
+
+...
+
+\subsubsection{Content Based}
+\label{sec:Content Based}
+
+TODO
 
 \section{Wat is Graph?}
 \label{sec:wat is Graph?}
 
 In de context van deze bachelorproef zal er met 'Graph' steeds verwezen worden naar een Graph databank. In dit onderdeel zullen we wat dieper ingaan op wat dit soort databank precies inhoudt om een volledig begrijpen van de precieze werking te verzekeren. 
 
-\subsection{SQL}
-\label{sec:SQL}
-SQL is de afkorting voor Structured Query Language. Dit verwijst eigenlijk naar de programmeertaal die gebruikt wordt om data op te halen of te schrijven naar een databank. Met een SQL-databank wordt dus eigenlijk een relationele databank bedoeld. 
-Deze databankstructuur is relationeel opgebouwd, dit wil zeggen dat we gebruik maken van een schema waarin een aantal tabellen met onderlinge relaties staan die gevuld worden door attributen. 
-
-	\includegraphics[width=\linewidth]{img/3-0.jpg}
-	
-Bovenstaande figuur is een voorbeeld van dergelijk schema, de relaties tussen te tabellen zijn eenvoudig af te leiden aan de hand van de lijnen.
-
-Het opvragen van data gebeurt aan de hand van query's, letterlijk vertaald uit het Engels betekent dit 'vraag'. Een query wordt bijvoorbeeld als volgt opgebouwd: 
-
-SELECT name 
-FROM boeken b
-JOIN auteurs a
-WHERE b.auteurnummer = a.nummer
-ORDER BY titel
-
-Deze query zal een lijst van namen van alle boeken in de databank van een bepaalde auteur weergeven, gesorteerd op titel.
-
-Merk hierbij op dat we het woord  'JOIN' gebruiken om aan het systeem duidelijk te maken dat we de data uit zowel de tabel 'boeken' als de tabel 'auteurs' nodig hebben. Dit is handig op kleine schaal, maar wanneer we data uit een groot aantal verschillende tabellen nodig hebben, kunnen deze query's zeer complex en traag worden. Dit soort scenario's is waar NoSQL uitblinkt.
-
-
-\subsection{NoSQL}
-\label{sec:NoSQL}
-Graph is een NoSQL databank. een NoSQL databank laat toe tot het opslaan en ophalen van data via een model dat de limitaties van relationele (SQL) databanken zoals hierboven besproken overbrugt. 
-Het grote verschil hierbij is dat NoSQL databanksystemen niet altijd vaste schema's volgen, er hoeft dus niet op voorhand gedefinieerd te worden hoe de data gestructureerd zal zijn, en er hoeven dus bijgevolg ook geen relaties gedefinieerd te worden, dit systeem is dus veel flexibeler. 
-
-
-	\includegraphics[width=\linewidth]{img/5_things_you_must_consider_before_nosql1.jpg}
-	
-NoSQL maakt gebruik van diverse opslagmethodes, enkele veelvoorkomende methodes worden hieronder verder uitgelegd. 
-
-
-\subsubsection{Document}
-\label{sec:Document}
-
-Bij een Document store //REF wordt data opgeslagen op een semi-gestructureerde wijze. Ze laten toe dat er verschillende types documenten binnen dezelfde opslag mogelijk zijn, dat er bepaalde velden optioneel zijn of een ander coderingssysteem gebruiken.
-
-	\includegraphics[width=\linewidth]{img/documentStoreExample.png}
-	
-\subsubsection{Key-Value}
-\label{sec:Key-Value}
-
-Deze opslagmethode is vooral geschikt wanneer data vaak uitgelezen moet worden. Het idee hiervan is hetzelfde als een Hashmap, waarbij een functie een sleutel omzet in een hash-waarde om die key-value combinatie snel te kunnen vinden. Dit wordt in onderstaande figuur geïllustreerd. Doordat de data enkel via deze waarde te vinden is, kan deze in een constante tijd worden opgehaald. Deze structuur blinkt dus uit in gevallen waarbij er zeer veel data is om te doorzoeken.
-
-	\includegraphics[width=\linewidth]{img/hashMapExample.png}
-
-\subsubsection{Graph}
+\subsection{Graph}
 \label{sec:Graph}
 
 Dit is de structuur die verder in dit onderzoek gebruikt zal worden. Deze structuur maakt gebruik van een wiskundige graaf om data op te slaan. Een graaf bestaat uit een aantal knopen (genaamd nodes) die al dan niet verbonden zijn. Een groot voordeel hiervan is dat deze databanken sneller zijn dan relationele databanken omdat ze snel naar een bepaalde node kunnen verwijzen, waarbij we bij een relationele databank een JOIN zouden moeten gebruiken. 
@@ -121,6 +111,9 @@ Er bestaan verschillende platformen voor SQL, alsook verschillende platformen vo
 Walmart maakt gebruik van Neo4j om de aanbevelingen voor hun klanten op hun online webservices te optimaliseren \autocite{neo4jWalmart2014}. Zij gebruiken dit omdat graph databanken zeer snel over een gebruiker zijn koophistorie kunnen traverseren, en ook direct nieuwe mogelijke interesses kunnen halen uit het gedrag van de gebruiker. Daarmee wordt bedoeld dat er in real-time nieuwe connecties worden gelegd tussen de gebruiker en de producten, en hij de nieuwe aanbevelingen meteen zal zien, en niet enkele dagen of uren later. Er wordt dus historische data gematcht met real-time data, hier blinkt Neo4j in uit. 
 
 
+Neo4j maakt dus gebruik van wiskundige grafen om data weer te geven samen met hun onderlinge relaties. Een graaf kan gericht of ongericht zijn, ongericht wil zeggen dat er geen richting is waarin de relaties lopen, dus deze zijn onderling uitwisselbaar. Een gerichte graaf is dan een graaf waarbij de relaties in een specifieke richting lopen, zoals volgers op Twitter: Persoon A volgt persoon B, maar persoon B volgt niet persoon A.
+
+
 % TODO: Info van hieruit gebruiken en bronnen vermelden (zie pdf's van use cases)
 % https://bbvaopen4u.com/en/actualidad/neo4j-what-graph-database-and-what-it-used
 
@@ -131,3 +124,5 @@ Walmart maakt gebruik van Neo4j om de aanbevelingen voor hun klanten op hun onli
 Elasticsearch op zichzelf is eigenlijk een zoekmachine die data kan analyseren, of dit nu nummers, tekst, gestructureerd of ongestructureerd is. Elasticsearch is een component van de Elastic stack, ook wel ELK-Stack genoemd. Dit staat voor Elasticsearch, Logstash en Kibana. Logstash wordt gebruikt om data te verwerken uit meerdere bronnen en te versturen naar Elasticsearch. Kibana is een tool om de gebruikers een visueel beeld te geven van de data in de vorm van grafieken of tabellen.
 
 In Elasticsearch is het mogelijk gewichten toe te kennen aan de resultaten van een zoekopdracht, zo kunnen meer relevante resultaten hoger in de lijst staan, dit is een belangrijke factor in dit onderzoek, namelijk of deze technologie gebruikt kan worden in E-Commerce toepassingen. In het artikel van \cite{Vavliakis2019} wordt beweerd dat het systeem dat zij implementeerden op een performante manier de gewenste resultaten gaf, alsook dat dit een oplossing kan zijn voor real-time zoekopdrachten in commerciële toepassingen.
+
+...

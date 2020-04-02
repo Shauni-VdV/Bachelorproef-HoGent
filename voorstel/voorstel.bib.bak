@@ -119,4 +119,37 @@
   url    = {http://dev.assets.neo4j.com.s3.amazonaws.com/wp-content/uploads/Neo4j_CS_Walmart.pdf?_ga=1.189104616.2108618949.1430736703},
 }
 
+@Article{Vavliakis2019,
+  author   = {Konstantinos N. Vavliakis and George Katsikopoulos and Andreas L. Symeonidis},
+  title    = {E-commerce Personalization with Elasticsearch},
+  journal  = {Procedia Computer Science},
+  year     = {2019},
+  volume   = {151},
+  pages    = {1128 - 1133},
+  note     = {The 10th International Conference on Ambient Systems, Networks and Technologies (ANT 2019) / The 2nd International Conference on Emerging Data and Industry 4.0 (EDI40 2019) / Affiliated Workshops},
+  issn     = {1877-0509},
+  doi      = {https://doi.org/10.1016/j.procs.2019.04.160},
+  url      = {http://www.sciencedirect.com/science/article/pii/S1877050919306271},
+  abstract = {Personalization techniques are constantly gaining traction among e-commerce retailers, since major advancements have been made at research level and the benefits are clear and pertinent. However, effectively applying personalization in real life is a challenging task, since the proper mixture of technology, data and content is complex and differs between organizations. In fact, personalization applications such as personalized search remain largely unfulfilled, especially by small and medium sized retailers, due to time and space limitations. In this paper we propose a novel approach for near real-time personalized e-commerce search that provides improved personalized results within the limited accepted time frames required for online browsing. We propose combining features such as product popularity, user interests, and query-product relevance with collaborative filtering, and implement our solution in Elasticsearch in order to achieve acceptable execution timings. We evaluate our approach against a publicly available dataset, as well as a running e-commerce store.},
+  keywords = {e-commerce, personalization, search, elasticsearch},
+}
+
+@Online{NetflixPrize,
+  author  = {Netflix},
+  title   = {The Netflix Prize},
+  year    = {2009},
+  url     = {https://www.netflixprize.com},
+  urldate = {2020-03-29},
+}
+
+@Article{Adamovicius2005,
+  author  = {G. {Adomavicius} and A. {Tuzhilin}},
+  title   = {Toward the next generation of recommender systems: a survey of the state-of-the-art and possible extensions},
+  journal = {IEEE Transactions on Knowledge and Data Engineering},
+  year    = {2005},
+  volume  = {17},
+  number  = {6},
+  pages   = {734-749},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  22 MAR 2020 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  2 APR 2020 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1724,7 +1724,7 @@ LaTeX Warning: Citation 'Dehkordi2012' on page 15 undefined on input line 18.
 [15
 
 ]
-<img/e2fcfe784532c41a644e4465f535530d.png, id=165, 457.10776pt x 351.714pt>
+<img/e2fcfe784532c41a644e4465f535530d.png, id=171, 457.10776pt x 351.714pt>
 File: img/e2fcfe784532c41a644e4465f535530d.png Graphic file (type png)
 <use img/e2fcfe784532c41a644e4465f535530d.png>
 Package pdftex.def Info: img/e2fcfe784532c41a644e4465f535530d.png  used on inpu
@@ -1737,72 +1737,70 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Warning: Citation 'Linden2003' on page 17 undefined on input line 49.
 
+
+LaTeX Warning: Citation 'Resnick1997' on page 17 undefined on input line 58.
+
 [17]
-<img/3-0.jpg, id=176, 724.7075pt x 498.86375pt>
-File: img/3-0.jpg Graphic file (type jpg)
-<use img/3-0.jpg>
-Package pdftex.def Info: img/3-0.jpg  used on input line 67.
-(pdftex.def)             Requested size: 426.79135pt x 293.79422pt.
+
+LaTeX Warning: Citation 'NetflixPrize' on page 18 undefined on input line 66.
+
+
+LaTeX Warning: Citation 'Adamovicius2005' on page 18 undefined on input line 73
+.
+
+<img/Content-based-filtering-and-Collaborative-filtering-recommendation.png, id
+=182, 689.57625pt x 495.8525pt>
+File: img/Content-based-filtering-and-Collaborative-filtering-recommendation.pn
+g Graphic file (type png)
+<use img/Content-based-filtering-and-Collaborative-filtering-recommendation.png
+>
+Package pdftex.def Info: img/Content-based-filtering-and-Collaborative-filterin
+g-recommendation.png  used on input line 75.
+(pdftex.def)             Requested size: 426.79135pt x 306.89574pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./img/3-0.jpg>]
-<img/5_things_you_must_consider_before_nosql1.jpg, id=181, 1154.3125pt x 562.1p
-t>
-File: img/5_things_you_must_consider_before_nosql1.jpg Graphic file (type jpg)
-<use img/5_things_you_must_consider_before_nosql1.jpg>
-Package pdftex.def Info: img/5_things_you_must_consider_before_nosql1.jpg  used
- on input line 90.
-(pdftex.def)             Requested size: 426.79135pt x 207.82793pt.
+ [18]
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 95.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 95.
-<img/documentStoreExample.png, id=182, 513.92pt x 334.24875pt>
-File: img/documentStoreExample.png Graphic file (type png)
-<use img/documentStoreExample.png>
-Package pdftex.def Info: img/documentStoreExample.png  used on input line 100.
-(pdftex.def)             Requested size: 426.79135pt x 277.58449pt.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 77.
+
+
+LaTeX Warning: Citation 'Schafera' on page 19 undefined on input line 80.
+
+
+LaTeX Warning: Citation 'Sarwar2001' on page 19 undefined on input line 85.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./img/5_things_you_must_consider_before_nosql1.jpg>]
-<img/hashMapExample.png, id=188, 636.3775pt x 393.47pt>
-File: img/hashMapExample.png Graphic file (type png)
-<use img/hashMapExample.png>
-Package pdftex.def Info: img/hashMapExample.png  used on input line 107.
-(pdftex.def)             Requested size: 426.79135pt x 263.88168pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20 <./img/documentStoreExample.png>]
-<img/Customer-Order-Example-Graph.png, id=195, 592.2125pt x 300.12125pt>
+ [19 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
+png>]
+<img/Customer-Order-Example-Graph.png, id=193, 592.2125pt x 300.12125pt>
 File: img/Customer-Order-Example-Graph.png Graphic file (type png)
 <use img/Customer-Order-Example-Graph.png>
 Package pdftex.def Info: img/Customer-Order-Example-Graph.png  used on input li
-ne 114.
+ne 104.
 (pdftex.def)             Requested size: 426.79135pt x 216.2932pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./img/hashMapExample.png (PNG copy)> <./img/Customer-Order-Example-Graph.
-png>]
+LaTeX Warning: Citation 'neo4jWalmart2014' on page 20 undefined on input line 1
+11.
 
-LaTeX Warning: Citation 'neo4jWalmart2014' on page 22 undefined on input line 1
-21.
+[20 <./img/Customer-Order-Example-Graph.png>]
 
-
-LaTeX Warning: Citation 'Vavliakis2019' on page 22 undefined on input line 133.
+LaTeX Warning: Citation 'Vavliakis2019' on page 21 undefined on input line 126.
 
 
-) (./methodologie.tex [22]
+) (./methodologie.tex [21] [22
+
+]
 Hoofdstuk 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
-
-])
+ [23])
 (./conclusie.tex [24]
 Hoofdstuk 4.
 
@@ -1868,11 +1866,11 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39880 strings out of 492616
- 743399 string characters out of 6129481
- 1349558 words of memory out of 5000000
- 43015 multiletter control sequences out of 15000+600000
- 575670 words of font info for 144 fonts, out of 8000000 for 9000
+ 39871 strings out of 492616
+ 743312 string characters out of 6129481
+ 1349780 words of memory out of 5000000
+ 43006 multiletter control sequences out of 15000+600000
+ 575800 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1881,10 +1879,10 @@ xlive/2019/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2
 019/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb>
-Output written on bachproef-tin.pdf (31 pages, 1350751 bytes).
+Output written on bachproef-tin.pdf (31 pages, 677041 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 22768 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 352 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 22769 words of extra memory for PDF output out of 24883 (max. 10000000)
 

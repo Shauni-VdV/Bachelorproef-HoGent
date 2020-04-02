@@ -119,7 +119,7 @@
   url    = {http://dev.assets.neo4j.com.s3.amazonaws.com/wp-content/uploads/Neo4j_CS_Walmart.pdf?_ga=1.189104616.2108618949.1430736703},
 }
 
-@Article{VaAVLIAKIS20191128,
+@Article{Vavliakis2019,
   author   = {Konstantinos N. Vavliakis and George Katsikopoulos and Andreas L. Symeonidis},
   title    = {E-commerce Personalization with Elasticsearch},
   journal  = {Procedia Computer Science},
@@ -132,6 +132,49 @@
   url      = {http://www.sciencedirect.com/science/article/pii/S1877050919306271},
   abstract = {Personalization techniques are constantly gaining traction among e-commerce retailers, since major advancements have been made at research level and the benefits are clear and pertinent. However, effectively applying personalization in real life is a challenging task, since the proper mixture of technology, data and content is complex and differs between organizations. In fact, personalization applications such as personalized search remain largely unfulfilled, especially by small and medium sized retailers, due to time and space limitations. In this paper we propose a novel approach for near real-time personalized e-commerce search that provides improved personalized results within the limited accepted time frames required for online browsing. We propose combining features such as product popularity, user interests, and query-product relevance with collaborative filtering, and implement our solution in Elasticsearch in order to achieve acceptable execution timings. We evaluate our approach against a publicly available dataset, as well as a running e-commerce store.},
   keywords = {e-commerce, personalization, search, elasticsearch},
+}
+
+@Online{NetflixPrize,
+  author  = {Netflix},
+  title   = {The Netflix Prize},
+  year    = {2009},
+  url     = {https://www.netflixprize.com},
+  urldate = {2020-03-29},
+}
+
+@Article{Adamovicius2005,
+  author  = {G. {Adomavicius} and A. {Tuzhilin}},
+  title   = {Toward the next generation of recommender systems: a survey of the state-of-the-art and possible extensions},
+  journal = {IEEE Transactions on Knowledge and Data Engineering},
+  year    = {2005},
+  volume  = {17},
+  number  = {6},
+  pages   = {734-749},
+}
+
+@InProceedings{Sarwar2001,
+  author    = {Sarwar, Badrul and Karypis, George and Konstan, Joseph and Riedl, John},
+  title     = {Item-Based Collaborative Filtering Recommendation Algorithms},
+  booktitle = {Proceedings of the 10th International Conference on World Wide Web},
+  year      = {2001},
+  series    = {WWW ’01},
+  publisher = {Association for Computing Machinery},
+  location  = {Hong Kong, Hong Kong},
+  isbn      = {1581133480},
+  pages     = {285–295},
+  doi       = {10.1145/371920.372071},
+  url       = {https://doi.org/10.1145/371920.372071},
+  address   = {New York, NY, USA},
+  numpages  = {11},
+}
+
+@InCollection{Schafera,
+  author    = {J. Ben Schafer and Dan Frankowski and Jon Herlocker and Shilad Sen},
+  title     = {Collaborative Filtering Recommender Systems},
+  booktitle = {The Adaptive Web},
+  publisher = {Springer Berlin Heidelberg},
+  pages     = {291--324},
+  doi       = {10.1007/978-3-540-72079-9_9},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
