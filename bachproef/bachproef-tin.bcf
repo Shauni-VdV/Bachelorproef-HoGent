@@ -2154,15 +2154,18 @@
     <bcf:citekey order="6">Adamovicius2005</bcf:citekey>
     <bcf:citekey order="7">Schafera</bcf:citekey>
     <bcf:citekey order="8">Sarwar2001</bcf:citekey>
-    <bcf:citekey order="9">neo4jWalmart2014</bcf:citekey>
-    <bcf:citekey order="10">Vavliakis2019</bcf:citekey>
-    <bcf:citekey order="11">Pitkow2002</bcf:citekey>
-    <bcf:citekey order="12">Telang2005</bcf:citekey>
-    <bcf:citekey order="13">Resnick1997</bcf:citekey>
-    <bcf:citekey order="14">Diehl2003</bcf:citekey>
-    <bcf:citekey order="15">Smith1999</bcf:citekey>
-    <bcf:citekey order="16">Pariser2011</bcf:citekey>
+    <bcf:citekey order="9">Lops2011</bcf:citekey>
+    <bcf:citekey order="10">Cano2017</bcf:citekey>
+    <bcf:citekey order="11">neo4jWalmart2014</bcf:citekey>
+    <bcf:citekey order="12">Vavliakis2019</bcf:citekey>
+    <bcf:citekey order="13">Pariser2011</bcf:citekey>
+    <bcf:citekey order="14">Pitkow2002</bcf:citekey>
+    <bcf:citekey order="15">Telang2005</bcf:citekey>
+    <bcf:citekey order="16">Resnick1997</bcf:citekey>
     <bcf:citekey order="17">Diehl2003</bcf:citekey>
+    <bcf:citekey order="18">Smith1999</bcf:citekey>
+    <bcf:citekey order="19">Pariser2011</bcf:citekey>
+    <bcf:citekey order="20">Diehl2003</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

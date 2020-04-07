@@ -177,4 +177,35 @@
   doi       = {10.1007/978-3-540-72079-9_9},
 }
 
+@InBook{Lops2011,
+  author    = {Lops, Pasquale and de Gemmis, Marco and Semeraro, Giovanni},
+  title     = {Content-based Recommender Systems: State of the Art and Trends},
+  booktitle = {Recommender Systems Handbook},
+  year      = {2011},
+  publisher = {Springer {US}},
+  pages     = {73-105},
+  doi       = {10.1007/978-0-387-85820-3_3},
+  journal   = {Recommender Systems Handbook},
+  month     = {01},
+}
+
+@Article{Cano2017,
+  author  = {Çano, Erion},
+  title   = {Hybrid Recommender Systems: A Systematic Literature Review},
+  journal = {Intelligent Data Analysis},
+  year    = {2017},
+  volume  = {21},
+  month   = {11},
+  pages   = {1487-1524},
+  doi     = {10.3233/IDA-163209},
+}
+
+@Online{F,
+  author  = {Netflix},
+  title   = {The Netflix Prize},
+  year    = {2009},
+  url     = {https://www.netflixprize.com},
+  urldate = {2020-03-29},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

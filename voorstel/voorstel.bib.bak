@@ -152,4 +152,39 @@
   pages   = {734-749},
 }
 
+@InProceedings{Sarwar2001,
+  author    = {Sarwar, Badrul and Karypis, George and Konstan, Joseph and Riedl, John},
+  title     = {Item-Based Collaborative Filtering Recommendation Algorithms},
+  booktitle = {Proceedings of the 10th International Conference on World Wide Web},
+  year      = {2001},
+  series    = {WWW ’01},
+  publisher = {Association for Computing Machinery},
+  location  = {Hong Kong, Hong Kong},
+  isbn      = {1581133480},
+  pages     = {285–295},
+  doi       = {10.1145/371920.372071},
+  url       = {https://doi.org/10.1145/371920.372071},
+  address   = {New York, NY, USA},
+  numpages  = {11},
+}
+
+@InCollection{Schafera,
+  author    = {J. Ben Schafer and Dan Frankowski and Jon Herlocker and Shilad Sen},
+  title     = {Collaborative Filtering Recommender Systems},
+  booktitle = {The Adaptive Web},
+  publisher = {Springer Berlin Heidelberg},
+  pages     = {291--324},
+  doi       = {10.1007/978-3-540-72079-9_9},
+}
+
+@InBook{Lops2011,
+  author  = {Lops, Pasquale and de Gemmis, Marco and Semeraro, Giovanni},
+  title   = {Content-based Recommender Systems: State of the Art and Trends},
+  year    = {2011},
+  pages   = {73-105},
+  doi     = {10.1007/978-0-387-85820-3_3},
+  journal = {Recommender Systems Handbook},
+  month   = {01},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
