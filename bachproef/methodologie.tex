@@ -2,14 +2,202 @@
 %% Methodologie
 %%=============================================================================
 
+
 \chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}
 \label{ch:methodologie}
 
-%% TODO: Hoe ben je te werk gegaan? Verdeel je onderzoek in grote fasen, en
-%% licht in elke fase toe welke stappen je gevolgd hebt. Verantwoord waarom je
-%% op deze manier te werk gegaan bent. Je moet kunnen aantonen dat je de best
-%% mogelijke manier toegepast hebt om een antwoord te vinden op de
-%% onderzoeksvraag.
 
-\lipsum[21-25]
+Rekeninghoudend met de bevindingen uit de literatuurstudie, zal hier verder besproken worden hoe we een systeem gaan opstellen dat gepaste aanbevelingen kan maken. Gezien we twee verschillende werkwijzen en technologieën zullen vergelijken, zal voor beide systemen een werkwijze voorgesteld worden.
+
+\section{Uitwerking ElasticSearch}
+\label{sec:Uitwerking ElasticSearch}
+
+Voor de uitwerking van Elasticsearch wordt een instantie opgezet waarmee we zullen communiceren, op deze instantie draait Elasticsearch. 
+
+In Elasticsearch worden items opgeslagen als een document met enkele waarden, typisch aan een product. In dit onderzoek zijn deze waarden; 'naam', 'merk', 'categorieën', en 'prijs'. 
+
+\subsection{Producten}
+\label{sec:Producten})
+Voor het aanmaken van de product data zullen enkele query's uitgevoerd worden die er als volgt uitzien:
+
+\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+POST http://35.233.112.106:9200/products/product/1 
+{ 
+ "name": "Logitech G930",
+ "brand": "Logitech",
+ "categories": ["Headset", "Wireless headset", "Headphones"],
+ "price": "190.00"
+}
+\end{lstlisting}
+
+Op deze manier worden enkele producten in de databank gezet, met enkele verwante velden zoals gelijkaardige categorieën, zodat we hiermee aanbevelingen kunnen maken. Deze verzameling van producten wordt een index genoemd.
+
+Vervolgens kunnen we een zoekterm ingeven via volgende query, deze zal alle resultaten weergeven waarvan een van de velden voldoet aan de meegegeven waarde, namelijk "deodorant". 
+
+\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+GET http://35.233.112.106:9200/products/product/1 
+{
+ "query" : {
+  "query_string": {
+   "query": "deodorant"
+  }
+ }
+}
+\end{lstlisting}
+
+\subsection{Gebruikers}
+
+Er zullen enkele vooraf gedefinieerde gebruikers opgesteld worden, waarmee bepaald zal worden of de zoekresultaten aan de verwachtingen voldoen. Een voorbeeld van een gebruiker is te zien in volgende query:
+\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+POST http://35.233.112.106:9200/users/user/1
+{
+	"name": "Louise",
+	"age": "21",
+	"address": {
+		"city": "Aalst",
+		"street": "Molendries 4",
+		"province": "Oost-Vlaanderen"
+	},
+	"categories": ["Electronics, Apple"],
+	"searches": ["iphone", "deodorant", "uncommon product"],
+	"brands": ["Nivea", "Apple"]
+}
+\end{lstlisting}
+
+Bij deze gebruiker kunnen we bijvoorbeeld verwachten dat als deze 'deodorant' opzoekt, zij die van het merk Nivea bovenaan de resultaten zal zien. Een voorbeeld van zo'n zoekopdracht, waarbij sommige velden ingevuld zijn op basis van onze persoon van de query hierboven, gaat als volgt:
+
+\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+POST http://35.233.112.106:9200/products/_search
+{
+  "query": {
+    "function_score": {
+      "query": {
+        "query_string": {
+          "query": "Deodorant"
+        }
+      },
+      "functions": [
+        { "filter" : 
+          { "terms" : 
+            { "brand" : ["Niveau", "Apple"]  } 
+          },
+          "weight": 3
+        },
+        { "filter" : 
+          { "terms" : 
+            { "categories" : ["Electronics", "Apple"] }
+          },
+          "weight": 2
+        },
+        { "filter" : 
+          { "terms" : 
+            { "searches" : ["iphone", "deodorant", "uncommon product"] } 
+          },
+          "weight": 1
+        }
+      ],
+      "score_mode": "sum",
+      "boost_mode": "replace"
+      }
+   }
+}
+\end{lstlisting}
+
+In het bovenste deel van de query, waar de \textit{query\textunderscore string} wordt aangeduid. Deze string zou dan overeenkomen met wat een gebruiker zou invoeren in een zoekbalk op een website.
+
+In de realiteit zal de informatie over 'brand', 'categories', en 'searches' opgehaald worden uit het model van de persoon in kwestie.
+
+In deze query wordt een score toegekend aan de resultaten die voldoen aan bovenstaande verwachting, namelijk dat het woord 'deodorant' terug te vinden moet zijn in een van de velden van het product (naam, merk, categorie)
+
+Die score wordt toegekend op basis van de informatie over een persoon, hieruit verstaan we dat dit gaat over de merken die deze persoon reeds gekocht heeft, in welke categorieën deze persoon reeds gekocht heeft, en een historiek van zoekopdrachten. Deze hebben elk een gewicht toegekend gekregen, respectievelijk drie, twee en één. 
+
+In de query zijn drie filters te zien die de score van een resultaat zullen beïnvloeden. Bij elk van deze filters wordt het score vermenigvuldigd met het gewicht. \textit{score\textunderscore mode : sum} zorgt ervoor dat de resultaten van de scores opgeteld worden.
+
+\textit{boost\textunderscore mode : replace} zorgt ervoor dat de score die verkregen wordt bij het gelijkaardig zijn aan de zoekterm vervangen wordt door de nieuw berekende score van de functies.
+
+Deze query is een vorm van collaborative filtering, toegepast op zichzelf. De query zal dus gaan zoeken naar hoe verwant een resultaat is aan een persoon, op basis van enkele variabelen, en zal deze een hogere score toekennen afhankelijk van hoe relevant het product is voor een gebruiker. Resultaten met een hogere score zullen dus bijgevolg ook hoger in de lijst van resultaten komen te staan.
+
+
+
+
+\section{Uitwerking Neo4j}
+\label{sec:UItwerking Neo4j}
+
+Voor dit systeem wordt er een model opgesteld in een Graph databank, de gekozen technologie hiervoor is Neo4j. Op deze graaf kunnen dan zoekalgoritmes uitgevoerd worden, om zo tot correcte aanbevelingen te komen. In dit hoofdstuk zal verder uitgewerkt worden hoe dit precies in elkaar zit.
+
+\subsection{Model}
+\label{sec:Model}
+Relaties tussen producten en klanten zullen als volgt worden opgeslagen worden in deze Graph databank:
+
+Er zijn 2 soorten nodes, dit zijn de knopen van een graaf, namelijk 'Gebruiker' en 'Product'. De relaties, aangeduid door lijnen tussen de knopen, zullen dan voorstellen wat de interactie van een gebruiker met een product is. Dit kan 'LIKES', 'BOUGHT', of 'LIVES\_TOGETHER' zijn. 'LIVES\_TOGETHER' zal dan aanduiden of 2 gebruikers familie of samenwonend zijn. 
+
+De attributen van een Product zijn als volgt:
+\begin{itemize}
+	\item Product ID
+	\item Name
+	\item Brand
+\end{itemize}
+
+De attributen voor een Gebruiker zijn als volgt:
+\begin{itemize}
+	\item Name
+	\item Address
+\end{itemize}
+
+De verschillende soorten relaties zijn als volgt:
+\begin{itemize}
+	\item 'BOUGHT' -> Gebruiker heeft Product gekocht
+	\item 'LIKES' -> Gebruiker heeft Product leuk gevonden
+	\item 'LIVES\_TOGETHER' -> Gebruiker 1 heeft hetzelfde adres als Gebruiker 2
+\end{itemize}
+
+De query die gebruikt wordt om de producten en gebruikers aan te maken:
+
+\texttt{
+CREATE(shauni:Customer {name: 'Shauni', address: 'Exterkenstraat 14'}), \newline
+(lynn:Customer {name: 'Lynn', address: 'Exterkenstraat 14'}), \newline
+(angelo:Customer {name: 'Angelo', address: 'Arbeidstraat 14'}), \newline
+(nicolas:Customer {name: 'Nicolas', address: 'Kouter 3'}), \newline
+(wendy:Customer {name: 'Wendy', address: 'Arbeidstraat 14'}), \newline
+(prod1:Product{id: '1', name:'Hairbrush', brand:'Syoss'}), \newline
+(prod2:Product{id: '2', name:'Instant Chocolate Milk', brand:'Nesquick'}), \newline
+(prod3:Product{id: '3', name:'Toilet Paper', brand: 'Boni'}), \newline
+(prod4:Product{id: '4', name:'Pen', brand:'Stabilo'}), \newline
+(prod5:Product{id: '5', name:'Roller Deodorant', brand: 'Sanex'}), \newline
+...
+}
+
+Om een relatie aan te maken tussen een product en een gebruiker zal volgende query gebruikt worden. Deze zal dus uitgevoerd worden elke keer een gebruiker een actie uitvoert met een product.
+Aangezien een product leuk vinden en een product kopen niet aanzien worden als evenwaardig, zullen er gewichten toegekend worden aan de interacties tussen gebruikers en producten.  Dat kan door middel van volgende query:
+
+
+\textt{
+	MATCH (c:Customer),(p:Product) \newline
+	WHERE c.name = 'Shauni' AND p.id=3 \newline
+	CREATE (c)-[r:BOUGHT]->(p) \newline
+	SET r.score = 3
+}
+
+Een product leuk vinden krijgt een score 2 toegekend, en een product kopen zal de score 3 krijgen
+
+Om de relatie van Gebruikers die op eenzelfde adres wonen aan te maken, gebruiken we volgende query: 
+
+\texttt{
+MATCH (a:Customer), (b:Customer) \newline
+WHERE EXISTS (a.address) AND EXISTS (b.address) AND a.address=b.address AND id(a)<id(b) \newline
+CREATE (a)-[:LIVES\_TOGETHER]->(b); \newline
+}
+
+\subsection{Ophalen van data}
+\label{sec:Ophalen van data}
+
+Om data op te halen uit deze graaf, en deze vervolgens aan de gebruiker te tonen als aanbevelingen, zullen enkele query's worden opgesteld. De resultaten hiervan zullen dan gecombineerd worden. 
+
+
+
+
+
+
+
+
 

@@ -187,4 +187,15 @@
   month   = {01},
 }
 
+@Article{Cano2017,
+  author  = {Çano, Erion},
+  title   = {Hybrid Recommender Systems: A Systematic Literature Review},
+  journal = {Intelligent Data Analysis},
+  year    = {2017},
+  volume  = {21},
+  month   = {11},
+  pages   = {1487-1524},
+  doi     = {10.3233/IDA-163209},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

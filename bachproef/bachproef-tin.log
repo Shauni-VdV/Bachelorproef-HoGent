@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  6 APR 2020 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  4 MAY 2020 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,21 +1425,21 @@ Package csquotes Info: Redefining alias 'default' -> 'dutch'.
 (./bachproef-tin.aux)
 \openout1 = `bachproef-tin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 82.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1511,7 +1511,7 @@ e
 \c@lstlisting=\count474
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 44.
+LaTeX Info: Redefining \microtypecontext on input line 82.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1526,7 +1526,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \AtBeginShipoutBox=\box70
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 82.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1536,9 +1536,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count475
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1556,8 +1556,8 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 44.
-Package biblatex Info: Reference segment=0 on input line 44.
+Package biblatex Info: Reference section=0 on input line 82.
+Package biblatex Info: Reference segment=0 on input line 82.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1593,7 +1593,7 @@ Package biblatex Info: Reference segment=0 on input line 44.
 <img/HOGENT_Logo_Pos_rgb.png, id=7, 3503.0875pt x 1975.38pt>
 File: img/HOGENT_Logo_Pos_rgb.png Graphic file (type png)
 <use img/HOGENT_Logo_Pos_rgb.png>
-Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 54.
+Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 94.
 (pdftex.def)             Requested size: 71.13188pt x 40.08864pt.
  [1
 
@@ -1639,7 +1639,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \inserttitlepage
+l.94 \inserttitlepage
                       [1
 
 
@@ -1683,29 +1683,27 @@ LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <12> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7])
+ [7] [8])
 \tf@toc=\write6
 \openout6 = `bachproef-tin.toc'.
 
+ [9] [10
 
-[8] (./bachproef-tin.lof)
+]
+(./bachproef-tin.lof)
 \tf@lof=\write7
 \openout7 = `bachproef-tin.lof'.
 
- [9
+ [11
 
-
-] [10
+] [12
 
 ] (./bachproef-tin.lot)
 \tf@lot=\write8
 \openout8 = `bachproef-tin.lot'.
 
- (./inleiding.tex
-[11] [12
+ (./inleiding.tex [13]
+[14
 
 ]
 Hoofdstuk 1.
@@ -1715,27 +1713,21 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13])
-(./standvanzaken.tex [14]
+ [15])
+(./standvanzaken.tex [16]
 Hoofdstuk 2.
-[15
+[17
 
 ]
-<img/e2fcfe784532c41a644e4465f535530d.png, id=180, 457.10776pt x 351.714pt>
+<img/e2fcfe784532c41a644e4465f535530d.png, id=214, 457.10776pt x 351.714pt>
 File: img/e2fcfe784532c41a644e4465f535530d.png Graphic file (type png)
 <use img/e2fcfe784532c41a644e4465f535530d.png>
 Package pdftex.def Info: img/e2fcfe784532c41a644e4465f535530d.png  used on inpu
 t line 37.
 (pdftex.def)             Requested size: 426.79135pt x 328.39476pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./img/e2fcfe784532c41a644e4465f535530d.png>] [17]
+ [18 <./img/e2fcfe784532c41a644e4465f535530d.png>] [19]
 <img/Content-based-filtering-and-Collaborative-filtering-recommendation.png, id
-=197, 689.57625pt x 495.8525pt>
+=229, 689.57625pt x 495.8525pt>
 File: img/Content-based-filtering-and-Collaborative-filtering-recommendation.pn
 g Graphic file (type png)
 <use img/Content-based-filtering-and-Collaborative-filtering-recommendation.png
@@ -1743,67 +1735,35 @@ g Graphic file (type png)
 Package pdftex.def Info: img/Content-based-filtering-and-Collaborative-filterin
 g-recommendation.png  used on input line 75.
 (pdftex.def)             Requested size: 426.79135pt x 306.89574pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
+ [20]
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 80.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
+ [21 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
 png>]
 
-LaTeX Warning: Citation 'Lops2011' on page 20 undefined on input line 93.
+LaTeX Warning: Citation 'Lops2011' on page 22 undefined on input line 93.
 
 
-LaTeX Warning: Citation 'Cano2017' on page 20 undefined on input line 107.
+LaTeX Warning: Citation 'Cano2017' on page 22 undefined on input line 107.
 
-
-Underfull \vbox (badness 2818) has occurred while \output is active []
-
- [20]
-<img/Customer-Order-Example-Graph.png, id=219, 592.2125pt x 300.12125pt>
+[22]
+<img/Customer-Order-Example-Graph.png, id=251, 592.2125pt x 300.12125pt>
 File: img/Customer-Order-Example-Graph.png Graphic file (type png)
 <use img/Customer-Order-Example-Graph.png>
 Package pdftex.def Info: img/Customer-Order-Example-Graph.png  used on input li
 ne 124.
 (pdftex.def)             Requested size: 426.79135pt x 216.2932pt.
-
-Underfull \vbox (badness 1102) has occurred while \output is active []
-
- [21 <./img/Customer-Order-Example-Graph.png>] [22]) (./methodologie.tex [23] [
-24
+ [23 <./img/Customer-Order-Example-Graph.png>] [24]) (./methodologie.tex
+[25] [26
 
 ]
 Hoofdstuk 3.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25])
-(./conclusie.tex [26]
-Hoofdstuk 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27
-
-])
-[28]
-B"ylage A.
-(../voorstel/voorstel-inhoud.tex [29
-
-] [30]) [31] [32
-
-]
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 12
-8.
-
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
+.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1811,20 +1771,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 12
-8.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
+.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 12
-8.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
+.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 12
-8.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
+.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -1835,28 +1795,90 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 128.
-
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+ [27] [28]
+[29] [30]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 168.
+
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (17.7001pt too wide) in paragraph at lines 168--169
+[] \T1/cmtt/m/n/12 CREATE(shauni:Customer name: 'Shauni', address: 'Exterkenstr
+aat 14'), 
+ []
+
+
+Overfull \hbox (23.25624pt too wide) in paragraph at lines 168--169
+\T1/cmtt/m/n/12 (prod2:Productid: '2', name:'Instant Chocolate Milk', brand:'Ne
+squick'), 
+ []
+
+! Undefined control sequence.
+l.174 \textt
+            {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (11.21794pt too wide) in paragraph at lines 189--190
+\T1/cmtt/m/n/12 WHERE EXISTS (a.address) AND EXISTS (b.address) AND a.address=b
+.address
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+) (./conclusie.tex [31] [32
+
+]
+Hoofdstuk 4.
+) [33] [34
+
+]
+B"ylage A.
+(../voorstel/voorstel-inhoud.tex [35] [36]) [37] [38
+
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 128.
- [33] [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
+ [39] [40]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
 
 (./bachproef-tin.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 130.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1868,24 +1890,27 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40173 strings out of 492616
- 749360 string characters out of 6129481
- 1351644 words of memory out of 5000000
- 43219 multiletter control sequences out of 15000+600000
- 590429 words of font info for 194 fonts, out of 8000000 for 9000
+ 40639 strings out of 492616
+ 754588 string characters out of 6129481
+ 1392800 words of memory out of 5000000
+ 43584 multiletter control sequences out of 15000+600000
+ 604187 words of font info for 230 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/tex
-mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (36 pages, 700496 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-di
+st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on bachproef-tin.pdf (42 pages, 754599 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 33025 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 166 named destinations out of 1000 (max. 500000)
+ 41801 words of extra memory for PDF output out of 42996 (max. 10000000)
 
