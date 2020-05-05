@@ -2146,26 +2146,25 @@
     <bcf:datasource type="file" datatype="bibtex">../voorstel/voorstel.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Pollefliet2011</bcf:citekey>
-    <bcf:citekey order="2">Dehkordi2012</bcf:citekey>
-    <bcf:citekey order="3">Linden2003</bcf:citekey>
-    <bcf:citekey order="4">Resnick1997</bcf:citekey>
-    <bcf:citekey order="5">NetflixPrize</bcf:citekey>
-    <bcf:citekey order="6">Adamovicius2005</bcf:citekey>
-    <bcf:citekey order="7">Schafera</bcf:citekey>
-    <bcf:citekey order="8">Sarwar2001</bcf:citekey>
-    <bcf:citekey order="9">Lops2011</bcf:citekey>
-    <bcf:citekey order="10">Cano2017</bcf:citekey>
-    <bcf:citekey order="11">neo4jWalmart2014</bcf:citekey>
-    <bcf:citekey order="12">Vavliakis2019</bcf:citekey>
-    <bcf:citekey order="13">Pariser2011</bcf:citekey>
-    <bcf:citekey order="14">Pitkow2002</bcf:citekey>
-    <bcf:citekey order="15">Telang2005</bcf:citekey>
-    <bcf:citekey order="16">Resnick1997</bcf:citekey>
-    <bcf:citekey order="17">Diehl2003</bcf:citekey>
-    <bcf:citekey order="18">Smith1999</bcf:citekey>
-    <bcf:citekey order="19">Pariser2011</bcf:citekey>
-    <bcf:citekey order="20">Diehl2003</bcf:citekey>
+    <bcf:citekey order="1">Dehkordi2012</bcf:citekey>
+    <bcf:citekey order="2">Linden2003</bcf:citekey>
+    <bcf:citekey order="3">Resnick1997</bcf:citekey>
+    <bcf:citekey order="4">NetflixPrize</bcf:citekey>
+    <bcf:citekey order="5">Adamovicius2005</bcf:citekey>
+    <bcf:citekey order="6">Schafera</bcf:citekey>
+    <bcf:citekey order="7">Sarwar2001</bcf:citekey>
+    <bcf:citekey order="8">Lops2011</bcf:citekey>
+    <bcf:citekey order="9">Cano2017</bcf:citekey>
+    <bcf:citekey order="10">neo4jWalmart2014</bcf:citekey>
+    <bcf:citekey order="11">Vavliakis2019</bcf:citekey>
+    <bcf:citekey order="12">Pariser2011</bcf:citekey>
+    <bcf:citekey order="13">Pitkow2002</bcf:citekey>
+    <bcf:citekey order="14">Telang2005</bcf:citekey>
+    <bcf:citekey order="15">Resnick1997</bcf:citekey>
+    <bcf:citekey order="16">Diehl2003</bcf:citekey>
+    <bcf:citekey order="17">Smith1999</bcf:citekey>
+    <bcf:citekey order="18">Pariser2011</bcf:citekey>
+    <bcf:citekey order="19">Diehl2003</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
