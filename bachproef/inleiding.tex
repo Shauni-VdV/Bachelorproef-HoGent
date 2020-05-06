@@ -5,43 +5,49 @@
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}
 \label{ch:inleiding}
 
-Deze inleiding is onderverdeeld in enkele secties die duidelijkheid zullen verschaffen over de opzet van deze bachelorproef en het onderzoek. Deze secties zijn als volgt:
-
-\begin{itemize}
-  \item context, achtergrond
-  \item afbakenen van het onderwerp
-  \item verantwoording van het onderwerp, methodologie
-  \item probleemstelling
-  \item onderzoeksdoelstelling
-  \item onderzoeksvraag
-  \item \ldots
-\end{itemize}
-
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
 \label{sec:probleemstelling}
 
-De meeste e-commerce online platformen hebben reeds een zoekfunctie geïmplementeerd,  maar deze is vaak beperkt tot enkel de productcatalogus. Rekeninghoudend met de algemene trend rond personalisering van de customer experience zou het ook aangewezen zijn om ook de zoekfunctionaliteit op e-commerce websites te personaliseren. Dit zou resulteren in een betere  gebruikservaring voor de klant en een hogere conversie voor het bedrijf.
+Elke webshop of e-commerce toepassing die vandaag de dag gekend is maakt gebruik van een zoekfunctie die gebruikers toelaat om snel en eenvoudig producten te kunnen opzoeken. Deze zoekfunctie is beperkt tot de beschikbare informatie, en bijgevolg dus in de meeste gevallen gelimiteerd tot de productcatalogus.
+
+ Rekeninghoudend met de algemene trend rond personalisering van de \textit{customer experience } zou het ook aangewezen zijn om ook de zoekfunctionaliteit op e-commerce websites te personaliseren. Dit zou resulteren in een betere customer experience voor de klant en een hogere conversie voor het bedrijf.
+ 
+ Het personaliseren wordt in deze context bedoeld als het gebruiken van persoonlijke data om de resultaten van een zoekopdracht te verfijnen en zo producten te kunnen aanbieden die passen bij de voorkeuren en het gedrag van de gebruiker. 
+ 
+ Hierop biedt dit onderzoek een mogelijke oplossing om dergelijke functionaliteiten te bereiken. Er zullen twee vooraf bepaalde platformen gebruikt worden om dit uit te werken, namelijk Neo4j en Elasticsearch. Het onderzoek zal uitwijzen welk platform het meest geschikt is om een gepersonaliseerde zoekfunctie mee te implementeren.
+ 
+  Belangrijk hierbij is om na te gaan of de wetgeving omtrent GDPR het gebruik van de persoonlijke data als legaal aanschouwt in de context van zoekfuncties, meer specifiek op welke manier deze data gebruikt zal worden binnen de uitwerking van de twee voorgenoemde platformen.
+
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
 \label{sec:onderzoeksvraag}
 
-De onderzoeksvraag bestaat eruit om te ontdekken welke databanktechnologie de beste oplossing biedt om in real-time op grote schaal gepersonaliseerde zoekresultaten te kunnen leveren.
+De onderzoeksvraag bestaat eruit om te ontdekken welk van de twee vooraf gekozen platformen of welke technologie de beste oplossing biedt om in real-time op grote schaal gepersonaliseerde zoekresultaten te kunnen leveren.
 
-Belangrijke criteria hierbij zijn performantie, kwaliteit van de resultaten, en of het al dan niet mogelijk is om familierelaties te kunnen verwerken. 
+Belangrijke criteria hierbij zijn snelheid, performantie, kwaliteit van de resultaten, en of het al dan niet mogelijk is om familierelaties te kunnen verwerken. Met performantie wordt hier geduid op de rekenkracht die een zoekoperatie zal nodig hebben, dit is gerelateerd aan de kost. 
 
-Concreet omvat dit onderzoek volgende onderzoeksvragen:
+Nog een niet te missen detail is de invloed van de wetgeving rond GDPR, en of een gepersonaliseerde zoekfunctie op basis van persoonlijke data al dan niet als legaal wordt aanzien onder deze wetgeving.
+
+Concreet omvat dit onderzoek volgende vier onderzoeksvragen:
 \begin{itemize}
-	\item Welke technologie biedt de mogelijkheid om een gepersonaliseerde zoekfunctie te implementeren
-	\item Welke technologie biedt de beste resultaten op basis van performantie en kwaliteit
-	\item Laten deze technologieën toe om rekening te houden met factoren die niet te maken hebben met historisch koopgedrag (bv. leeftijd, geslacht, gezinssamenstelling)
-
+	\item Is het implementeren van een gepersonaliseerde zoekfunctie op basis van persoonlijke data legaal onder de wetgeving rond GDPR?
+	\item Welke technologie biedt de mogelijkheid om een gepersonaliseerde zoekfunctie te implementeren?
+	\item Welke technologie biedt de beste resultaten op basis van snelheid, performantie en kwaliteit?
+	\item Laten deze technologieën toe om rekening te houden met factoren die niet te maken hebben met historisch koopgedrag (bv. leeftijd, geslacht, gezinssamenstelling)?
 \end{itemize} 
+
+Deze vragen zullen doorheen dit onderzoek een antwoord krijgen.
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}
 \label{sec:onderzoeksdoelstelling}
 
 Het onderzoek heeft als doel om te ontdekken in hoeverre de persoonlijke data van een specifieke gebruiker en contextuele data kan ingeschakeld en gecombineerd worden met de data uit een productcatalogus om persoonlijke en relevante zoekresultaten te genereren.
-We spreken hier vooral over historische koopdata van de persoon zelf, maar ook demografische data zoals geslacht, leeftijd, gezinssamenstelling kunnen hierbij belangrijke factoren zijn. 
+
+Dit zal verwezenlijkt worden door middel een prototype op te stellen van beide vooraf gekozen platformen, zijnde Neo4j en Elasticsearch, en de mogelijkheden ervan te ontdekken. De ondervindingen van het onderzoek, naast de informatie die een literatuurstudie biedt, zullen een antwoord geven op de onderzoeksvragen.
+
+Bij het gebruik van contextuele data wordt hier geduid op vooral historische koopdata van de persoon zelf, maar ook demografische data zoals geslacht, leeftijd, gezinssamenstelling kunnen hierbij belangrijke factoren zijn. 
+
+Het is niet enkel de mogelijkheid om dergelijk zoeksysteem te verwezenlijken die van belang is voor dit onderzoek, ook het gebruiksgemak en eenvoud van installatie speelt hierbij een rol, en zullen ondanks een eerder subjectieve voorwaarde te zijn toch effect hebben op de conclusie.
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}
 \label{sec:opzet-bachelorproef}

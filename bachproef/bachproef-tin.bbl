@@ -55,6 +55,39 @@
       \field{pages}{734\bibrangedash 749}
       \range{pages}{16}
     \endentry
+    \entry{Cano2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1a4b019b3ea4dbe4d2345337f2a4431c}{%
+           family={Çano},
+           familyi={Ç\bibinitperiod},
+           given={Erion},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1a4b019b3ea4dbe4d2345337f2a4431c}
+      \strng{fullhash}{1a4b019b3ea4dbe4d2345337f2a4431c}
+      \strng{bibnamehash}{1a4b019b3ea4dbe4d2345337f2a4431c}
+      \strng{authorbibnamehash}{1a4b019b3ea4dbe4d2345337f2a4431c}
+      \strng{authornamehash}{1a4b019b3ea4dbe4d2345337f2a4431c}
+      \strng{authorfullhash}{1a4b019b3ea4dbe4d2345337f2a4431c}
+      \field{sortinit}{Ç}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Intelligent Data Analysis}
+      \field{month}{11}
+      \field{title}{Hybrid Recommender Systems: A Systematic Literature Review}
+      \field{volume}{21}
+      \field{year}{2017}
+      \field{pages}{1487\bibrangedash 1524}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.3233/IDA-163209
+      \endverb
+    \endentry
     \entry{Dehkordi2012}{article}{}
       \name{author}{5}{}{%
         {{uniquename=0,uniquepart=base,hash=5a00a11ee5d9a74101997ce362adcd63}{%
@@ -202,6 +235,56 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1109/MIC.2003.1167344
+      \endverb
+    \endentry
+    \entry{Lops2011}{inbook}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=e2de4717b0a7f2faba103bdaf4b03bee}{%
+           family={Lops},
+           familyi={L\bibinitperiod},
+           given={Pasquale},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2f106eb722eff496058a71938fe7f236}{%
+           family={Gemmis},
+           familyi={G\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=648dfaca113383f23724ce78b40b515f}{%
+           family={Semeraro},
+           familyi={S\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer {US}}%
+      }
+      \strng{namehash}{5c0f7d9feacb4be00b6128eefc647fc5}
+      \strng{fullhash}{aa18da94833ea2bc46a83befb16f9485}
+      \strng{bibnamehash}{aa18da94833ea2bc46a83befb16f9485}
+      \strng{authorbibnamehash}{aa18da94833ea2bc46a83befb16f9485}
+      \strng{authornamehash}{5c0f7d9feacb4be00b6128eefc647fc5}
+      \strng{authorfullhash}{aa18da94833ea2bc46a83befb16f9485}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Recommender Systems Handbook}
+      \field{journaltitle}{Recommender Systems Handbook}
+      \field{month}{01}
+      \field{title}{Content-based Recommender Systems: State of the Art and Trends}
+      \field{year}{2011}
+      \field{pages}{73\bibrangedash 105}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1007/978-0-387-85820-3_3
       \endverb
     \endentry
     \entry{neo4jWalmart2014}{online}{}
@@ -370,37 +453,6 @@
       \verb 10.1145/567498.567526
       \endverb
     \endentry
-    \entry{Pollefliet2011}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=7ca343ebcc6de1727ac22a1a847c21e5}{%
-           family={Pollefliet},
-           familyi={P\bibinitperiod},
-           given={Leen},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Gent}%
-      }
-      \list{publisher}{1}{%
-        {Academia Press}%
-      }
-      \strng{namehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{fullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{bibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authorbibnamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authornamehash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \strng{authorfullhash}{7ca343ebcc6de1727ac22a1a847c21e5}
-      \field{sortinit}{P}
-      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Schrijven van verslag tot eindwerk: do's en don'ts}
-      \field{year}{2011}
-    \endentry
     \entry{Resnick1997}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=42c60cd629ab25ff7b8464868a0669aa}{%
@@ -505,6 +557,56 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1145/371920.372071
+      \endverb
+    \endentry
+    \entry{Schafera}{incollection}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=0c44fa1383479733136239598c1b37ce}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi Ben},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a6e4af3c5bc076ad2d1ad7738f2ebe1f}{%
+           family={Frankowski},
+           familyi={F\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=94319e671235d0cc5fb4a63fcae5724c}{%
+           family={Herlocker},
+           familyi={H\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=aa581f910bac5f7c1259b145c7ace7e6}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Shilad},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{6a966a61bca79cc08d31d05b3b220bff}
+      \strng{fullhash}{473386a02503f573ceb40c5c1ffe1fbc}
+      \strng{bibnamehash}{473386a02503f573ceb40c5c1ffe1fbc}
+      \strng{authorbibnamehash}{473386a02503f573ceb40c5c1ffe1fbc}
+      \strng{authornamehash}{6a966a61bca79cc08d31d05b3b220bff}
+      \strng{authorfullhash}{473386a02503f573ceb40c5c1ffe1fbc}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Adaptive Web}
+      \field{title}{Collaborative Filtering Recommender Systems}
+      \field{pages}{291\bibrangedash 324}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/978-3-540-72079-9_9
       \endverb
     \endentry
     \entry{Smith1999}{article}{}
@@ -654,7 +756,6 @@
       \keyw{e-commerce,personalization,search,elasticsearch}
     \endentry
   \enddatalist
-  \missing{Schafera}
 \endrefsection
 \endinput
 

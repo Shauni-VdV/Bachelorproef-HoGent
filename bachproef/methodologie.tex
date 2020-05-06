@@ -171,7 +171,7 @@ Om een relatie aan te maken tussen een product en een gebruiker zal volgende que
 Aangezien een product leuk vinden en een product kopen niet aanzien worden als evenwaardig, zullen er gewichten toegekend worden aan de interacties tussen gebruikers en producten.  Dat kan door middel van volgende query:
 
 
-\textt{
+\texttt{
 	MATCH (c:Customer),(p:Product) \newline
 	WHERE c.name = 'Shauni' AND p.id=3 \newline
 	CREATE (c)-[r:BOUGHT]->(p) \newline
