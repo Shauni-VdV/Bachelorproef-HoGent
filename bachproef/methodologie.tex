@@ -17,10 +17,10 @@ Voor de uitwerking van Elasticsearch wordt een instantie opgezet waarmee we zull
 In Elasticsearch worden items opgeslagen als een document met enkele waarden, typisch aan een product. In dit onderzoek zijn deze waarden; 'naam', 'merk', 'categorieën', en 'prijs'. 
 
 \subsection{Producten}
-\label{sec:Producten})
+\label{sec:Producten}
 Voor het aanmaken van de product data zullen enkele query's uitgevoerd worden die er als volgt uitzien:
 
-\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+\begin{lstlisting}[caption={Query om één enkel product aan te maken},captionpos=b]
 POST http://35.233.112.106:9200/products/product/1 
 { 
  "name": "Logitech G930",
@@ -34,7 +34,7 @@ Op deze manier worden enkele producten in de databank gezet, met enkele verwante
 
 Vervolgens kunnen we een zoekterm ingeven via volgende query, deze zal alle resultaten weergeven waarvan een van de velden voldoet aan de meegegeven waarde, namelijk "deodorant". 
 
-\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+\begin{lstlisting}[caption={Query om één enkel product op te halen},captionpos=b]
 GET http://35.233.112.106:9200/products/product/1 
 {
  "query" : {
@@ -48,7 +48,7 @@ GET http://35.233.112.106:9200/products/product/1
 \subsection{Gebruikers}
 
 Er zullen enkele vooraf gedefinieerde gebruikers opgesteld worden, waarmee bepaald zal worden of de zoekresultaten aan de verwachtingen voldoen. Een voorbeeld van een gebruiker is te zien in volgende query:
-\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+\begin{lstlisting}[caption={Query om één enkele gebruiker aan te maken}]
 POST http://35.233.112.106:9200/users/user/1
 {
 	"name": "Louise",
@@ -66,7 +66,7 @@ POST http://35.233.112.106:9200/users/user/1
 
 Bij deze gebruiker kunnen we bijvoorbeeld verwachten dat als deze 'deodorant' opzoekt, zij die van het merk Nivea bovenaan de resultaten zal zien. Een voorbeeld van zo'n zoekopdracht, waarbij sommige velden ingevuld zijn op basis van onze persoon van de query hierboven, gaat als volgt:
 
-\begin{lstlisting}[language=json,basicstyle=\small,firstnumber=1]
+\begin{lstlisting}[caption={Query om een zoekopdracht met term 'Deodorant' uit te voeren, met filters en een score op basis van informatie van een gebruiker}]
 POST http://35.233.112.106:9200/products/_search
 {
   "query": {
@@ -117,8 +117,12 @@ In de query zijn drie filters te zien die de score van een resultaat zullen beï
 
 Deze query is een vorm van collaborative filtering, toegepast op zichzelf. De query zal dus gaan zoeken naar hoe verwant een resultaat is aan een persoon, op basis van enkele variabelen, en zal deze een hogere score toekennen afhankelijk van hoe relevant het product is voor een gebruiker. Resultaten met een hogere score zullen dus bijgevolg ook hoger in de lijst van resultaten komen te staan.
 
+\subsection{Conclusie ElasticSearch}
+\label{sec:Conclusie Elasticsearch}
 
+Elasticsearch is zeer snel in het vinden van producten die relateren aan de gebruiker zelf, maar is wat moeilijker in omgang met het gebruik maken van data die personen aan elkaar linkt. Binnen dit onderzoek is er geen manier ontdekt waarbij er rekening kan gehouden worden met familiale verbanden. 
 
+Het rekening houden met andere variabelen van een persoon zoals geslacht, leeftijdscategorie, etc. zijn wel mogelijk bij het genereren van aanbevelingen bij een zoekopdracht. Dit kan door middel van gebruikers te vergelijken op basis van bijvoorbeeld hun gemeenschappelijke zoekopdrachten.
 
 \section{Uitwerking Neo4j}
 \label{sec:UItwerking Neo4j}

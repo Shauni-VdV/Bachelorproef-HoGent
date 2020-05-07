@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  6 MAY 2020 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  7 MAY 2020 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1394,6 +1394,26 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \TX@cols=\count468
 \TX@ftn=\toks48
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen292
+\captionmargin@=\dimen293
+\captionwidth=\dimen294
+\caption@tempdima=\dimen295
+\caption@indent=\dimen296
+\caption@parindent=\dimen297
+\caption@hangindent=\dimen298
+)
+\c@caption@flags=\count469
+\c@ContinuedFloat=\count470
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+)
 Package biblatex Info: Trying to load language 'dutch' -> 'dutch-apa'...
 Package biblatex Info: ... file 'dutch-apa.lbx' found.
 
@@ -1443,26 +1463,29 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'dutch'.
 
-(./bachproef-tin.aux)
+(./bachproef-tin.aux
+
+LaTeX Warning: Label `sec:Conclusie Elasticsearch' multiply defined.
+
+)
 \openout1 = `bachproef-tin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 52.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 79.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -1501,16 +1524,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count469
-\scratchdimen=\dimen292
+\scratchcounter=\count471
+\scratchdimen=\dimen299
 \scratchbox=\box71
-\nofMPsegments=\count470
-\nofMParguments=\count471
+\nofMPsegments=\count472
+\nofMParguments=\count473
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count472
-\MPscratchDim=\dimen293
-\MPnumerator=\count473
-\makeMPintoPDFobject=\count474
+\MPscratchCnt=\count474
+\MPscratchDim=\dimen300
+\MPnumerator=\count475
+\makeMPintoPDFobject=\count476
 \everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1529,10 +1552,10 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count475
+\c@lstlisting=\count477
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 52.
+LaTeX Info: Redefining \microtypecontext on input line 79.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1547,7 +1570,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 79.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1555,11 +1578,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count476
+\c@section@level=\count478
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1569,8 +1592,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bachproef-tin.bbl' found.
 
 (./bachproef-tin.bbl)
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
+Package biblatex Info: Reference section=0 on input line 79.
+Package biblatex Info: Reference segment=0 on input line 79.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1606,7 +1631,7 @@ Package biblatex Info: Reference segment=0 on input line 52.
 <img/HOGENT_Logo_Pos_rgb.png, id=7, 3503.0875pt x 1975.38pt>
 File: img/HOGENT_Logo_Pos_rgb.png Graphic file (type png)
 <use img/HOGENT_Logo_Pos_rgb.png>
-Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 64.
+Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 91.
 (pdftex.def)             Requested size: 71.13188pt x 40.08864pt.
  [1
 
@@ -1652,7 +1677,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.64 \inserttitlepage
+l.91 \inserttitlepage
                       [1
 
 
@@ -1711,37 +1736,114 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 
 ] [12
 
-] (./bachproef-tin.lot)
+] (./bachproef-tin.lot
+Overfull \hbox (8.17168pt too wide) in paragraph at lines 8--8
+|\T1/pag/m/n/12 (-20) 2.1| []Source: https://neo4j.com/news/how-much-faster-is-
+a-graph-database-
+ []
+
+)
 \tf@lot=\write8
 \openout8 = `bachproef-tin.lot'.
 
- (./inleiding.tex [13]
-[14
+ [13] [14
+
+] (./bachproef-tin.lol
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 2.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 2.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 2.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 2.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 2.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+
+Overfull \hbox (12.0pt too wide) detected at line 2
+ []\T1/ptm/m/n/12 35
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 4
+ []\T1/ptm/m/n/12 36
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 6
+ []\T1/ptm/m/n/12 36
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 8
+ []\T1/ptm/m/n/12 36
+ []
+
+)
+\tf@lol=\write9
+\openout9 = `bachproef-tin.lol'.
+
+ (./inleiding.tex [15] [16
 
 ]
 Hoofdstuk 1.
-[15]
+[17]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 33.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
- [16])
-(./standvanzaken.tex [17] [18
+ [18])
+(./standvanzaken.tex [19] [20
 
 ]
 Hoofdstuk 2.
-[19]
-<img/e2fcfe784532c41a644e4465f535530d.png, id=227, 457.10776pt x 351.714pt>
+[21]
+<img/e2fcfe784532c41a644e4465f535530d.png, id=252, 457.10776pt x 351.714pt>
 File: img/e2fcfe784532c41a644e4465f535530d.png Graphic file (type png)
 <use img/e2fcfe784532c41a644e4465f535530d.png>
 Package pdftex.def Info: img/e2fcfe784532c41a644e4465f535530d.png  used on inpu
 t line 46.
 (pdftex.def)             Requested size: 426.79135pt x 328.39476pt.
- [20] [21 <./img/e2fcfe784532c41a644e4465f535530d.png>] [22]
+ [22] [23 <./img/e2fcfe784532c41a644e4465f535530d.png>] [24]
 <img/Content-based-filtering-and-Collaborative-filtering-recommendation.png, id
-=246, 689.57625pt x 495.8525pt>
+=272, 689.57625pt x 495.8525pt>
 File: img/Content-based-filtering-and-Collaborative-filtering-recommendation.pn
 g Graphic file (type png)
 <use img/Content-based-filtering-and-Collaborative-filtering-recommendation.png
@@ -1753,260 +1855,148 @@ LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 94.
- [23 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
-png>] [24]
-[25]
-<img/Customer-Order-Example-Graph.png, id=274, 592.2125pt x 300.12125pt>
+ [25 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
+png>] [26]
+[27]
+<img/Customer-Order-Example-Graph.png, id=299, 592.2125pt x 300.12125pt>
 File: img/Customer-Order-Example-Graph.png Graphic file (type png)
 <use img/Customer-Order-Example-Graph.png>
 Package pdftex.def Info: img/Customer-Order-Example-Graph.png  used on input li
 ne 143.
 (pdftex.def)             Requested size: 426.79135pt x 216.2932pt.
- [26 <./img/Customer-Order-Example-Graph.png>]
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlztmcm.fd)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsztmcm.fd)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxztmcm.fd)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd)
-Underfull \hbox (badness 4266) in paragraph at lines 184--184
+ [28 <./img/Customer-Order-Example-Graph.png>]
+Underfull \hbox (badness 4266) in paragraph at lines 187--187
 []|\T1/ptm/m/n/12 (+20) - Niet ge-op-ti-ma-li-seerd voor sim-pele
  []
 
-<img/Google_Knowledge_Graph.jpeg, id=281, 943.525pt x 642.4pt>
+
+LaTeX Warning: Citation 'GoogleKnowledgeGraph' on page 29 undefined on input li
+ne 193.
+
+
+Overfull \hbox (27.52942pt too wide) in paragraph at lines 193--194
+\T1/ptm/m/n/12 (-20) Google startte in mei 2012 een ini-ti-a-tief ge-naamd \T1/
+ptm/m/it/12 (-20) Know-ledge Graph \T1/ptm/m/n/12 (-20) ([]).
+ []
+
+[29]
+<img/Google_Knowledge_Graph.jpeg, id=313, 943.525pt x 642.4pt>
 File: img/Google_Knowledge_Graph.jpeg Graphic file (type jpg)
 <use img/Google_Knowledge_Graph.jpeg>
 Package pdftex.def Info: img/Google_Knowledge_Graph.jpeg  used on input line 19
-2.
+7.
 (pdftex.def)             Requested size: 426.79135pt x 290.58687pt.
-[27] [28 <./img/Google_Knowledge_Graph.jpeg>]) (./methodologie.tex [29]
-[30
 
-]
+
+LaTeX Warning: Citation 'E-CommerceKnowledgeGraph' on page 30 undefined on inpu
+t line 205.
+
+[30 <./img/Google_Knowledge_Graph.jpeg>]
+
+LaTeX Warning: Citation 'Grad-Gyenge2015' on page 31 undefined on input line 21
+3.
+
+[31]
+<img/twitter_graph.png, id=324, 734.745pt x 513.92pt>
+File: img/twitter_graph.png Graphic file (type png)
+<use img/twitter_graph.png>
+Package pdftex.def Info: img/twitter_graph.png  used on input line 231.
+(pdftex.def)             Requested size: 426.79135pt x 298.52863pt.
+
+
+LaTeX Warning: Citation 'Vukotic2014' on page 32 undefined on input line 236.
+
+[32 <./img/twitter_graph.png>]) (./methodologie.tex [33] [34]
 Hoofdstuk 3.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/02/27 1.8b listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The following languages weren't loadable:
-    ,json$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: language json undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The language is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[31] (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/02/27 1.8b listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The following languages weren't loadable:
-    ,json$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: language json undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The language is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/02/27 1.8b listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The following languages weren't loadable:
-    ,json$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: language json undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The language is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2019/02/27 1.8b listings language file
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2019/02/27 1.8b listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The following languages weren't loadable:
-    ,json$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: language json undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 ...uage=json,basicstyle=\small,firstnumber=1]
-                                                  
-The language is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[32]
-Overfull \hbox (46.25247pt too wide) in paragraph at lines 94--95
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[33]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 168.
-
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 23.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [35
 
-Overfull \hbox (17.7001pt too wide) in paragraph at lines 168--169
+] [36]
+[37] [38]
+Overfull \hbox (17.7001pt too wide) in paragraph at lines 172--173
 [] \T1/cmtt/m/n/12 CREATE(shauni:Customer name: 'Shauni', address: 'Exterkenstr
 aat 14'), 
  []
 
 
-Overfull \hbox (23.25624pt too wide) in paragraph at lines 168--169
+Overfull \hbox (23.25624pt too wide) in paragraph at lines 172--173
 \T1/cmtt/m/n/12 (prod2:Productid: '2', name:'Instant Chocolate Milk', brand:'Ne
 squick'), 
  []
 
-[34]
-Overfull \hbox (11.21794pt too wide) in paragraph at lines 189--190
+
+Overfull \hbox (11.21794pt too wide) in paragraph at lines 193--194
 \T1/cmtt/m/n/12 WHERE EXISTS (a.address) AND EXISTS (b.address) AND a.address=b
 .address
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-) (./conclusie.tex [35] [36
-
-]
+[39]) (./conclusie.tex [40]
 Hoofdstuk 4.
-) [37] [38
+) [41
+
+] [42
 
 ]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [39] [40]) [41] [42
+(../voorstel/voorstel-inhoud.tex [43] [44]) [45] [46
 
-] [43] [44]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+] [47] [48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
 
 (./bachproef-tin.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 169.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                bachproef-tin
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40788 strings out of 492616
- 757989 string characters out of 6129481
- 1378513 words of memory out of 5000000
- 43683 multiletter control sequences out of 15000+600000
- 602903 words of font info for 233 fonts, out of 8000000 for 9000
+ 41789 strings out of 492616
+ 775239 string characters out of 6129481
+ 1477533 words of memory out of 5000000
+ 44699 multiletter control sequences out of 15000+600000
+ 596377 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2019/
-texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (46 pages, 888507 bytes).
+ive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2019/te
+xmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-dis
+t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on bachproef-tin.pdf (50 pages, 1025441 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 538 compressed objects within 6 object streams
- 175 named destinations out of 1000 (max. 500000)
- 41814 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 687 PDF objects out of 1000 (max. 8388607)
+ 571 compressed objects within 6 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 36707 words of extra memory for PDF output out of 42996 (max. 10000000)
 

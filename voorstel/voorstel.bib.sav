@@ -200,7 +200,7 @@
   doi     = {10.3233/IDA-163209},
 }
 
-@Online{F,
+@Online{FilterBubble2010,
   author  = {Netflix},
   title   = {The Netflix Prize},
   year    = {2009},

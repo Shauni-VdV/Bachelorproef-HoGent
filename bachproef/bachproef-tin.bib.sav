@@ -200,7 +200,7 @@
   doi     = {10.3233/IDA-163209},
 }
 
-@Book{Vukotic2014,
+@Book{1,
   author    = {Vukotic, Aleksa and Watt, Nicki and Abedrabbo, Tareq and Fox, Dominic and Partner, Jonas},
   title     = {Neo4j in Action},
   year      = {2014},
