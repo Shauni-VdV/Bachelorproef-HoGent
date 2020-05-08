@@ -264,15 +264,243 @@ Elasticsearch op zichzelf is eigenlijk een zoekmachine die data kan analyseren, 
 
 Elasticsearch is een component van de Elastic stack, ook wel ELK-Stack genoemd. Dit staat voor Elasticsearch, Logstash en Kibana. Logstash wordt gebruikt om data te verwerken uit meerdere bronnen en te versturen naar Elasticsearch. Kibana is een tool om de gebruikers een visueel beeld te geven van de data in de vorm van grafieken of tabellen.
 
-In Elasticsearch is het mogelijk gewichten toe te kennen aan de resultaten van een zoekopdracht, zo kunnen meer relevante resultaten hoger in de lijst staan, dit is een belangrijke factor in dit onderzoek, namelijk of deze technologie gebruikt kan worden in E-Commerce toepassingen.
+Data wordt in Elasticsearch opgeslagen als een document in JSON-formaat in een index. Aangezien dit een zoekmachine is, is Elasticsearch dus gespecialiseerd in het zoeken van data, bijvoorbeeld een query om alle producten op te halen waar het woord 'switch' in voorkomt zal zeer snel resultaten opleveren.  
+
+Elasticsearch ondersteunt ook meerdere methodes voor het zoeken, eentje ervan is zoals hierboven beschreven het zoeken op een stukje tekst, waarbij alle documenten geretourneerd worden waar de tekst in een van de velden voorkomt, dit wordt tekst-gebaseerd zoeken genoemd.  Hieronder enkele voorbeelden van zoekmethodes:  
+
+De zoekmethode die hier als voorbeeld genomen werd maakt gebruik van de parameter \textit{query\textunderscore string}. Als een van de velden van een document overeenkomt met de ingevoerde tekst, zal dit document in de lijst van resultaten terechtkomen.
+
+\begin{lstlisting}[caption={Tekst-gebaseerd zoeken: Query om een simpele zoekopdracht uit te voeren met de term 'deodorant'}]
+{
+	"query" : 
+	{
+		"query_string": 
+		{
+			"query": "deodorant"
+		}
+	}
+}
+\end{lstlisting}
+
+Er kan ook op specifieke termen gezocht worden via \textit{term}. Daarbij kan dan gespecificeerd worden welk veld moet overeenkomen met de ingevoerde tekst. 
+Indien men wil zoeken op meerdere termen, kan terms vervangen worden door de parameter \textit{terms}, en zal er een array mee moeten gegeven worden als input in plaats van 'Audio' 
+
+\begin{lstlisting}[caption={Tekst-gebaseerd zoeken: Query om een simpele zoekopdracht uit te voeren waar de categorie van het product overeen komt met 'Audio' }]
+{
+	"query" : 
+	{
+		"term": 
+		{
+			"category": "Audio"
+		}
+	}
+}
+\end{lstlisting}
+
+Een andere manier om te zoeken op basis van tekst is \textit{match}. Hierbij worden alle woorden van alle velden van een document bekeken, en wordt er een score toegekend voor elke keer dit woord in het document voorkomt, op deze manier zullen resultaten waarbij dit woord het vaakst voorkomt, bovenaan in de lijst van resultaten terechtkomen. 
+
+\begin{lstlisting}[caption={Tekst-gebaseerd zoeken: Query die de resultaten sorteert op basis van hoe vaak het woord 'accepted' voorkomt in het veld 'message' van een document }]
+{
+	"query" : 
+	{
+		"match": 
+		{
+			"message": "accepted"
+		}
+	}
+}
+\end{lstlisting}
+
+Als men wil zoeken binnen een bepaalde prijsklasse, bijvoorbeeld tussen 30 en 50 euro, kan dit met de parameter \textit{range}, bijvoorbeeld met volgende query:
+
+\begin{lstlisting}[caption={Bereik zoeken: Een query om alle documenten op te halen waarbij het veld 'price' tussen 30 en 50 ligt}]
+{
+	"query" : 
+	{
+		"range": 
+		{
+			"price": {
+				"gte": 30,
+				"lte": 50
+			}
+		}
+	}
+}
+\end{lstlisting}
+
+
+Het is ook mogelijk om query's te combineren, dit kan verwezenlijkt worden door het gebruik van een \textit{bool query}. De parameters die hieronder gebruikt kunnen worden zijn:
+
+\begin{itemize}
+	\setlength\itemsep{1em}
+	\item \textit{``must``} : De meegegeven waarde moet in het document voorkomen en de score van deze query zal meetellen voor de totale score. Dit is een strikte voorwaarde, als hier niet aan voldaan wordt zal het document niet opgenomen worden in de resultaten.	
+	\item \textit{``filter``} : De meegegeven waarde moet in het document voorkomen. De score van deze query zal niet meetellen voor de totale score. Alle documenten die niet aan de voorwaarden van de filter voldoen, zullen net zoals bij 'must' niet opgenomen worden in de resultaten.	
+	\item \textit{``should``} : Als de gegeven waarde voorkomt in het document, zal de score van het document verhoogd worden, maar dit is geen strikte voorwaarde. De parameter \textit{``minimum\textunderscore should\textunderscore match``} geeft aan aan hoeveel voorwaarden voldaan moet worden om het document op de nemen in de resultaten. De \textit{``boost``} parameter laat toe bepaalde overeenkomsten een hogere score te laten genereren.
+	\item \textit{``must\textunderscore not``} : Het omgekeerde van 'must'. De meegegeven waarde mag niet voorkomen in het document. Net zoals bij 'filter' zal de score voor deze query niet meetellen. 
+\end{itemize}
+
+\begin{lstlisting}[caption={Combineren: Voorbeeld van een 'bool' query}]
+{
+	"query" : 
+	{
+		"bool": 
+		{
+			"must": {
+				"term" : { "name" : "Kim" }
+			},
+			"must_not": {
+				"term": { "lastname" : "Johnson" }
+			},
+			"filter": {
+				"term": { "gender" : "female" }
+			},
+			"should" : [
+				{
+					"range" : {
+						"age" : { "gte" : 20, "lte" : 30 }
+					}
+				},
+				{
+					"range" : {
+						"height" : { "gte" : 150, "lte" : 170 } ,
+						"boost" : 3
+					}
+				},
+				{
+					"term" : { "country" : "Belgium" }
+				},
+			],
+			"minimum_should_match": 2
+		}
+	}
+}
+\end{lstlisting}
+ 
+Bovenstaande query zal alle documenten retourneren waar: 
+\begin{itemize}
+	\setlength\itemsep{.3em}
+	\item De voornaam 'Kim' is
+	\item De achternaam NIET 'Johnson' is
+	\item Het geslacht 'female' is.
+\end{itemize}
+
+En er aan minstens twee van deze drie voorwaarden voldaan wordt: 
+\begin{itemize}
+	\setlength\itemsep{.3em}
+	\item De leeftijd tussen 20 en 30 jaar is
+	\item De lengte tussen 150 en 170 is
+	\item Het land 'België' is.
+\end{itemize}
+
+
+
+In Elasticsearch is het dus mogelijk gewichten toe te kennen aan de resultaten van een zoekopdracht, zo kunnen meer relevante resultaten hoger in de lijst staan, dit is een belangrijke factor in dit onderzoek, namelijk of deze technologie gebruikt kan worden in E-Commerce toepassingen.
+
+Een alternatieve en meer uitgebreide manier om scores toe te kennen aan resultaten is via een \textit{``function\_score``}. Het bovenste deel van deze query (\textit{``query``}) zal bepalen welke documenten opgenomen moeten worden, en het onderste deel ( \textit{``functions``}) zal een lijst van functies vormen. 
+
+Aan de hand van deze functies zal een score voor een resultaat worden berekend. Aan elk van deze functies kan een gewicht (\textit{``weight``}) worden toegekend om bepaalde overeenkomsten meer te laten doorwegen dan andere en deze dus een hogere score toe te kennen.
+
+Er komen nog twee extra parameters kijken bij deze functies, namelijk \textit{``score\_mode``} en \textit{``boost\_mode``}. Elk document dat wordt opgehaald zal een score toegewezen krijgen. 
+
+De parameter score\_mode bepaalt hoe de scores  van deze functies gecombineerd worden. Mogelijke opties hiervoor zijn \textit{``multiply``}, \textit{``sum``}, \textit{``avg``}, \textit{``first``}, \textit{``max``}, en \textit{``min``}
+
+De parameter boost\_mode bepaalt hoe de score van de query en de functies gecombineerd moet worden. Mogelijke opties hiervoor zijn: \textit{``multiply``}, \textit{``replace``}, \textit{``sum``}, \textit{``avg``}, \textit{``max``}, en \textit{``min``}.
+
+De meeste opties verklaren zichzelf, \textit{``replace``} zal de score die toegekend werd aan het document bij het ophalen ( \textit{``query``}) overschrijven door de score die berekend werd door de functies. 
+
+Hieronder een voorbeeld van een function\_score query waar alle documenten opgehaald worden, daarna zal er een score van 4 toegekend worden aan de documenten indien 'name' overeenkomt met 'Kim', en een score van 2 indien 'age' overeenkomt met '23'.
+
+De scores van deze functies zullen worden opgeteld, en het resultaat hiervan zal de score die toegekend werd aan het resultaat bij het ophalen van het document overschrijven. 
+
+\begin{lstlisting}[caption={Scoring: voorbeeld van een function\_score query}]
+{
+	"query" : {
+		"function_score" : {
+			"query" : { "match_all" : {} },
+			"boost" : 2,
+			"functions" : [
+				{
+					"filter" : { "match" : { "name" : "Kim" } },
+					"weight": 4
+				},
+				{
+				"filter" : { "match" : { "age" : 23 } },
+				"weight": 2
+				}
+			],
+			"score_mode" : "sum",
+			"boost_mode" : "replace"
+		}
+	}
+}
+\end{lstlisting}
+
+De \textit{``script\_score``} functie laat toe om een score voor een document te berekenen aan de hand een van de waarden van de velden in het document.
+
+Onderstaande query zal alle documenten ophalen waarbij het veld 'naam' overeenkomt met 'Kim', en zal een score berekenen op basis van de lengte. In dit geval (300 - lengte) zal een lagere waarde voor dit veld resulteren in een kleinere score.
+
+\begin{lstlisting}[caption={Scoring: voorbeeld van een script\_score query}]
+{
+	"query" : {
+		"script_score" : {
+			"query" : {
+				"match" : { "name" : "Sasha" }
+			},
+			"script": {
+				"
+				height = doc['height'].value;
+				return 300 - height;
+				"
+			}
+		}
+	}
+}
+\end{lstlisting}
+
+Decay functies kunnen gebruikt worden om de score van een document aan te passen naar gelang een opgegeven veld afwijkt van een bepaalde waarde. Dit is gelijkaardig aan de 'range' query, waar met met intervallen zou kunnen werken, maar loopt geleidelijk mee naargelang de afstand tussen de waarde van het veld en de opgegeven waarde groter wordt. 
+\newline
+
+Er zijn drie mogelijke decay functies, namelijk \textit{``linear``}, \textit{``exp``}, en \textit{``gauss``}. De velden die hierbij horen zijn:
+
+\begin{itemize}
+	\item \textit{``origin``} : Het startpunt voor het berekenen van de afstand. De waarde hiervan moet numeriek, een datum of een geo-punt zijn.
+	\item \textit{``scale``} : Het verschil dat nodig is om de score te doen afnemen met de waarde aangegeven door de decay.
+	\item \textit{``offset``} (Optioneel):  Als deze waarde gedefinieerd wordt, zal de decay functie enkel berekend worden als de afstand groter is dan deze waarde. Default is 0.
+	\item \textit{``decay``} (Optioneel): Geeft aan met welke waarde de score van een document moet afnemen. Default is 0.5
+\end{itemize}
+
+
+\begin{lstlisting}[caption={Decay: voorbeeld van een decay functie}]
+{
+	"query" : {
+		"function_score" : {
+			"exp" : {
+				"date" : {
+					"origin": "2013-09-17",
+					"scale" : "10d",
+					"offset" : "5d",
+					"decay" : 0.5				}
+			}
+		}
+	}
+}
+\end{lstlisting}
+
+De bovenstaande query zal de score van een document laten afnemen met 0.5 naar gelang de waarde van het veld 'datum' verder ligt van de opgegeven waarde (2013-09-17). De waarde zal niet afnemen indien deze binnen de 5 dagen verwijderd ligt van de opgegeven waarde.
 
  In het artikel van \autocite{Vavliakis2019} wordt beweerd dat het systeem dat zij implementeerden op een performante manier de gewenste resultaten gaf, alsook dat dit een oplossing kan zijn voor real-time zoekopdrachten in commerciële toepassingen. Dit sluit dus al uit dat Elasticsearch geen oplossing zou kunnen bieden voor onze onderzoeksvraag.
-
-
+ 
 \section{Filter Bubble}
 \label{sec:Filter Bubble}
 
-Een filter bubble, ook wel informatieluchtbel genaamd, is een gevolg van het personaliseren van zoekopdrachten. Personalisatie is het proberen bepalen welke zaken een gebruiker zou willen zien, aan de hand van een algoritme. Een filter bubble betekent dat door deze personalisatie, een bijvoorbeeld geen producten zal zien die hem niet interesseren, in dit geval is dat een voordeel. Als we kijken in de context van controversiële onderwerpen, zorgt deze bubbel ervoor dat de gebruiker eigenlijk geen informatie zal zien die niet bij zijn standpunt past, de gebruikers worden dus afgesloten in luchtbel bestaande uit enkel hun visie of standpunt.  \autocite{Pariser2011}
+Een filter bubble, ook wel informatieluchtbel genaamd, is een gevolg van het personaliseren van zoekopdrachten. Personalisatie is het proberen bepalen welke zaken een gebruiker zou willen zien, aan de hand van een algoritme. 
+
+Een filter bubble betekent dat door deze personalisatie, een bijvoorbeeld geen producten zal zien die hem niet interesseren, in dit geval is dat een voordeel. Als we kijken in de context van controversiële onderwerpen, zorgt deze bubbel ervoor dat de gebruiker eigenlijk geen informatie zal zien die niet bij zijn standpunt past, de gebruikers worden dus afgesloten in luchtbel bestaande uit enkel hun visie of standpunt.  \autocite{Pariser2011}
+
+Pariser geeft als voorbeeld in zijn boek een scenario waar een gebruiker de zoekterm ``BP``invoerde, en resultaten kreeg in verband met investeringsnieuws over British Petroleum. Een tweede gebruiker gaf dezelfde zoekterm in en kreeg informatie over Deepwater Horizon als resultaat. Dit is dus een merkwaardig verschil.
+
+Parser beweert dat het effect van de filter bubble negatieve gevolgen kan hebben voor de manier waarop mensen hun mening vormen, dit aangezien zij geen argumenten te zien krijgen die hun mening tegenspreken.
+
 
 De relevantie van dit fenomeen voor dit onderzoek valt op het feit dat bij de Content Based algoritmen die eerder besproken werden, we met een gelijkaardig probleem te maken hadden. Bij deze aanbevelingssystemen kan er overspecialisatie optreden, waardoor de gebruiker enkel producten aanbevolen krijgt die reeds gezien zijn, of té gelijkaardig zijn, en er dus geen nieuwe verrassende producten aangeboden worden.
 
