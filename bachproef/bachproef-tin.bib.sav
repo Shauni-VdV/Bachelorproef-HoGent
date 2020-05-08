@@ -200,7 +200,7 @@
   doi     = {10.3233/IDA-163209},
 }
 
-@Book{1,
+@Book{Vukotic2014,
   author    = {Vukotic, Aleksa and Watt, Nicki and Abedrabbo, Tareq and Fox, Dominic and Partner, Jonas},
   title     = {Neo4j in Action},
   year      = {2014},
@@ -239,6 +239,51 @@
   year    = {2009},
   url     = {https://www.netflixprize.com},
   urldate = {2020-03-29},
+}
+
+@Article{Goddard2017,
+  author    = {Michelle Goddard},
+  title     = {The {EU} General Data Protection Regulation ({GDPR}): European Regulation that has a Global Impact},
+  journal   = {International Journal of Market Research},
+  year      = {2017},
+  volume    = {59},
+  number    = {6},
+  month     = {nov},
+  pages     = {703--705},
+  doi       = {10.2501/ijmr-2017-050},
+  publisher = {{SAGE} Publications},
+}
+
+@Online{Article5GDPR2018,
+  title        = {GDPR Article 5},
+  date         = {2018-05-25},
+  url          = {https://www.privacy-regulation.eu/nl/artikel-5-beginselen-inzake-verwerking-van-persoonsgegevens-EU-AVG.htm},
+  organization = {European Commission},
+  urldate      = {2020-05-08},
+}
+
+@Online{Article6GDPR2018,
+  title        = {GDPR Article 6},
+  date         = {2018-05-25},
+  url          = {https://www.privacy-regulation.eu/nl/artikel-6-rechtmatigheid-van-de-verwerking-EU-AVG.htm},
+  organization = {European Commission},
+  urldate      = {2020-05-08},
+}
+
+@Online{Article1GDPR2018,
+  title        = {GDPR Article 15},
+  date         = {2018-05-25},
+  url          = {https://www.privacy-regulation.eu/nl/artikel-15-recht-van-inzage-van-de-betrokkene-EU-AVG.htm},
+  organization = {European Commission},
+  urldate      = {2020-05-08},
+}
+
+@Online{Article17GDPR2018,
+  title        = {GDPR Article 17},
+  date         = {2018-05-25},
+  url          = {https://www.privacy-regulation.eu/nl/artikel-17-recht-op-gegevenswissing-recht-op-vergetelheid%E2%80%9D-EU-AVG.htm},
+  organization = {European Commission},
+  urldate      = {2020-05-08},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

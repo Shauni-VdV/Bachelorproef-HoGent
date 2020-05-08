@@ -2162,13 +2162,18 @@
     <bcf:citekey order="14">Vukotic2014</bcf:citekey>
     <bcf:citekey order="15">Vavliakis2019</bcf:citekey>
     <bcf:citekey order="16">Pariser2011</bcf:citekey>
-    <bcf:citekey order="17">Pitkow2002</bcf:citekey>
-    <bcf:citekey order="18">Telang2005</bcf:citekey>
-    <bcf:citekey order="19">Resnick1997</bcf:citekey>
-    <bcf:citekey order="20">Diehl2003</bcf:citekey>
-    <bcf:citekey order="21">Smith1999</bcf:citekey>
-    <bcf:citekey order="22">Pariser2011</bcf:citekey>
-    <bcf:citekey order="23">Diehl2003</bcf:citekey>
+    <bcf:citekey order="17">Goddard2017</bcf:citekey>
+    <bcf:citekey order="18">Article5GDPR2018</bcf:citekey>
+    <bcf:citekey order="19">Article6GDPR2018</bcf:citekey>
+    <bcf:citekey order="20">Article15GDPR2018</bcf:citekey>
+    <bcf:citekey order="21">Article17GDPR2018</bcf:citekey>
+    <bcf:citekey order="22">Pitkow2002</bcf:citekey>
+    <bcf:citekey order="23">Telang2005</bcf:citekey>
+    <bcf:citekey order="24">Resnick1997</bcf:citekey>
+    <bcf:citekey order="25">Diehl2003</bcf:citekey>
+    <bcf:citekey order="26">Smith1999</bcf:citekey>
+    <bcf:citekey order="27">Pariser2011</bcf:citekey>
+    <bcf:citekey order="28">Diehl2003</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

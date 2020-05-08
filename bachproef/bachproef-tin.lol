@@ -15,10 +15,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {2.8}Decay: voorbeeld van een decay functie}{38}{lstlisting.2.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.1}Query om \IeC {\'e}\IeC {\'e}n enkel product aan te maken}{41}{lstlisting.3.1}% 
+\contentsline {lstlisting}{\numberline {3.1}Query om \IeC {\'e}\IeC {\'e}n enkel product aan te maken}{43}{lstlisting.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.2}Query om \IeC {\'e}\IeC {\'e}n enkel product op te halen}{42}{lstlisting.3.2}% 
+\contentsline {lstlisting}{\numberline {3.2}Query om \IeC {\'e}\IeC {\'e}n enkel product op te halen}{44}{lstlisting.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.3}Query om \IeC {\'e}\IeC {\'e}n enkele gebruiker aan te maken}{42}{lstlisting.3.3}% 
+\contentsline {lstlisting}{\numberline {3.3}Query om \IeC {\'e}\IeC {\'e}n enkele gebruiker aan te maken}{44}{lstlisting.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.4}Query om een zoekopdracht met term 'Deodorant' uit te voeren, met filters en een score op basis van informatie van een gebruiker}{42}{lstlisting.3.4}% 
+\contentsline {lstlisting}{\numberline {3.4}Query om een zoekopdracht met term 'Deodorant' uit te voeren, met filters en een score op basis van informatie van een gebruiker}{44}{lstlisting.3.4}% 
