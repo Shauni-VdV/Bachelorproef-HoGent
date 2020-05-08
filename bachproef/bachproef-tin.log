@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  8 MAY 2020 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  8 MAY 2020 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1875,7 +1875,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 ]
 Hoofdstuk 2.
 [21]
-<img/e2fcfe784532c41a644e4465f535530d.png, id=281, 457.10776pt x 351.714pt>
+<img/e2fcfe784532c41a644e4465f535530d.png, id=284, 457.10776pt x 351.714pt>
 File: img/e2fcfe784532c41a644e4465f535530d.png Graphic file (type png)
 <use img/e2fcfe784532c41a644e4465f535530d.png>
 Package pdftex.def Info: img/e2fcfe784532c41a644e4465f535530d.png  used on inpu
@@ -1883,7 +1883,7 @@ t line 46.
 (pdftex.def)             Requested size: 426.79135pt x 328.39476pt.
  [22] [23 <./img/e2fcfe784532c41a644e4465f535530d.png>] [24]
 <img/Content-based-filtering-and-Collaborative-filtering-recommendation.png, id
-=301, 689.57625pt x 495.8525pt>
+=304, 689.57625pt x 495.8525pt>
 File: img/Content-based-filtering-and-Collaborative-filtering-recommendation.pn
 g Graphic file (type png)
 <use img/Content-based-filtering-and-Collaborative-filtering-recommendation.png
@@ -1898,7 +1898,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
  [25 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
 png>] [26]
 [27]
-<img/Customer-Order-Example-Graph.png, id=328, 592.2125pt x 300.12125pt>
+<img/Customer-Order-Example-Graph.png, id=331, 592.2125pt x 300.12125pt>
 File: img/Customer-Order-Example-Graph.png Graphic file (type png)
 <use img/Customer-Order-Example-Graph.png>
 Package pdftex.def Info: img/Customer-Order-Example-Graph.png  used on input li
@@ -1920,7 +1920,7 @@ ptm/m/it/12 (-20) Know-ledge Graph \T1/ptm/m/n/12 (-20) ([]).
  []
 
 [29]
-<img/Google_Knowledge_Graph.jpeg, id=342, 943.525pt x 642.4pt>
+<img/Google_Knowledge_Graph.jpeg, id=345, 943.525pt x 642.4pt>
 File: img/Google_Knowledge_Graph.jpeg Graphic file (type jpg)
 <use img/Google_Knowledge_Graph.jpeg>
 Package pdftex.def Info: img/Google_Knowledge_Graph.jpeg  used on input line 19
@@ -1937,7 +1937,7 @@ LaTeX Warning: Citation 'Grad-Gyenge2015' on page 31 undefined on input line 21
 3.
 
 [31]
-<img/twitter_graph.png, id=354, 734.745pt x 513.92pt>
+<img/twitter_graph.png, id=357, 734.745pt x 513.92pt>
 File: img/twitter_graph.png Graphic file (type png)
 <use img/twitter_graph.png>
 Package pdftex.def Info: img/twitter_graph.png  used on input line 231.
@@ -1990,7 +1990,7 @@ LaTeX Warning: Citation 'Article17GDPR2018' on page 40 undefined on input line
 555.
 
 [40]
-<img/180321-EU-Cookie-Consent-Examples.jpg, id=521, 652.4375pt x 307.1475pt>
+<img/180321-EU-Cookie-Consent-Examples.jpg, id=524, 652.4375pt x 307.1475pt>
 File: img/180321-EU-Cookie-Consent-Examples.jpg Graphic file (type jpg)
 <use img/180321-EU-Cookie-Consent-Examples.jpg>
 Package pdftex.def Info: img/180321-EU-Cookie-Consent-Examples.jpg  used on inp
@@ -2026,13 +2026,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
 [47]) (./conclusie.tex [48]
 Hoofdstuk 4.
-) [49
+[49
 
-] [50
-
-]
+]) [50]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [51] [52]) [53] [54
+(../voorstel/voorstel-inhoud.tex [51
+
+] [52]) [53] [54
 
 ] [55] [56]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
@@ -2058,10 +2058,10 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41968 strings out of 492616
- 777930 string characters out of 6129481
- 1477877 words of memory out of 5000000
- 44709 multiletter control sequences out of 15000+600000
+ 41971 strings out of 492616
+ 777968 string characters out of 6129481
+ 1477909 words of memory out of 5000000
+ 44711 multiletter control sequences out of 15000+600000
  598402 words of font info for 226 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2075,10 +2075,10 @@ xmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on bachproef-tin.pdf (58 pages, 1168515 bytes).
+Output written on bachproef-tin.pdf (58 pages, 1170904 bytes).
 PDF statistics:
- 910 PDF objects out of 1000 (max. 8388607)
- 780 compressed objects within 8 object streams
- 323 named destinations out of 1000 (max. 500000)
- 36736 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 916 PDF objects out of 1000 (max. 8388607)
+ 785 compressed objects within 8 object streams
+ 324 named destinations out of 1000 (max. 500000)
+ 36744 words of extra memory for PDF output out of 42996 (max. 10000000)
 

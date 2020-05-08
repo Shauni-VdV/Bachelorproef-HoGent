@@ -79,9 +79,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Conclusie}{49}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1} ElasticSearch}{49}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}GDPR}{49}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2} Neo4j}{49}{section.4.2}% 
+\contentsline {section}{\numberline {4.2} ElasticSearch}{50}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3} Neo4j}{50}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{51}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
