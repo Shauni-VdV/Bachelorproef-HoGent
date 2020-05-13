@@ -37,11 +37,24 @@ Hiermee is de onderzoeksvraag beantwoordt; ja, het is mogelijk om een systeem op
 \section{ ElasticSearch}
 \label{sec:Conclusie Elasticsearch}
 
-Elasticsearch is zeer snel in het vinden van producten die relateren aan de gebruiker zelf, maar is wat moeilijker in omgang met het gebruik maken van data die personen aan elkaar linkt. 
+Elasticsearch is zeer snel en eenvoudig in het gebruik als het gaat over het vinden van producten die relateren aan de gebruiker zelf. Uit het onderzoek bleek ook dat specifieke zoektermen en filters relatief eenvoudig te implementeren zijn.
 
-Zonder dieper in te gaan op extensies of extra pakketten die Elasticsearch aanbiedt, is het niet mogelijk om rekening te houden met familiale banden of netwerken van personen. 
-
-
+Elasticsearch biedt ook de mogelijkheden om een graaf met de relaties tussen de verschillende documenten op te slaan, maar deze is niet zomaar verkrijgbaar, hier is een Platinum of Enterprise licentie voor vereist. Het is mogelijk om op deze manier dan toch rekening te kunnen houden met familiale relaties, alsook filters toe te passen op de zoekopdrachten.
 
 \section{ Neo4j}
 \label{sec:Conclusie Neo4j}
+
+Neo4j, als graph databank, staat toe om gebruik te maken van alle relaties tussen de verschillende producten (nodes) om aanbevelingen te genereren. Ook zijn er enkele algoritmen reeds ingebouwd in een Graph Data Analysis plugin, die zorgen voor de meest performante werkwijze.
+
+Qua eenvoud van implementatie is Neo4j de betere keuze, mede met dank aan het feit dat alles visueel kan toegelicht worden door simpelweg naar de graaf te kijken. 
+
+Zowel het gebruik van de graaf, als het zoeken op basis van een tekstveld zijn mogelijk in Neo4j zonder dat hier extra kosten aan vast hangen voor licenties. 
+
+\section{Resultaat}
+\label{sec:Resultaat}
+
+Er kan dus geconcludeerd worden dat elk van deze technieken uitblinkt in zijn eigen branche, de literatuurstudie wees ook uit dat een Knowledge Graph gebruikt kan worden om aanvullende informatie te verschaffen bij het genereren van gepersonaliseerde zoekresultaten. 
+
+Een optie is dus om beide platformen te combineren, en elkaar te laten aanvullen. Een voorbeeld hier van is om de resultaten van een zoekalgoritme in Neo4 te combineren met de scores die gevonden werden in Elasticsearch. 
+
+Deze ontdekking zet de weg open tot verder onderzoek in hoe deze twee platformen efficiënt samen gebruikt kunnen worden, en hoe de modellen die in dit onderzoek werden opgebouwd, verder gespecialiseerd kunnen worden om deze combinatie mogelijk te maken. 

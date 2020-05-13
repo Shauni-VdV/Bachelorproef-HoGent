@@ -22,3 +22,27 @@
 \contentsline {lstlisting}{\numberline {3.3}Query om \IeC {\'e}\IeC {\'e}n enkele gebruiker aan te maken}{44}{lstlisting.3.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {3.4}Query om een zoekopdracht met term 'Deodorant' uit te voeren, met filters en een score op basis van informatie van een gebruiker}{44}{lstlisting.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.5}Neo4j query voor het aanmaken van producten en klanten}{47}{lstlisting.3.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.6}Neo4j query voor het aanmaken van een relatie tussen een product en een klant}{48}{lstlisting.3.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.7}Neo4j query voor het aanmaken van een relatie tussen een twee klanten.}{48}{lstlisting.3.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.8}Neo4j query die alle likes en aankopen van de familie van een bepaalde gebruiker c1 weergeeft}{49}{lstlisting.3.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.9}Neo4j query die de aankopen van gebruikers weergeeft waar een gebruiker c1 gemeenschappelijke aankopen mee heeft}{50}{lstlisting.3.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.10}Neo4j query die de aankopen en likes van gebruikers weergeeft waar een gebruiker c1 gemeenschappelijke aankopen mee heeft}{50}{lstlisting.3.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.11}Een index cre\IeC {\"e}ren binnen Neo4j om zoekopdrachten op basis van tekst uit te voeren}{50}{lstlisting.3.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.12}Een zoekopdracht uitvoeren op basis van tekst}{50}{lstlisting.3.12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.13}Een genoemde graaf cre\IeC {\"e}ren om graafalgoritmen op uit te voeren}{51}{lstlisting.3.13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.14}PageRank algoritme uitvoeren}{51}{lstlisting.3.14}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.15}Personalized PageRank algoritme}{52}{lstlisting.3.15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {3.16}Personalized PageRank algoritme}{53}{lstlisting.3.16}% 

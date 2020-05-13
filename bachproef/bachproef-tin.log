@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  8 MAY 2020 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  13 MAY 2020 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1414,6 +1414,44 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count471
+\float@exts=\toks49
+\float@box=\box71
+\@floatcapt=\box72
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks50
+\flrow@foot=\insert252
+\FB@wd=\dimen299
+\FBo@wd=\dimen300
+\FBc@wd=\dimen301
+\FBo@ht=\skip170
+\FBc@ht=\skip171
+\FBf@ht=\skip172
+\FBo@max=\skip173
+\FBc@max=\skip174
+\FBf@max=\skip175
+\c@FBl@b=\count472
+\floatbox@depth=\count473
+\c@FRobj=\count474
+\c@FRsobj=\count475
+\Xhsize=\skip176
+\sXhsize=\skip177
+\Zhsize=\skip178
+\sZhsize=\skip179
+\flrow@rowbox=\box73
+\FR@Zunitlength=\dimen302
+\c@FBcnt=\count476
+\FPOScnt=\count477
+\LTleft=\skip180
+\LTright=\skip181
+\LTleft=\skip182
+\LTright=\skip183
+\flrow@types=\toks51
+)
 Package biblatex Info: Trying to load language 'dutch' -> 'dutch-apa'...
 Package biblatex Info: ... file 'dutch-apa.lbx' found.
 
@@ -1470,21 +1508,21 @@ LaTeX Warning: Label `sec:Conclusie Elasticsearch' multiply defined.
 )
 \openout1 = `bachproef-tin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 80.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -1524,17 +1562,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count471
-\scratchdimen=\dimen299
-\scratchbox=\box71
-\nofMPsegments=\count472
-\nofMParguments=\count473
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count474
-\MPscratchDim=\dimen300
-\MPnumerator=\count475
-\makeMPintoPDFobject=\count476
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count478
+\scratchdimen=\dimen303
+\scratchbox=\box74
+\nofMPsegments=\count479
+\nofMParguments=\count480
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count481
+\MPscratchDim=\dimen304
+\MPnumerator=\count482
+\makeMPintoPDFobject=\count483
+\everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1552,10 +1590,10 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count477
+\c@lstlisting=\count484
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 79.
+LaTeX Info: Redefining \microtypecontext on input line 80.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1569,8 +1607,8 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-\AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring OFF on input line 79.
+\AtBeginShipoutBox=\box75
+Package hyperref Info: Link coloring OFF on input line 80.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1578,11 +1616,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count478
+\c@section@level=\count485
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1592,9 +1630,11 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bachproef-tin.bbl' found.
 
 (./bachproef-tin.bbl)
-Package biblatex Info: Reference section=0 on input line 79.
-Package biblatex Info: Reference segment=0 on input line 79.
+Package biblatex Info: Reference section=0 on input line 80.
+Package biblatex Info: Reference segment=0 on input line 80.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
 Package caption Info: End \AtBeginDocument code.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -1631,7 +1671,7 @@ Package caption Info: End \AtBeginDocument code.
 <img/HOGENT_Logo_Pos_rgb.png, id=7, 3503.0875pt x 1975.38pt>
 File: img/HOGENT_Logo_Pos_rgb.png Graphic file (type png)
 <use img/HOGENT_Logo_Pos_rgb.png>
-Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 91.
+Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 92.
 (pdftex.def)             Requested size: 71.13188pt x 40.08864pt.
  [1
 
@@ -1677,7 +1717,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \inserttitlepage
+l.92 \inserttitlepage
                       [1
 
 
@@ -1854,15 +1894,75 @@ Overfull \hbox (12.0pt too wide) detected at line 24
  []\T1/ptm/m/n/12 44
  []
 
+
+Overfull \hbox (12.0pt too wide) detected at line 26
+ []\T1/ptm/m/n/12 47
+ []
+
+[15]
+Overfull \hbox (12.0pt too wide) detected at line 28
+ []\T1/ptm/m/n/12 48
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 30
+ []\T1/ptm/m/n/12 48
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 32
+ []\T1/ptm/m/n/12 49
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 34
+ []\T1/ptm/m/n/12 50
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 36
+ []\T1/ptm/m/n/12 50
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 38
+ []\T1/ptm/m/n/12 50
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 40
+ []\T1/ptm/m/n/12 50
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 42
+ []\T1/ptm/m/n/12 51
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 44
+ []\T1/ptm/m/n/12 51
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 46
+ []\T1/ptm/m/n/12 52
+ []
+
+
+Overfull \hbox (12.0pt too wide) detected at line 48
+ []\T1/ptm/m/n/12 53
+ []
+
 )
 \tf@lol=\write9
 \openout9 = `bachproef-tin.lol'.
 
- (./inleiding.tex [15] [16
+ (./inleiding.tex [16]
+Hoofdstuk 1.
+[17
 
 ]
-Hoofdstuk 1.
-[17]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 33.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
@@ -1875,7 +1975,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 ]
 Hoofdstuk 2.
 [21]
-<img/e2fcfe784532c41a644e4465f535530d.png, id=284, 457.10776pt x 351.714pt>
+<img/e2fcfe784532c41a644e4465f535530d.png, id=346, 457.10776pt x 351.714pt>
 File: img/e2fcfe784532c41a644e4465f535530d.png Graphic file (type png)
 <use img/e2fcfe784532c41a644e4465f535530d.png>
 Package pdftex.def Info: img/e2fcfe784532c41a644e4465f535530d.png  used on inpu
@@ -1883,7 +1983,7 @@ t line 46.
 (pdftex.def)             Requested size: 426.79135pt x 328.39476pt.
  [22] [23 <./img/e2fcfe784532c41a644e4465f535530d.png>] [24]
 <img/Content-based-filtering-and-Collaborative-filtering-recommendation.png, id
-=304, 689.57625pt x 495.8525pt>
+=366, 689.57625pt x 495.8525pt>
 File: img/Content-based-filtering-and-Collaborative-filtering-recommendation.pn
 g Graphic file (type png)
 <use img/Content-based-filtering-and-Collaborative-filtering-recommendation.png
@@ -1898,7 +1998,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
  [25 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
 png>] [26]
 [27]
-<img/Customer-Order-Example-Graph.png, id=331, 592.2125pt x 300.12125pt>
+<img/Customer-Order-Example-Graph.png, id=394, 592.2125pt x 300.12125pt>
 File: img/Customer-Order-Example-Graph.png Graphic file (type png)
 <use img/Customer-Order-Example-Graph.png>
 Package pdftex.def Info: img/Customer-Order-Example-Graph.png  used on input li
@@ -1920,7 +2020,7 @@ ptm/m/it/12 (-20) Know-ledge Graph \T1/ptm/m/n/12 (-20) ([]).
  []
 
 [29]
-<img/Google_Knowledge_Graph.jpeg, id=345, 943.525pt x 642.4pt>
+<img/Google_Knowledge_Graph.jpeg, id=408, 943.525pt x 642.4pt>
 File: img/Google_Knowledge_Graph.jpeg Graphic file (type jpg)
 <use img/Google_Knowledge_Graph.jpeg>
 Package pdftex.def Info: img/Google_Knowledge_Graph.jpeg  used on input line 19
@@ -1937,7 +2037,7 @@ LaTeX Warning: Citation 'Grad-Gyenge2015' on page 31 undefined on input line 21
 3.
 
 [31]
-<img/twitter_graph.png, id=357, 734.745pt x 513.92pt>
+<img/twitter_graph.png, id=419, 734.745pt x 513.92pt>
 File: img/twitter_graph.png Graphic file (type png)
 <use img/twitter_graph.png>
 Package pdftex.def Info: img/twitter_graph.png  used on input line 231.
@@ -1990,7 +2090,7 @@ LaTeX Warning: Citation 'Article17GDPR2018' on page 40 undefined on input line
 555.
 
 [40]
-<img/180321-EU-Cookie-Consent-Examples.jpg, id=524, 652.4375pt x 307.1475pt>
+<img/180321-EU-Cookie-Consent-Examples.jpg, id=586, 652.4375pt x 307.1475pt>
 File: img/180321-EU-Cookie-Consent-Examples.jpg Graphic file (type jpg)
 <use img/180321-EU-Cookie-Consent-Examples.jpg>
 Package pdftex.def Info: img/180321-EU-Cookie-Consent-Examples.jpg  used on inp
@@ -2001,46 +2101,53 @@ ut line 567.
 
 ]
 Hoofdstuk 3.
-[43] [44] [45] [46]
-Overfull \hbox (17.7001pt too wide) in paragraph at lines 172--173
-[] \T1/cmtt/m/n/12 CREATE(shauni:Customer name: 'Shauni', address: 'Exterkenstr
-aat 14'), 
- []
+[43] [44] [45]
+<img/elastic-license.png, id=671, 938.50626pt x 184.69pt>
+File: img/elastic-license.png Graphic file (type png)
+<use img/elastic-license.png>
+Package pdftex.def Info: img/elastic-license.png  used on input line 131.
+(pdftex.def)             Requested size: 405.45047pt x 79.78712pt.
+ [46 <./img/elastic-license.png>] [47] [48]
+<img/full_graph_result.png, id=707, 586.19pt x 466.74374pt>
+File: img/full_graph_result.png Graphic file (type png)
+<use img/full_graph_result.png>
+Package pdftex.def Info: img/full_graph_result.png  used on input line 219.
+(pdftex.def)             Requested size: 405.45047pt x 322.82982pt.
+ [49 <./img/full_graph_result.png>] [50]
+<img/pageRank_res_1.png, id=738, 1009.7725pt x 490.83376pt>
+File: img/pageRank_res_1.png Graphic file (type png)
+<use img/pageRank_res_1.png>
+Package pdftex.def Info: img/pageRank_res_1.png  used on input line 317.
+(pdftex.def)             Requested size: 405.45047pt x 197.08646pt.
+ [51]
+<img/persPageRank_res_1.png, id=759, 1009.7725pt x 490.83376pt>
+File: img/persPageRank_res_1.png Graphic file (type png)
+<use img/persPageRank_res_1.png>
+Package pdftex.def Info: img/persPageRank_res_1.png  used on input line 346.
+(pdftex.def)             Requested size: 405.45047pt x 197.08646pt.
+ [52 <./img/pageRank_res_1.png> <./img/persPageRank_res_1.png>]
+<img/Louvain_result.png, id=775, 905.3825pt x 502.87875pt>
+File: img/Louvain_result.png Graphic file (type png)
+<use img/Louvain_result.png>
+Package pdftex.def Info: img/Louvain_result.png  used on input line 371.
+(pdftex.def)             Requested size: 405.45047pt x 225.19606pt.
+) (./conclusie.tex [53 <./img/Louvain_result.png>] [54
 
-
-Overfull \hbox (23.25624pt too wide) in paragraph at lines 172--173
-\T1/cmtt/m/n/12 (prod2:Productid: '2', name:'Instant Chocolate Milk', brand:'Ne
-squick'), 
- []
-
-
-Overfull \hbox (11.21794pt too wide) in paragraph at lines 193--194
-\T1/cmtt/m/n/12 WHERE EXISTS (a.address) AND EXISTS (b.address) AND a.address=b
-.address
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-[47]) (./conclusie.tex [48]
+]
 Hoofdstuk 4.
-[49
+[55] [56]) [57] [58
 
-]) [50]
+]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [51
+(../voorstel/voorstel-inhoud.tex [59] [60]) [61] [62
 
-] [52]) [53] [54
-
-] [55] [56]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+] [63] [64]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
 
 (./bachproef-tin.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 169.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
 
 
 LaTeX Warning: There were undefined references.
@@ -2058,27 +2165,26 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41971 strings out of 492616
- 777968 string characters out of 6129481
- 1477909 words of memory out of 5000000
- 44711 multiletter control sequences out of 15000+600000
- 598402 words of font info for 226 fonts, out of 8000000 for 9000
+ 42634 strings out of 492616
+ 787932 string characters out of 6129481
+ 1491623 words of memory out of 5000000
+ 45258 multiletter control sequences out of 15000+600000
+ 599837 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2019/te
-xmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on bachproef-tin.pdf (58 pages, 1170904 bytes).
+e/2019/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/local/texlive/2019/
+texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
+type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on bachproef-tin.pdf (66 pages, 1453866 bytes).
 PDF statistics:
- 916 PDF objects out of 1000 (max. 8388607)
- 785 compressed objects within 8 object streams
- 324 named destinations out of 1000 (max. 500000)
- 36744 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1127 PDF objects out of 1200 (max. 8388607)
+ 966 compressed objects within 10 object streams
+ 423 named destinations out of 1000 (max. 500000)
+ 38865 words of extra memory for PDF output out of 42996 (max. 10000000)
 

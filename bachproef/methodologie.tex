@@ -117,6 +117,24 @@ In de query zijn drie filters te zien die de score van een resultaat zullen beï
 
 Deze query is een vorm van collaborative filtering, toegepast op zichzelf. De query zal dus gaan zoeken naar hoe verwant een resultaat is aan een persoon, op basis van enkele variabelen, en zal deze een hogere score toekennen afhankelijk van hoe relevant het product is voor een gebruiker. Resultaten met een hogere score zullen dus bijgevolg ook hoger in de lijst van resultaten komen te staan.
 
+\subsection{Graph API Plug-in}
+\label{sec:Graph API Plug-in}
+
+Elasticsearch biedt ook een plug-in aan die de functionaliteiten van een graph database voorziet. Met deze plug-in bekomen we dus eigenlijk een Knowledge Graph zoals eerder in de literatuurstudie vermeld werd. 
+
+Deze plug-in laat toe om connecties te vinden tussen objecten in de databank, en wordt geadverteerd als ook bruikbaar te zijn voor aanbevelingen.
+
+Jammer genoeg is deze plug-in enkel beschikbaar wanneer we beschikken over een Platinum of Enterprise licentie. Door deze vereiste valt deze functionaliteit dus buiten de scope van het onderzoek. 
+
+\begin{figure} [ht]
+	\centering
+	\includegraphics[width=0.95\textwidth]{img/elastic-license}
+	\caption{Overzicht van de beschikbaarheid van de Graph plugin voor de Elastic licenties}
+	\floatfoot{Source: https://www.elastic.co/subscriptions}
+	\label{fig:elastic licenties overzicht graph}
+\end{figure}
+
+
 \subsection{Conclusie ElasticSearch}
 \label{sec:Conclusie Elasticsearch}
 
@@ -157,51 +175,203 @@ De verschillende soorten relaties zijn als volgt:
 
 De query die gebruikt wordt om de producten en gebruikers aan te maken:
 
-\texttt{
-CREATE(shauni:Customer {name: 'Shauni', address: 'Exterkenstraat 14'}), \newline
-(lynn:Customer {name: 'Lynn', address: 'Exterkenstraat 14'}), \newline
-(angelo:Customer {name: 'Angelo', address: 'Arbeidstraat 14'}), \newline
-(nicolas:Customer {name: 'Nicolas', address: 'Kouter 3'}), \newline
-(wendy:Customer {name: 'Wendy', address: 'Arbeidstraat 14'}), \newline
-(prod1:Product{id: '1', name:'Hairbrush', brand:'Syoss'}), \newline
-(prod2:Product{id: '2', name:'Instant Chocolate Milk', brand:'Nesquick'}), \newline
-(prod3:Product{id: '3', name:'Toilet Paper', brand: 'Boni'}), \newline
-(prod4:Product{id: '4', name:'Pen', brand:'Stabilo'}), \newline
-(prod5:Product{id: '5', name:'Roller Deodorant', brand: 'Sanex'}), \newline
+\begin{lstlisting}[caption={Neo4j query voor het aanmaken van producten en klanten}]
+CREATE 
+(shauni:Customer {name: 'Shauni', address: 'Exterkenstraat 14'}),
+(lynn:Customer {name: 'Lynn', address: 'Exterkenstraat 14'}),
+(angelo:Customer {name: 'Angelo', address: 'Arbeidstraat 14'}), 
+(nicolas:Customer {name: 'Nicolas', address: 'Kouter 3'}), 
+(wendy:Customer {name: 'Wendy', address: 'Arbeidstraat 14'}), 
+(prod1:Product{id: '1', name:'Hairbrush', brand:'Syoss'}), 
+(prod2:Product{id: '2', name:'Instant Chocolate Milk', brand:'Nesquick'}), 
+(prod3:Product{id: '3', name:'Toilet Paper', brand: 'Boni'}), 
+(prod4:Product{id: '4', name:'Pen', brand:'Stabilo'}), 
+(prod5:Product{id: '5', name:'Roller Deodorant', brand: 'Sanex'}), 
 ...
-}
+
+\end{lstlisting}
 
 Om een relatie aan te maken tussen een product en een gebruiker zal volgende query gebruikt worden. Deze zal dus uitgevoerd worden elke keer een gebruiker een actie uitvoert met een product.
 Aangezien een product leuk vinden en een product kopen niet aanzien worden als evenwaardig, zullen er gewichten toegekend worden aan de interacties tussen gebruikers en producten.  Dat kan door middel van volgende query:
 
-
-\texttt{
-	MATCH (c:Customer),(p:Product) \newline
-	WHERE c.name = 'Shauni' AND p.id=3 \newline
-	CREATE (c)-[r:BOUGHT]->(p) \newline
+\begin{lstlisting}[caption={Neo4j query voor het aanmaken van een relatie tussen een product en een klant}]
+	MATCH (c:Customer),(p:Product) 
+	WHERE c.name = 'Shauni' AND p.id=3 
+	CREATE (c)-[r:BOUGHT]->(p) 
 	SET r.score = 3
-}
+\end{lstlisting}
 
-Een product leuk vinden krijgt een score 2 toegekend, en een product kopen zal de score 3 krijgen
+Een product leuk vinden krijgt een score 2 toegekend, en een product kopen zal de score 3 krijgen, om de relatie 'LIKES' aan te maken zal in bovenstaande query de relatie 'BOUGHT' en de score moeten aangepast worden.
 
 Om de relatie van Gebruikers die op eenzelfde adres wonen aan te maken, gebruiken we volgende query: 
 
-\texttt{
-MATCH (a:Customer), (b:Customer) \newline
-WHERE EXISTS (a.address) AND EXISTS (b.address) AND a.address=b.address AND id(a)<id(b) \newline
-CREATE (a)-[:LIVES\_TOGETHER]->(b); \newline
-}
+\begin{lstlisting}[caption={Neo4j query voor het aanmaken van een relatie tussen een twee klanten.}]
+	MATCH (a:Customer), (b:Customer) 
+	WHERE EXISTS (a.address) AND EXISTS (b.address) AND a.address=b.address AND id(a)<id(b) 
+	CREATE (a)-[:LIVES\_TOGETHER]->(b); 
+\end{lstlisting}
+
+De uiteindelijke graaf die voor dit zeer klein voorbeeld opgebouwd werd, zal al snel een beter inzicht geven in hoe deze data aan elkaar vast hangt. Dit is ook een van de troeven van Neo4j, het voorstellen van duidelijke visuele beelden die het eenvoudig maken om te begrijpen wat er zich op de achtergrond afspeelt. De graaf is te zien in \autoref{fig:neo4jfullgraph}
+\newpage
+
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.95\textwidth]{img/full_graph_result}
+	\caption{Overzicht van de ingevoerde data in een Neo4j graaf}
+	\label{fig:neo4jfullgraph}
+\end{figure}
+
 
 \subsection{Ophalen van data}
-\label{sec:Ophalen van data}
+\label{sec:Neo4j Ophalen van data}
 
-Om data op te halen uit deze graaf, en deze vervolgens aan de gebruiker te tonen als aanbevelingen, zullen enkele query's worden opgesteld. De resultaten hiervan zullen dan gecombineerd worden. 
+Voor deze uitwerking werden enkele query's opgesteld die op basis van de relaties producten retourneren die zouden kunnen dienen als aanbevelingen.
+
+Zo kan er bijvoorbeeld een lijst van producten gegenereerd worden die leuk gevonden of gekocht werden door de familieleden van een bepaalde gebruiker, dit gebeurt op basis van de relatie LIVES\_TOGETHER.
+
+\begin{lstlisting}[caption={Neo4j query die alle likes en aankopen van de familie van een bepaalde gebruiker c1 weergeeft}]
+MATCH (c1: Customer)
+WHERE c1.name = 'Shauni'
+MATCH (c1) - [:LIVES_TOGETHER] -> (c2 : Customer) - [:BOUGHT] -> (p:Product)
+RETURN p as Product
+UNION
+MATCH (c1) - [:LIVES_TOGETHER] -> (c2) - [:LIKES] -> (p:Product)
+RETURN p as Product
+\end{lstlisting}
+
+Ook van belang is het ophalen van producten die gebruikers kopen waar een gebruiker \textit{c1} gemeenschappelijke aankopen mee heeft. Dit kan via volgende query:
+
+\begin{lstlisting}[caption={Neo4j query die de aankopen van gebruikers weergeeft waar een gebruiker c1 gemeenschappelijke aankopen mee heeft}]
+MATCH (c1: Customer)
+WHERE c1.name = 'Shauni'
+MATCH(c1) - [:BOUGHT] -> (p1 : Product) <- [:BOUGHT] - (c2: Customer) - [:BOUGHT] -> (p2: Product)
+RETURN p2
+\end{lstlisting}
+
+Om ditzelfde te bereiken maar dan inclusief de likes van deze gebruikers waar een gebruiker \textit{c1} gemeenschappelijke aankopen mee heeft, kan volgende query gebruikt worden: 
+
+\begin{lstlisting}[caption={Neo4j query die de aankopen en likes van gebruikers weergeeft waar een gebruiker c1 gemeenschappelijke aankopen mee heeft}]
+MATCH (c1) - [:BOUGHT] -> (p1 : Product) <- [:BOUGHT] - (c2: Customer) - [:BOUGHT] -> (p2: Product)
+RETURN p2 as Product
+UNION ALL
+MATCH (c1) - [:BOUGHT] -> (p1) <- [:BOUGHT] -(c2) - [:LIKES] -> (p2) 
+WHERE id(c1)<id(c2)
+RETURN p2 as Product
+\end{lstlisting}
+
+
+\subsection{Search}
+\label{subsec: Search Neo4j}
+
+Binnen neo4j is het ook mogelijk om zoekopdrachten uit te voeren op basis van een tekstveld. Hiervoor moet op voorhand een index aangemaakt worden waarin beschreven staat welke attributen van welke types van nodes gebruikt mogen worden om de ingevoerde tekst mee te vergelijken.
+
+\begin{lstlisting}[caption={Een index creëren binnen Neo4j om zoekopdrachten op basis van tekst uit te voeren}]
+CALL db.index.fulltext.createNodeIndex("namesAndCategories",["Product"],["name", "category"])
+\end{lstlisting}
+
+In dit voorbeeld gebruiken we de attributen \textit{name} en \textit{categories} van het nodetype \textit{Product}, en nemen we als zoekterm ``deodorant``.  Op deze manier kan er dus eenvoudig gekozen worden op welke velden van de objecten er moet vergeleken worden.
 
 
 
+\begin{lstlisting}[caption={Een zoekopdracht uitvoeren op basis van tekst}]
+CALL db.index.fulltext.queryNodes("namesAndCategories", "deodorant") YIELD node, score
+RETURN node.name, node.category, score
+\end{lstlisting}
+
+Er zal een lijst geretourneerd worden met de attributen (node.name), en een score die door het algoritme werd toegekend die aantoont hoe sterk het resultaat gelijkend is aan de ingevoerde tekst.
+
+\subsection{PageRank}
+\label{subsec:PageRank}
+
+Voor het vinden van resultaten die belang hebben voor de gebruiker, wordt het PageRank algoritme gebruikt. Dit algoritme berekent de belangrijkheid van een knoop op basis van zijn buren. Hoe meer connecties er naartoe, hoe sterker het resultaat. Op deze manier worden populaire resultaten hoger gerangschikt.
+
+Om via dit algoritme aanbevelingen te verkrijgen, moet er eerst een nieuwe graaf worden opgesteld waar enkel de informatie in zit die nodig is voor de berekening, dit gebeurt via volgende query, waarin de interacties 'BOUGHT' en 'LIKES' opgenomen worden, samen met hun gewicht.
+
+\begin{lstlisting}[caption={Een genoemde graaf creëren om graafalgoritmen op uit te voeren}]
+CALL gds.graph.create.cypher(
+	'graph1',
+	'MATCH (p:Product) RETURN id(p) AS id',
+	'MATCH (p2:Product)<-[r:BOUGHT|LIKES]-(c:Customer)-[:BOUGHT|LIKES]->(p3:Product)
+	RETURN
+		id(p2) AS source,
+		id(p3) AS target,
+		r.weight AS weight',
+		{
+			readConcurrency: 4
+		}
+)
+\end{lstlisting}
+
+Vervolgens kunnen we het pageRank algoritme uitvoeren op deze graaf, die een lijst van productnamen zal weergeven met daarnaast een score.
+
+\begin{lstlisting}[caption={PageRank algoritme uitvoeren}]
+CALL gds.pageRank.stream('graph1', { maxIterations: 10, dampingFactor: 0.85 })
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).name AS name, score
+ORDER BY score DESC, name ASC
+\end{lstlisting}
+
+Het resultaat van dit algoritme (\autoref{fig:simplePageRankResult}) toont ons dat ``Toilet Paper`` de belangrijkste knoop is in deze graaf, met andere woorden dat als er door de graaf gelopen wordt, deze knoop de grootste kans heeft om bereikt te worden.
+\begin{figure} [ht]
+	\centering
+	\includegraphics[width=0.95\textwidth]{img/pageRank_res_1}
+	\caption{Resultaat PageRank algoritme}
+	\label{fig:simplePageRankResult}
+\end{figure}
 
 
+\subsection{Personalized PageRank}
+\label{sec:Personalized PageRank}
 
+Om de resultaten te baseren vanuit een bepaald startpunt, bijvoorbeeld een Customer, kan er een variant op PageRank gebruikt worden. Het algoritme zal dan starten in een bepaalde knoop (de gebruiker in kwestie) en zal op deze manier de meest relevante knopen vinden.
+
+We gebruiken opnieuw de genoemde graaf uit de simpele PageRank, en voeren daar volgend algoritme op uit: 
+
+\begin{lstlisting}[caption={Personalized PageRank algoritme }]
+MATCH (c1:Customer {name: 'Shauni'})
+CALL gds.pageRank.stream('graph1', {
+	maxIterations: 20,
+	dampingFactor: 0.85,
+	sourceNodes: [c1]
+	})
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).name AS name, score
+ORDER BY score DESC, name ASC
+\end{lstlisting}
+
+In de resultaten is nu zichtbaar dat voor deze specifieke klant nog steeds ``Toiler Paper`` een aanbeveling is, maar dat het product met naam ``Hairbrush`` een hogere score krijgt dan ``Pen``, wat in het algemene PageRank algoritme niet zo is.
+
+\begin{figure} [ht]
+	\centering
+	\includegraphics[width=0.95\textwidth]{img/persPageRank_res_1}
+	\caption{Resultaat Personalized PageRank algoritme}
+	\label{fig:personalizedPageRankResult}
+\end{figure}
+
+\subsection{Community Detection}
+\label{subsec: Community Detection}
+
+Door het analyseren van de graaf met een community detection-algoritme kunnen groepen van gelijkaardige producten ontdekt worden. Op deze manier kan ontdekt worden welke gebruikers geïnteresseerd zijn in bepaalde groepen van producten, en kunnen er op basis van deze clusters aanbevelingen voorgesteld worden. 
+
+Een nadeel aan deze techniek is dat deze last heeft van het cold-start probleem. Met andere woorden dat voor nieuwe gebruikers of producten, waarvoor dus nog niet bekend is tot welke cluster ze behoren of in welke clusters zij interesse hebben, nog geen correcte aanbevelingen kunnen bepaald worden.
+
+Een voorbeeld van een community detection algoritme is het Louvain algoritme. De genoemde graaf van de uitwerking van PageRank zal opnieuw worden gebruikt voor dit algoritme.
+
+\begin{lstlisting}[caption={Personalized PageRank algoritme }]
+CALL gds.louvain.stream('graph1')
+YIELD nodeId, communityId, intermediateCommunityIds
+RETURN gds.util.asNode(nodeId).name AS name, communityId, intermediateCommunityIds
+ORDER BY name ASC
+\end{lstlisting}
+
+Uit de resultaten worden twee clusters ontdekt, met id 2 en 3, deze producten worden door het algoritme aanzien als gelijkaardig te zijn, omdat deze door een bepaalde groep gebruikers gekocht of leuk gevonden wordt. 
+
+\begin{figure} [ht]
+	\centering
+	\includegraphics[width=0.95\textwidth]{img/Louvain_result}
+	\caption{Resultaat Louvain algoritme}
+	\label{fig:LouvainResult}
+\end{figure}
 
 
 
