@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  13 MAY 2020 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  13 MAY 2020 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2165,10 +2165,10 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42634 strings out of 492616
- 787932 string characters out of 6129481
+ 42636 strings out of 492616
+ 787958 string characters out of 6129481
  1491623 words of memory out of 5000000
- 45258 multiletter control sequences out of 15000+600000
+ 45260 multiletter control sequences out of 15000+600000
  599837 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2181,7 +2181,7 @@ texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (66 pages, 1453866 bytes).
+Output written on bachproef-tin.pdf (66 pages, 1455324 bytes).
 PDF statistics:
  1127 PDF objects out of 1200 (max. 8388607)
  966 compressed objects within 10 object streams
