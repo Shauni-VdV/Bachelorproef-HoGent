@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  13 MAY 2020 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  14 MAY 2020 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1841,7 +1841,7 @@ Overfull \hbox (12.0pt too wide) detected at line 2
 
 
 Overfull \hbox (12.0pt too wide) detected at line 4
- []\T1/ptm/m/n/12 33
+ []\T1/ptm/m/n/12 34
  []
 
 
@@ -1861,7 +1861,7 @@ Overfull \hbox (12.0pt too wide) detected at line 10
 
 
 Overfull \hbox (12.0pt too wide) detected at line 12
- []\T1/ptm/m/n/12 36
+ []\T1/ptm/m/n/12 37
  []
 
 
@@ -2009,48 +2009,23 @@ Underfull \hbox (badness 4266) in paragraph at lines 187--187
 []|\T1/ptm/m/n/12 (+20) - Niet ge-op-ti-ma-li-seerd voor sim-pele
  []
 
-
-LaTeX Warning: Citation 'GoogleKnowledgeGraph' on page 29 undefined on input li
-ne 193.
-
-
-Overfull \hbox (27.52942pt too wide) in paragraph at lines 193--194
-\T1/ptm/m/n/12 (-20) Google startte in mei 2012 een ini-ti-a-tief ge-naamd \T1/
-ptm/m/it/12 (-20) Know-ledge Graph \T1/ptm/m/n/12 (-20) ([]).
- []
-
 [29]
-<img/Google_Knowledge_Graph.jpeg, id=408, 943.525pt x 642.4pt>
+<img/Google_Knowledge_Graph.jpeg, id=410, 943.525pt x 642.4pt>
 File: img/Google_Knowledge_Graph.jpeg Graphic file (type jpg)
 <use img/Google_Knowledge_Graph.jpeg>
 Package pdftex.def Info: img/Google_Knowledge_Graph.jpeg  used on input line 19
 7.
 (pdftex.def)             Requested size: 426.79135pt x 290.58687pt.
-
-
-LaTeX Warning: Citation 'E-CommerceKnowledgeGraph' on page 30 undefined on inpu
-t line 205.
-
-[30 <./img/Google_Knowledge_Graph.jpeg>]
-
-LaTeX Warning: Citation 'Grad-Gyenge2015' on page 31 undefined on input line 21
-3.
-
-[31]
-<img/twitter_graph.png, id=419, 734.745pt x 513.92pt>
+ [30 <./img/Google_Knowledge_Graph.jpeg>] [31]
+<img/twitter_graph.png, id=425, 734.745pt x 513.92pt>
 File: img/twitter_graph.png Graphic file (type png)
 <use img/twitter_graph.png>
 Package pdftex.def Info: img/twitter_graph.png  used on input line 231.
 (pdftex.def)             Requested size: 426.79135pt x 298.52863pt.
-
-
-LaTeX Warning: Citation 'Vukotic2014' on page 32 undefined on input line 236.
-
-[32 <./img/twitter_graph.png>]
+ [32 <./img/twitter_graph.png>]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 273.
 
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2069,64 +2044,43 @@ Overfull \hbox (1.23598pt too wide) in paragraph at lines 500--501
 ringsnieuws over British Petroleum.
  []
 
-
-LaTeX Warning: Citation 'Goddard2017' on page 39 undefined on input line 512.
-
-
-LaTeX Warning: Citation 'Article5GDPR2018' on page 39 undefined on input line 5
-19.
-
-[39]
-
-LaTeX Warning: Citation 'Article6GDPR2018' on page 40 undefined on input line 5
-28.
-
-
-LaTeX Warning: Citation 'Article15GDPR2018' on page 40 undefined on input line 
-542.
-
-
-LaTeX Warning: Citation 'Article17GDPR2018' on page 40 undefined on input line 
-555.
-
-[40]
-<img/180321-EU-Cookie-Consent-Examples.jpg, id=586, 652.4375pt x 307.1475pt>
+[39] [40]
+<img/180321-EU-Cookie-Consent-Examples.jpg, id=605, 652.4375pt x 307.1475pt>
 File: img/180321-EU-Cookie-Consent-Examples.jpg Graphic file (type jpg)
 <use img/180321-EU-Cookie-Consent-Examples.jpg>
 Package pdftex.def Info: img/180321-EU-Cookie-Consent-Examples.jpg  used on inp
-ut line 567.
+ut line 568.
 (pdftex.def)             Requested size: 426.79135pt x 200.92766pt.
-) (./methodologie.tex [41 <./img/180321-EU-Cookie-Consent-Examples.jpg>]
-[42
+) (./methodologie.tex [41 <./img/180321-EU-Cookie-Consent-Examples.jpg>] [42
 
 ]
 Hoofdstuk 3.
 [43] [44] [45]
-<img/elastic-license.png, id=671, 938.50626pt x 184.69pt>
+<img/elastic-license.png, id=689, 938.50626pt x 184.69pt>
 File: img/elastic-license.png Graphic file (type png)
 <use img/elastic-license.png>
 Package pdftex.def Info: img/elastic-license.png  used on input line 131.
 (pdftex.def)             Requested size: 405.45047pt x 79.78712pt.
  [46 <./img/elastic-license.png>] [47] [48]
-<img/full_graph_result.png, id=707, 586.19pt x 466.74374pt>
+<img/full_graph_result.png, id=725, 586.19pt x 466.74374pt>
 File: img/full_graph_result.png Graphic file (type png)
 <use img/full_graph_result.png>
 Package pdftex.def Info: img/full_graph_result.png  used on input line 219.
 (pdftex.def)             Requested size: 405.45047pt x 322.82982pt.
  [49 <./img/full_graph_result.png>] [50]
-<img/pageRank_res_1.png, id=738, 1009.7725pt x 490.83376pt>
+<img/pageRank_res_1.png, id=756, 1009.7725pt x 490.83376pt>
 File: img/pageRank_res_1.png Graphic file (type png)
 <use img/pageRank_res_1.png>
 Package pdftex.def Info: img/pageRank_res_1.png  used on input line 317.
 (pdftex.def)             Requested size: 405.45047pt x 197.08646pt.
  [51]
-<img/persPageRank_res_1.png, id=759, 1009.7725pt x 490.83376pt>
+<img/persPageRank_res_1.png, id=777, 1009.7725pt x 490.83376pt>
 File: img/persPageRank_res_1.png Graphic file (type png)
 <use img/persPageRank_res_1.png>
 Package pdftex.def Info: img/persPageRank_res_1.png  used on input line 346.
 (pdftex.def)             Requested size: 405.45047pt x 197.08646pt.
  [52 <./img/pageRank_res_1.png> <./img/persPageRank_res_1.png>]
-<img/Louvain_result.png, id=775, 905.3825pt x 502.87875pt>
+<img/Louvain_result.png, id=794, 905.3825pt x 502.87875pt>
 File: img/Louvain_result.png Graphic file (type png)
 <use img/Louvain_result.png>
 Package pdftex.def Info: img/Louvain_result.png  used on input line 371.
@@ -2150,26 +2104,22 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                bachproef-tin
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42636 strings out of 492616
- 787958 string characters out of 6129481
+ 42675 strings out of 492616
+ 789369 string characters out of 6129481
  1491623 words of memory out of 5000000
- 45260 multiletter control sequences out of 15000+600000
- 599837 words of font info for 231 fonts, out of 8000000 for 9000
+ 45287 multiletter control sequences out of 15000+600000
+ 600062 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -2181,10 +2131,10 @@ texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (66 pages, 1455324 bytes).
+Output written on bachproef-tin.pdf (66 pages, 1452542 bytes).
 PDF statistics:
- 1127 PDF objects out of 1200 (max. 8388607)
- 966 compressed objects within 10 object streams
- 423 named destinations out of 1000 (max. 500000)
+ 1161 PDF objects out of 1200 (max. 8388607)
+ 1000 compressed objects within 10 object streams
+ 432 named destinations out of 1000 (max. 500000)
  38865 words of extra memory for PDF output out of 42996 (max. 10000000)
 

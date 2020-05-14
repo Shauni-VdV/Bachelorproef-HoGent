@@ -12,7 +12,7 @@
 
 Personalisatie van webapplicaties en websites draait erom de bezoekers een op maat gemaakte ervaring aan te bieden. Dit kan op verschillende manieren toegepast worden, en kan meerdere doelen hebben. 
 
-In dit hoofdstuk wordt er verder ingegaan op welke manieren personalisatie van websites wordt toegepast, en wat dit betekent voor zowel de bezoeker als het bedrijf zelf.
+In dit hoofdstuk wordt er verder ingegaan op welke manieren personalisatie van websites hedendaags wordt toegepast, en wat dit betekent voor zowel de bezoeker als het bedrijf zelf.
 
 \subsection{Personalisatie op basis van e-mail en sociale media}
 \label{subsec:Personalisatie op basis van e-mail en Social Media}
@@ -55,7 +55,7 @@ Verder moet er ook inhoud gecreëerd worden voor elk bedrijf dat men specifiek w
  
  Dit is de vorm van personalisatie die een grote meerwaarde zal leveren aan dit onderzoek. De meeste mensen hebben deze vorm al ondervonden op een webshop zoals Amazon of Bol.com. Deze vorm van personalisatie draait erom de gebruikers artikels of producten aan te raden op basis van items die ze al eerder bekeken hebben, alsook het gedrag van andere gebruikers.
  
-De werking van het aanbevelingssysteem van Amazon is gebaseerd op enkele complexe algoritmen. \autocite{Linden2003} Dit is natuurlijk verantwoord omdat zij een gigant zijn in de e-commerce industrie. Amazon werkt op zeer grote schaal werken en heeft veel geld geïnvesteerd in de ontwikkeling van hun systeem. 
+De werking van het aanbevelingssysteem van Amazon is gebaseerd op enkele complexe algoritmen. \autocite{Linden2003} Dit is natuurlijk verantwoord omdat zij een gigant zijn in de e-commerce industrie. Amazon werkt op zeer grote schaal en heeft veel geld geïnvesteerd in de ontwikkeling van hun systeem. 
 
 In de realiteit hoeven de technologieën voor aanbevelingen van producten niet zo complex te zijn voor gewone webshops en bedrijven, vaak is het voldoende om relaties te creëren tussen artikels en op basis van deze relaties nieuwe artikels aan te raden aan de gebruikers. 
 
@@ -71,7 +71,7 @@ Over de mogelijkheden van het personaliseren van zoekresultaten gaan we dieper i
 \label{sec:Recommender Systems}
 Recommender Systems \autocite{Resnick1997} zijn aanbevelingen vanuit het systeem die rekening houden met de beschikbare informatie van gebruikers en hun voorkeuren om zo een filter te plaatsen op de informatie die weergegeven wordt. Verder zullen we deze benoemen aan de hand  van hun Nederlandse naam 'aanbevelingssystemen'.
 
-Aanbevelingssystemen worden vooral gebruikt in een e-commerce toepassingen waar een zeer groot en verscheiden aanbod aan producten is, en het al vaak lastig wordt om precieze aanbevelingen aan de klant te geven. Hierbij wordt allerlei informatie van een gebruiker verzameld, zoals historische aankopen, items op het verlanglijstje, items waar de gebruiker op geklikt heeft, etc.
+Aanbevelingssystemen worden vooral gebruikt in e-commerce toepassingen waar een zeer groot en verscheiden aanbod aan producten is, en het al vaak lastig wordt om precieze aanbevelingen aan de klant te geven. Hierbij wordt allerlei informatie van een gebruiker verzameld, zoals historische aankopen, items op het verlanglijstje, items waar de gebruiker op geklikt heeft, etc.
 
 In dit onderdeel zullen we kort wat dieper ingaan op de werking van dergelijke aanbevelingssystemen en de achterliggende algoritmen.
 
@@ -109,7 +109,7 @@ Een groot voordeel van Collaborative Filtering is dat er absoluut geen kennis ho
 
 Content Based aanbevelingssystemen \autocite{Lops2011} maken, in tegenstelling tot Collaborative Filtering, wel gebruik van de specifieke producten binnen het systeem en hun attributen. Op basis van deze attributen en de interesse van de gebruiker daarin, wordt per gebruiker een profiel opgezet, elk attribuut krijgt dan een score toegekend, een hogere score betekent grotere interesse. Een attribuut van een product kan dan bijvoorbeeld 'schoenen' of 'PS4 games' zijn, of zelfs een filmgenre.
 
-Een probleem van Content Based is, net zoals bij Collaborative Filtering, het cold start probleem. Als een nieuwe gebruiker het systeem gebruikt, is er voor deze gebruiker nog geen profiel opgesteld en kunnen er ook geen anbevelingen gemaakt worden.
+Een probleem van Content Based is, net zoals bij Collaborative Filtering, het cold start probleem. Als een nieuwe gebruiker het systeem gebruikt, is er voor deze gebruiker nog geen profiel opgesteld en kunnen er ook geen aanbevelingen gemaakt worden.
 
 Een ander probleem van Content Based wordt overspecialisatie genoemd, dit treedt op wanneer het systeem eigenlijk té accurate aanbevelingen doet. Het gevolg hiervan is dat slechts enkele producten voldoen aan de verwachtingen van het systeem, waardoor er geen nieuwe aanbevelingen aan de gebruiker naar voor gebracht worden, en de gebruiker enkel producten zal zien die hij reeds bekeken heeft. 
 
@@ -163,7 +163,7 @@ Nog een belangrijk voordeel van graph databanken is dat hiermee een \textit{Know
 
 Graph databanken hebben niet enkel voordelen, deze zijn vooral afhankelijk van de verwachtingen van de gebruikers en wat zij nodig hebben om hun doeleinden te bereiken. Graph databanken bestaan niet om relationele databanken te vervangen, zij bieden slechts een oplossing voor de beperkingen waar relationele databanken mee kampen.
 
-Graph databanken zijn geen goede keuze wanneer er data moet opgeslagen worden waarbij geen verbanden of connecties zijn tussen deze data, hier blinkt een relationele databank dan weer in uit. 
+Graph databanken zijn geen goede keuze wanneer er data moet opgeslagen worden waarbij geen verbanden of connecties nodig zijn tussen deze data, hier blinkt een relationele databank dan weer in uit.  Hiermee wordt bedoeld op relaties tussen verschillende personen of producten onderling
 
 Hetzelfde geldt voor wanneer de databank slechts als opslag gebruikt zal worden, of er slechts simpele query's nodig zullen zijn die in een relationele databank zonder JOIN statement kunnen gebeuren.Dit is niet zozeer een nadeel, maar benadrukt wel dat graph databanken geen universele \textit{one size fits all} oplossing zijn. Graph kan dit, maar is hiervoor niet geoptimaliseerd.
 
@@ -233,11 +233,11 @@ Een gerichte graaf is dan een graaf waarbij de relaties in een specifieke richti
 \subsubsection{Performantie}
 \label{subsubsec:Performantie}
 
-In in hoofdstuk één van het boek 'Neo4j in Action' \autocite{Vukotic2014} wordt een onderzoek gedaan naar de snelheid van het uitvoeren van bepaalde query's zoals 'zoek vrienden van vrienden' op een dataset. De resultaten hiervan wijzen erop dat graph databanken beduidend sneller zijn in het traverseren van een graaf, bijvoorbeeld voor het zoeken op een bepaalde diepte vanaf een startpunt.
+In hoofdstuk één van het boek 'Neo4j in Action' \autocite{Vukotic2014} wordt een onderzoek gedaan naar de snelheid van het uitvoeren van bepaalde query's zoals 'zoek vrienden van vrienden' op een dataset. De resultaten hiervan wijzen erop dat graph databanken beduidend sneller zijn in het traverseren van een graaf, bijvoorbeeld voor het zoeken op een bepaalde diepte vanaf een startpunt.
 
 Het experiment bestaat eruit 'vrienden van vrienden' op te halen uit een databank, dit in zowel Neo4j als MySQL. De databank bestaat voor beide platformen uit 1 000 000 gebruikers, \textit{Execution Time} wordt uitgedrukt in seconden per 1000 gebruikers.
 
-In Tabel 2.1 worden de resultaten van dit experiment samengevat. De \textit{Depht} slaat hier op hoeveel vrienden een persoon van een andere persoon verwijderd zal zijn, voor een diepte drie is dit dus 'vrienden van vrienden van vrienden'.
+In Tabel 2.1 worden de resultaten van dit experiment samengevat. De \textit{Depth} slaat hier op hoeveel vrienden een persoon van een andere persoon verwijderd zal zijn, voor een diepte drie is dit dus 'vrienden van vrienden van vrienden'.
 
 	\begin{table}
 		\centering
@@ -283,7 +283,7 @@ De zoekmethode die hier als voorbeeld genomen werd maakt gebruik van de paramete
 \end{lstlisting}
 
 Er kan ook op specifieke termen gezocht worden via \textit{term}. Daarbij kan dan gespecificeerd worden welk veld moet overeenkomen met de ingevoerde tekst. 
-Indien men wil zoeken op meerdere termen, kan terms vervangen worden door de parameter \textit{terms}, en zal er een array mee moeten gegeven worden als input in plaats van 'Audio' 
+Indien men wil zoeken op meerdere termen, kan de parameter \textit{term} vervangen worden door de parameter \textit{terms}, en zal er een array mee moeten gegeven worden als input in plaats van 'Audio' 
 
 \begin{lstlisting}[caption={Tekst-gebaseerd zoeken: Query om een simpele zoekopdracht uit te voeren waar de categorie van het product overeen komt met 'Audio' }]
 {
@@ -335,7 +335,7 @@ Het is ook mogelijk om query's te combineren, dit kan verwezenlijkt worden door 
 	\setlength\itemsep{1em}
 	\item \textit{``must``} : De meegegeven waarde moet in het document voorkomen en de score van deze query zal meetellen voor de totale score. Dit is een strikte voorwaarde, als hier niet aan voldaan wordt zal het document niet opgenomen worden in de resultaten.	
 	\item \textit{``filter``} : De meegegeven waarde moet in het document voorkomen. De score van deze query zal niet meetellen voor de totale score. Alle documenten die niet aan de voorwaarden van de filter voldoen, zullen net zoals bij 'must' niet opgenomen worden in de resultaten.	
-	\item \textit{``should``} : Als de gegeven waarde voorkomt in het document, zal de score van het document verhoogd worden, maar dit is geen strikte voorwaarde. De parameter \textit{``minimum\textunderscore should\textunderscore match``} geeft aan aan hoeveel voorwaarden voldaan moet worden om het document op de nemen in de resultaten. De \textit{``boost``} parameter laat toe bepaalde overeenkomsten een hogere score te laten genereren.
+	\item \textit{``should``} : Als de gegeven waarde voorkomt in het document, zal de score van het document verhoogd worden, maar dit is geen strikte voorwaarde. De parameter \textit{``minimum\textunderscore should\textunderscore match``} geeft aan aan hoeveel voorwaarden voldaan moet worden om het document op te nemen in de resultaten. De \textit{``boost``} parameter laat toe bepaalde overeenkomsten een hogere score te laten genereren.
 	\item \textit{``must\textunderscore not``} : Het omgekeerde van 'must'. De meegegeven waarde mag niet voorkomen in het document. Net zoals bij 'filter' zal de score voor deze query niet meetellen. 
 \end{itemize}
 
@@ -437,7 +437,7 @@ De scores van deze functies zullen worden opgeteld, en het resultaat hiervan zal
 
 De \textit{``script\_score``} functie laat toe om een score voor een document te berekenen aan de hand een van de waarden van de velden in het document.
 
-Onderstaande query zal alle documenten ophalen waarbij het veld 'naam' overeenkomt met 'Kim', en zal een score berekenen op basis van de lengte. In dit geval (300 - lengte) zal een lagere waarde voor dit veld resulteren in een kleinere score.
+Onderstaande query zal alle documenten ophalen waarbij het veld 'naam' overeenkomt met 'Kim', en zal een score berekenen op basis van de lengte van deze persoon. In dit geval (300 - lengte) zal een lagere waarde voor dit veld resulteren in een kleinere score.
 
 \begin{lstlisting}[caption={Scoring: voorbeeld van een script\_score query}]
 {
@@ -448,8 +448,8 @@ Onderstaande query zal alle documenten ophalen waarbij het veld 'naam' overeenko
 			},
 			"script": {
 				"
-				height = doc['height'].value;
-				return 300 - height;
+				height = doc['length'].value;
+				return 300 - length;
 				"
 			}
 		}
@@ -457,7 +457,7 @@ Onderstaande query zal alle documenten ophalen waarbij het veld 'naam' overeenko
 }
 \end{lstlisting}
 
-Decay functies kunnen gebruikt worden om de score van een document aan te passen naar gelang een opgegeven veld afwijkt van een bepaalde waarde. Dit is gelijkaardig aan de 'range' query, waar met met intervallen zou kunnen werken, maar loopt geleidelijk mee naargelang de afstand tussen de waarde van het veld en de opgegeven waarde groter wordt. 
+Decay functies kunnen gebruikt worden om de score van een document aan te passen naar gelang een opgegeven veld afwijkt van een bepaalde waarde. Dit is gelijkaardig aan de 'range' query, waar met intervallen zou kunnen werken, maar loopt geleidelijk mee naargelang de afstand tussen de waarde van het veld en de opgegeven waarde groter wordt. 
 \newline
 
 Er zijn drie mogelijke decay functies, namelijk \textit{``linear``}, \textit{``exp``}, en \textit{``gauss``}. De velden die hierbij horen zijn:
@@ -495,7 +495,7 @@ De bovenstaande query zal de score van een document laten afnemen met 0.5 naar g
 
 Een filter bubble, ook wel informatieluchtbel genaamd, is een gevolg van het personaliseren van zoekopdrachten. Personalisatie is het proberen bepalen welke zaken een gebruiker zou willen zien, aan de hand van een algoritme. 
 
-Een filter bubble betekent dat door deze personalisatie, een bijvoorbeeld geen producten zal zien die hem niet interesseren, in dit geval is dat een voordeel. Als we kijken in de context van controversiële onderwerpen, zorgt deze bubbel ervoor dat de gebruiker eigenlijk geen informatie zal zien die niet bij zijn standpunt past, de gebruikers worden dus afgesloten in luchtbel bestaande uit enkel hun visie of standpunt.  \autocite{Pariser2011}
+Een filter bubble betekent dat door deze personalisatie, bijvoorbeeld geen producten zal zien die hem niet interesseren, in dit geval is dat een voordeel. Als we kijken in de context van controversiële onderwerpen, zorgt deze bubbel ervoor dat de gebruiker eigenlijk geen informatie zal zien die niet bij zijn standpunt past, de gebruikers worden dus afgesloten in een luchtbel die bestaat uit enkel hun visie of standpunt.  \autocite{Pariser2011}
 
 Pariser geeft als voorbeeld in zijn boek een scenario waar een gebruiker de zoekterm ``BP``invoerde, en resultaten kreeg in verband met investeringsnieuws over British Petroleum. Een tweede gebruiker gaf dezelfde zoekterm in en kreeg informatie over Deepwater Horizon als resultaat. Dit is dus een merkwaardig verschil.
 
@@ -529,7 +529,7 @@ Het verwerken van persoonsgegevens moet rechtmatig, behoorlijk en transparant ge
 
 De regulatie verplicht ook dat slechts het minimum aan persoonlijke data van een gebruiker wordt opgeslagen, en moet dus beperkt blijven tot de data die van belang is voor de doelen waarvoor die data gebruikt zal worden.
 
-Als er wordt gesproken over transparantie, wil dit zeggen dat er geen twijfel mogelijk mag zijn over hoe de persoonlijke data van een gebruiker verwerkt wordt. Ook dat enkel en alleen de verwerkingen waar een gebruiker mee instemt effectief uitgevoerd worden, en niets meer.
+Als er wordt gesproken over transparantie, wil dit zeggen dat er geen twijfel mogelijk mag zijn over hoe de persoonlijke data van een gebruiker verwerkt wordt. Ook mogen enkel en alleen verwerkingen uitgevoerd worden waar een gebruiker mee instemt.
 
 
 \subsection{Rechten van de gebruikers}
@@ -550,9 +550,10 @@ Persoonlijke gegevens moeten gewist worden wanneer:
 	\item De betrokken persoon trekt zijn toestemming voor de verwerking in.
 	\item De betrokken persoon maakt bezwaar tegen de verwerking.
 	\item De gegevens zijn onrechtmatig verwerkt.
-	\item Om te voldoen aan een recht van de betrokken persoon.
 \end{itemize}
 \autocite{Article17GDPR2018}
+
+De volledige lijst staat beschreven in Artikel 17 van de GDPR.
 
 \subsection{Effect van de GDPR op e-commerce}
 \label{subsec: Effect van de GDPR op e-commerce}

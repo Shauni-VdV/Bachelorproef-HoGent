@@ -88,6 +88,41 @@
       \verb 10.3233/IDA-163209
       \endverb
     \endentry
+    \entry{E-CommerceKnowledgeGraph}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6dd3a74584b1a493340bc9c907dd79ce}{%
+           family={Chandrasekhar},
+           familyi={C\bibinitperiod},
+           given={Govind},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6dd3a74584b1a493340bc9c907dd79ce}
+      \strng{fullhash}{6dd3a74584b1a493340bc9c907dd79ce}
+      \strng{bibnamehash}{6dd3a74584b1a493340bc9c907dd79ce}
+      \strng{authorbibnamehash}{6dd3a74584b1a493340bc9c907dd79ce}
+      \strng{authornamehash}{6dd3a74584b1a493340bc9c907dd79ce}
+      \strng{authorfullhash}{6dd3a74584b1a493340bc9c907dd79ce}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Ecommerce Knowledge Graph}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.semantics3.com/blog/the-ecommerce-knowledge-graph-semantics3-labs/
+      \endverb
+      \verb{url}
+      \verb https://www.semantics3.com/blog/the-ecommerce-knowledge-graph-semantics3-labs/
+      \endverb
+    \endentry
     \entry{Dehkordi2012}{article}{}
       \name{author}{5}{}{%
         {{uniquename=0,uniquepart=base,hash=5a00a11ee5d9a74101997ce362adcd63}{%
@@ -177,6 +212,181 @@
       \field{year}{2003}
       \field{pages}{166\bibrangedash 167}
       \range{pages}{2}
+    \endentry
+    \entry{Article15GDPR2018}{online}{}
+      \list{organization}{1}{%
+        {European Commission}%
+      }
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{5}
+      \field{title}{GDPR Article 15}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.privacy-regulation.eu/nl/artikel-15-recht-van-inzage-van-de-betrokkene-EU-AVG.htm
+      \endverb
+      \verb{url}
+      \verb https://www.privacy-regulation.eu/nl/artikel-15-recht-van-inzage-van-de-betrokkene-EU-AVG.htm
+      \endverb
+    \endentry
+    \entry{Article17GDPR2018}{online}{}
+      \list{organization}{1}{%
+        {European Commission}%
+      }
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{5}
+      \field{title}{GDPR Article 17}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.privacy-regulation.eu/nl/artikel-17-recht-op-gegevenswissing-recht-op-vergetelheid%E2%80%9D-EU-AVG.htm
+      \endverb
+      \verb{url}
+      \verb https://www.privacy-regulation.eu/nl/artikel-17-recht-op-gegevenswissing-recht-op-vergetelheid%E2%80%9D-EU-AVG.htm
+      \endverb
+    \endentry
+    \entry{Article5GDPR2018}{online}{}
+      \list{organization}{1}{%
+        {European Commission}%
+      }
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{5}
+      \field{title}{GDPR Article 5}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.privacy-regulation.eu/nl/artikel-5-beginselen-inzake-verwerking-van-persoonsgegevens-EU-AVG.htm
+      \endverb
+      \verb{url}
+      \verb https://www.privacy-regulation.eu/nl/artikel-5-beginselen-inzake-verwerking-van-persoonsgegevens-EU-AVG.htm
+      \endverb
+    \endentry
+    \entry{Article6GDPR2018}{online}{}
+      \list{organization}{1}{%
+        {European Commission}%
+      }
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{5}
+      \field{title}{GDPR Article 6}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.privacy-regulation.eu/nl/artikel-6-rechtmatigheid-van-de-verwerking-EU-AVG.htm
+      \endverb
+      \verb{url}
+      \verb https://www.privacy-regulation.eu/nl/artikel-6-rechtmatigheid-van-de-verwerking-EU-AVG.htm
+      \endverb
+    \endentry
+    \entry{Goddard2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6f8cb807a251dde00a629c1f146dbe38}{%
+           family={Goddard},
+           familyi={G\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {{SAGE} Publications}%
+      }
+      \strng{namehash}{6f8cb807a251dde00a629c1f146dbe38}
+      \strng{fullhash}{6f8cb807a251dde00a629c1f146dbe38}
+      \strng{bibnamehash}{6f8cb807a251dde00a629c1f146dbe38}
+      \strng{authorbibnamehash}{6f8cb807a251dde00a629c1f146dbe38}
+      \strng{authornamehash}{6f8cb807a251dde00a629c1f146dbe38}
+      \strng{authorfullhash}{6f8cb807a251dde00a629c1f146dbe38}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Market Research}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{The {EU} General Data Protection Regulation ({GDPR}): European Regulation that has a Global Impact}
+      \field{volume}{59}
+      \field{year}{2017}
+      \field{pages}{703\bibrangedash 705}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.2501/ijmr-2017-050
+      \endverb
+    \endentry
+    \entry{Grad-Gyenge2015}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=f7a24db8fb91af4c3e20585554fb45e0}{%
+           family={Grad-Gyenge},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=440840cf1a958f86ce96afdf0ed33447}{%
+           family={Filzmoser},
+           familyi={F\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=20e0a8f4613769a540300c260934d7fe}{%
+           family={Werthner},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{18d7d0b536ac93dd8903c0525dd8be97}
+      \strng{fullhash}{a9c27cc73b92af803f1f250aea72c830}
+      \strng{bibnamehash}{a9c27cc73b92af803f1f250aea72c830}
+      \strng{authorbibnamehash}{a9c27cc73b92af803f1f250aea72c830}
+      \strng{authornamehash}{18d7d0b536ac93dd8903c0525dd8be97}
+      \strng{authorfullhash}{a9c27cc73b92af803f1f250aea72c830}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{Recommendations on a Knowledge Graph}
+      \field{year}{2015}
     \endentry
     \entry{Linden2003}{article}{}
       \name{author}{3}{}{%
@@ -609,6 +819,41 @@
       \verb 10.1007/978-3-540-72079-9_9
       \endverb
     \endentry
+    \entry{GoogleKnowledgeGraph}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e842c74a8f00853e7e3ea135b41b55bd}{%
+           family={Singhal},
+           familyi={S\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e842c74a8f00853e7e3ea135b41b55bd}
+      \strng{fullhash}{e842c74a8f00853e7e3ea135b41b55bd}
+      \strng{bibnamehash}{e842c74a8f00853e7e3ea135b41b55bd}
+      \strng{authorbibnamehash}{e842c74a8f00853e7e3ea135b41b55bd}
+      \strng{authornamehash}{e842c74a8f00853e7e3ea135b41b55bd}
+      \strng{authorfullhash}{e842c74a8f00853e7e3ea135b41b55bd}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducing the Knowledge Graph: things, not strings}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html
+      \endverb
+      \verb{url}
+      \verb https://googleblog.blogspot.com/2012/05/introducing-knowledge-graph-things-not.html
+      \endverb
+    \endentry
     \entry{Smith1999}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=e9207df347c27a46262260d3120cd159}{%
@@ -754,6 +999,63 @@
       \verb http://www.sciencedirect.com/science/article/pii/S1877050919306271
       \endverb
       \keyw{e-commerce,personalization,search,elasticsearch}
+    \endentry
+    \entry{Vukotic2014}{book}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=1efe0d9fd46765f667d21ab471a1fe0f}{%
+           family={Vukotic},
+           familyi={V\bibinitperiod},
+           given={Aleksa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=51a9cf1e7547f4fdf952b540016f9f32}{%
+           family={Watt},
+           familyi={W\bibinitperiod},
+           given={Nicki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2e9bafb33780992a8b23b42bde360e2e}{%
+           family={Abedrabbo},
+           familyi={A\bibinitperiod},
+           given={Tareq},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=53d5f4d6e4e6e71cf49edee1490ed0d0}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=253ec623e102df478f65281ab86c3213}{%
+           family={Partner},
+           familyi={P\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications Co.}%
+      }
+      \strng{namehash}{f99e1e8ed2f70ab83a2c3d47c0b1ff3a}
+      \strng{fullhash}{29b600310a81c507b492e85d71e18adf}
+      \strng{bibnamehash}{29b600310a81c507b492e85d71e18adf}
+      \strng{authorbibnamehash}{29b600310a81c507b492e85d71e18adf}
+      \strng{authornamehash}{f99e1e8ed2f70ab83a2c3d47c0b1ff3a}
+      \strng{authorfullhash}{29b600310a81c507b492e85d71e18adf}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st}
+      \field{isbn}{1617290769}
+      \field{title}{Neo4j in Action}
+      \field{year}{2014}
     \endentry
   \enddatalist
 \endrefsection

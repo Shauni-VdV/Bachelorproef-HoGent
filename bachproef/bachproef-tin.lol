@@ -1,7 +1,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {2.1}Tekst-gebaseerd zoeken: Query om een simpele zoekopdracht uit te voeren met de term 'deodorant'}{33}{lstlisting.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {2.2}Tekst-gebaseerd zoeken: Query om een simpele zoekopdracht uit te voeren waar de categorie van het product overeen komt met 'Audio'}{33}{lstlisting.2.2}% 
+\contentsline {lstlisting}{\numberline {2.2}Tekst-gebaseerd zoeken: Query om een simpele zoekopdracht uit te voeren waar de categorie van het product overeen komt met 'Audio'}{34}{lstlisting.2.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {2.3}Tekst-gebaseerd zoeken: Query die de resultaten sorteert op basis van hoe vaak het woord 'accepted' voorkomt in het veld 'message' van een document}{34}{lstlisting.2.3}% 
 \defcounter {refsection}{0}\relax 
@@ -9,7 +9,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {2.5}Combineren: Voorbeeld van een 'bool' query}{35}{lstlisting.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {2.6}Scoring: voorbeeld van een function\_score query}{36}{lstlisting.2.6}% 
+\contentsline {lstlisting}{\numberline {2.6}Scoring: voorbeeld van een function\_score query}{37}{lstlisting.2.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {2.7}Scoring: voorbeeld van een script\_score query}{37}{lstlisting.2.7}% 
 \defcounter {refsection}{0}\relax 

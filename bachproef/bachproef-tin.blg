@@ -1,21 +1,22 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'bachproef-tin.blg'
-[39] biber-darwin:315> INFO - === Wed May  6, 2020, 16:29:09
-[63] Biber.pm:371> INFO - Reading 'bachproef-tin.bcf'
-[159] Biber.pm:889> INFO - Found 16 citekeys in bib section 0
+[39] biber-darwin:315> INFO - === Thu May 14, 2020, 14:29:14
+[66] Biber.pm:371> INFO - Reading 'bachproef-tin.bcf'
+[159] Biber.pm:889> INFO - Found 25 citekeys in bib section 0
 [172] Biber.pm:4093> INFO - Processing section 0
-[185] Biber.pm:4254> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
-[187] bibtex.pm:1523> INFO - LaTeX decoding ...
-[216] bibtex.pm:1340> INFO - Found BibTeX data source 'bachproef-tin.bib'
-[234] Utils.pm:193> WARN - month field 'mar' in entry 'Resnick1997' is not an integer - this will probably not sort properly.
-[295] Utils.pm:193> WARN - ISBN '1594203008, 9781594203008' in entry 'Pariser2011' is invalid - run biber with '--validate_datamodel' for details.
-[305] Utils.pm:193> WARN - month field 'sep' in entry 'Pitkow2002' is not an integer - this will probably not sort properly.
-[309] Utils.pm:193> WARN - month field 'mar' in entry 'Telang2005' is not an integer - this will probably not sort properly.
-[316] Utils.pm:193> WARN - month field 'jun' in entry 'Smith1999' is not an integer - this will probably not sort properly.
-[350] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[350] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[350] Biber.pm:3921> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
-[350] Biber.pm:3927> INFO - No sort tailoring available for locale 'nl-NL'
-[376] bbl.pm:636> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
-[390] bbl.pm:739> INFO - Output to bachproef-tin.bbl
-[390] Biber.pm:110> INFO - WARNINGS: 5
+[182] Biber.pm:4254> INFO - Looking for bibtex format file 'bachproef-tin.bib' for section 0
+[184] bibtex.pm:1523> INFO - LaTeX decoding ...
+[223] bibtex.pm:1340> INFO - Found BibTeX data source 'bachproef-tin.bib'
+[245] Utils.pm:193> WARN - month field 'mar' in entry 'Resnick1997' is not an integer - this will probably not sort properly.
+[318] Utils.pm:193> WARN - ISBN '1594203008, 9781594203008' in entry 'Pariser2011' is invalid - run biber with '--validate_datamodel' for details.
+[322] Utils.pm:193> WARN - month field 'nov' in entry 'Goddard2017' is not an integer - this will probably not sort properly.
+[337] Utils.pm:193> WARN - month field 'sep' in entry 'Pitkow2002' is not an integer - this will probably not sort properly.
+[342] Utils.pm:193> WARN - month field 'mar' in entry 'Telang2005' is not an integer - this will probably not sort properly.
+[353] Utils.pm:193> WARN - month field 'jun' in entry 'Smith1999' is not an integer - this will probably not sort properly.
+[397] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[397] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[397] Biber.pm:3921> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[397] Biber.pm:3927> INFO - No sort tailoring available for locale 'nl-NL'
+[428] bbl.pm:636> INFO - Writing 'bachproef-tin.bbl' with encoding 'UTF-8'
+[446] bbl.pm:739> INFO - Output to bachproef-tin.bbl
+[446] Biber.pm:110> INFO - WARNINGS: 6
