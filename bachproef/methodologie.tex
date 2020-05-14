@@ -173,22 +173,22 @@ De verschillende soorten relaties zijn als volgt:
 	\item 'LIVES\_TOGETHER' -> Gebruiker 1 heeft hetzelfde adres als Gebruiker 2
 \end{itemize}
 
-De query die gebruikt wordt om de producten en gebruikers aan te maken:
+Volgende query wordt gebruikt om de product- en klant nodes aan te maken, dit is uiteraard een verkorte versie:
 
 \begin{lstlisting}[caption={Neo4j query voor het aanmaken van producten en klanten}]
 CREATE 
 (shauni:Customer {name: 'Shauni', address: 'Exterkenstraat 14'}),
 (lynn:Customer {name: 'Lynn', address: 'Exterkenstraat 14'}),
 (angelo:Customer {name: 'Angelo', address: 'Arbeidstraat 14'}), 
-(nicolas:Customer {name: 'Nicolas', address: 'Kouter 3'}), 
+(kenzo:Customer {name: 'Kenzo', address: 'Kouter 3'}), 
 (wendy:Customer {name: 'Wendy', address: 'Arbeidstraat 14'}), 
+...
 (prod1:Product{id: '1', name:'Hairbrush', brand:'Syoss'}), 
 (prod2:Product{id: '2', name:'Instant Chocolate Milk', brand:'Nesquick'}), 
 (prod3:Product{id: '3', name:'Toilet Paper', brand: 'Boni'}), 
 (prod4:Product{id: '4', name:'Pen', brand:'Stabilo'}), 
 (prod5:Product{id: '5', name:'Roller Deodorant', brand: 'Sanex'}), 
 ...
-
 \end{lstlisting}
 
 Om een relatie aan te maken tussen een product en een gebruiker zal volgende query gebruikt worden. Deze zal dus uitgevoerd worden elke keer een gebruiker een actie uitvoert met een product.
@@ -266,10 +266,10 @@ RETURN p2 as Product
 Binnen neo4j is het ook mogelijk om zoekopdrachten uit te voeren op basis van een tekstveld. Hiervoor moet op voorhand een index aangemaakt worden waarin beschreven staat welke attributen van welke types van nodes gebruikt mogen worden om de ingevoerde tekst mee te vergelijken.
 
 \begin{lstlisting}[caption={Een index creëren binnen Neo4j om zoekopdrachten op basis van tekst uit te voeren}]
-CALL db.index.fulltext.createNodeIndex("namesAndCategories",["Product"],["name", "category"])
+CALL db.index.fulltext.createNodeIndex("namesAndBrands",["Product"],["name", "brand"])
 \end{lstlisting}
 
-In dit voorbeeld gebruiken we de attributen \textit{name} en \textit{categories} van het nodetype \textit{Product}, en nemen we als zoekterm ``deodorant``.  Op deze manier kan er dus eenvoudig gekozen worden op welke velden van de objecten er moet vergeleken worden.
+In dit voorbeeld gebruiken we de attributen \textit{name} en \textit{brand} van het nodetype \textit{Product}, en nemen we als zoekterm ``deodorant``.  Op deze manier kan er dus eenvoudig gekozen worden op welke velden van de objecten er moet vergeleken worden.
 
 
 
@@ -285,17 +285,17 @@ Er zal een lijst geretourneerd worden met de attributen (node.name), en een scor
 
 Voor het vinden van resultaten die belang hebben voor de gebruiker, wordt het PageRank algoritme gebruikt. Dit algoritme berekent de belangrijkheid van een knoop op basis van zijn buren. Hoe meer connecties er naartoe, hoe sterker het resultaat. Op deze manier worden populaire resultaten hoger gerangschikt.
 
-Om via dit algoritme aanbevelingen te verkrijgen, moet er eerst een nieuwe graaf worden opgesteld waar enkel de informatie in zit die nodig is voor de berekening, dit gebeurt via volgende query, waarin de interacties 'BOUGHT' en 'LIKES' opgenomen worden, samen met hun gewicht.
+Om via dit algoritme aanbevelingen te verkrijgen, moet er eerst een nieuwe graaf worden opgesteld waar enkel de informatie in zit die nodig is voor de berekening, dit gebeurt via volgende query, waarin de interacties 'BOUGHT' en 'LIKES' opgenomen worden, samen met hun gewicht (score).
 
 \begin{lstlisting}[caption={Een genoemde graaf creëren om graafalgoritmen op uit te voeren}]
 CALL gds.graph.create.cypher(
-	'graph1',
+	'boughtGraph',
 	'MATCH (p:Product) RETURN id(p) AS id',
-	'MATCH (p2:Product)<-[r:BOUGHT|LIKES]-(c:Customer)-[:BOUGHT|LIKES]->(p3:Product)
+	'MATCH (p2:Product)<-[r:BOUGHT]-(c:Customer)-[:BOUGHT|LIKES]->(p3:Product)
 	RETURN
 		id(p2) AS source,
 		id(p3) AS target,
-		r.weight AS weight',
+		r.score AS score',
 		{
 			readConcurrency: 4
 		}
@@ -305,13 +305,14 @@ CALL gds.graph.create.cypher(
 Vervolgens kunnen we het pageRank algoritme uitvoeren op deze graaf, die een lijst van productnamen zal weergeven met daarnaast een score.
 
 \begin{lstlisting}[caption={PageRank algoritme uitvoeren}]
-CALL gds.pageRank.stream('graph1', { maxIterations: 10, dampingFactor: 0.85 })
+CALL gds.pageRank.stream('boughtGraph', { maxIterations: 3, dampingFactor: 0.85 })
 YIELD nodeId, score
 RETURN gds.util.asNode(nodeId).name AS name, score
 ORDER BY score DESC, name ASC
 \end{lstlisting}
 
-Het resultaat van dit algoritme (\autoref{fig:simplePageRankResult}) toont ons dat ``Toilet Paper`` de belangrijkste knoop is in deze graaf, met andere woorden dat als er door de graaf gelopen wordt, deze knoop de grootste kans heeft om bereikt te worden.
+Het resultaat van dit algoritme (\autoref{fig:simplePageRankResult}) toont ons dat ``Wireless Mouse`` de belangrijkste knoop is in deze graaf, met andere woorden dat als er door de graaf gelopen wordt, deze knoop de grootste kans heeft om bereikt te worden. 
+
 \begin{figure} [ht]
 	\centering
 	\includegraphics[width=0.95\textwidth]{img/pageRank_res_1}
@@ -328,9 +329,9 @@ Om de resultaten te baseren vanuit een bepaald startpunt, bijvoorbeeld een Custo
 We gebruiken opnieuw de genoemde graaf uit de simpele PageRank, en voeren daar volgend algoritme op uit: 
 
 \begin{lstlisting}[caption={Personalized PageRank algoritme }]
-MATCH (c1:Customer {name: 'Shauni'})
-CALL gds.pageRank.stream('graph1', {
-	maxIterations: 20,
+MATCH (c1:Customer {name: 'Tony'})
+CALL gds.pageRank.stream('boughtGraph', {
+	maxIterations: 1,
 	dampingFactor: 0.85,
 	sourceNodes: [c1]
 	})
@@ -339,7 +340,7 @@ RETURN gds.util.asNode(nodeId).name AS name, score
 ORDER BY score DESC, name ASC
 \end{lstlisting}
 
-In de resultaten is nu zichtbaar dat voor deze specifieke klant nog steeds ``Toiler Paper`` een aanbeveling is, maar dat het product met naam ``Hairbrush`` een hogere score krijgt dan ``Pen``, wat in het algemene PageRank algoritme niet zo is.
+In het resultaat van deze query zien we dat de resultaten voor deze gebruiker in dezelfde lijn lopen als de algemene resultaten, maar dat er toch enkele producten bovenaan de lijst te vinden zijn die bij het gewone PageRank algoritme niet aan bod komen.
 
 \begin{figure} [ht]
 	\centering
@@ -357,14 +358,14 @@ Een nadeel aan deze techniek is dat deze last heeft van het cold-start probleem.
 
 Een voorbeeld van een community detection algoritme is het Louvain algoritme. De genoemde graaf van de uitwerking van PageRank zal opnieuw worden gebruikt voor dit algoritme.
 
-\begin{lstlisting}[caption={Personalized PageRank algoritme }]
-CALL gds.louvain.stream('graph1')
+\begin{lstlisting}[caption={ Louvain algoritme }]
+CALL gds.louvain.stream('boughtGraph')
 YIELD nodeId, communityId, intermediateCommunityIds
 RETURN gds.util.asNode(nodeId).name AS name, communityId, intermediateCommunityIds
-ORDER BY name ASC
+ORDER BY communityId DESC
 \end{lstlisting}
 
-Uit de resultaten worden twee clusters ontdekt, met id 2 en 3, deze producten worden door het algoritme aanzien als gelijkaardig te zijn, omdat deze door een bepaalde groep gebruikers gekocht of leuk gevonden wordt. 
+Uit de resultaten worden enkele clusters ontdekt, deze zijn aangeduid op \autoref{fig:LouvainResult}.
 
 \begin{figure} [ht]
 	\centering

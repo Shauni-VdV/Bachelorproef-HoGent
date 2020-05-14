@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  14 MAY 2020 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  14 MAY 2020 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2062,34 +2062,34 @@ File: img/elastic-license.png Graphic file (type png)
 Package pdftex.def Info: img/elastic-license.png  used on input line 131.
 (pdftex.def)             Requested size: 405.45047pt x 79.78712pt.
  [46 <./img/elastic-license.png>] [47] [48]
-<img/full_graph_result.png, id=725, 586.19pt x 466.74374pt>
+<img/full_graph_result.png, id=726, 1010.77625pt x 931.48pt>
 File: img/full_graph_result.png Graphic file (type png)
 <use img/full_graph_result.png>
 Package pdftex.def Info: img/full_graph_result.png  used on input line 219.
-(pdftex.def)             Requested size: 405.45047pt x 322.82982pt.
+(pdftex.def)             Requested size: 405.45047pt x 373.63718pt.
  [49 <./img/full_graph_result.png>] [50]
-<img/pageRank_res_1.png, id=756, 1009.7725pt x 490.83376pt>
+<img/pageRank_res_1.png, id=757, 1153.30875pt x 566.115pt>
 File: img/pageRank_res_1.png Graphic file (type png)
 <use img/pageRank_res_1.png>
-Package pdftex.def Info: img/pageRank_res_1.png  used on input line 317.
-(pdftex.def)             Requested size: 405.45047pt x 197.08646pt.
+Package pdftex.def Info: img/pageRank_res_1.png  used on input line 318.
+(pdftex.def)             Requested size: 405.45047pt x 199.0243pt.
  [51]
-<img/persPageRank_res_1.png, id=777, 1009.7725pt x 490.83376pt>
+<img/persPageRank_res_1.png, id=778, 1153.30875pt x 566.115pt>
 File: img/persPageRank_res_1.png Graphic file (type png)
 <use img/persPageRank_res_1.png>
-Package pdftex.def Info: img/persPageRank_res_1.png  used on input line 346.
-(pdftex.def)             Requested size: 405.45047pt x 197.08646pt.
+Package pdftex.def Info: img/persPageRank_res_1.png  used on input line 347.
+(pdftex.def)             Requested size: 405.45047pt x 199.0243pt.
  [52 <./img/pageRank_res_1.png> <./img/persPageRank_res_1.png>]
-<img/Louvain_result.png, id=794, 905.3825pt x 502.87875pt>
+<img/Louvain_result.png, id=796, 767.86874pt x 693.59125pt>
 File: img/Louvain_result.png Graphic file (type png)
 <use img/Louvain_result.png>
-Package pdftex.def Info: img/Louvain_result.png  used on input line 371.
-(pdftex.def)             Requested size: 405.45047pt x 225.19606pt.
-) (./conclusie.tex [53 <./img/Louvain_result.png>] [54
-
-]
+Package pdftex.def Info: img/Louvain_result.png  used on input line 372.
+(pdftex.def)             Requested size: 405.45047pt x 366.23636pt.
+) (./conclusie.tex [53] [54 <./img/Louvain_result.png>]
 Hoofdstuk 4.
-[55] [56]) [57] [58
+[55
+
+] [56]) [57] [58
 
 ]
 B"ylage A.
@@ -2106,20 +2106,16 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42675 strings out of 492616
- 789369 string characters out of 6129481
- 1491623 words of memory out of 5000000
- 45287 multiletter control sequences out of 15000+600000
- 600062 words of font info for 233 fonts, out of 8000000 for 9000
+ 42700 strings out of 492616
+ 789802 string characters out of 6129481
+ 1492028 words of memory out of 5000000
+ 45314 multiletter control sequences out of 15000+600000
+ 599837 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -2131,10 +2127,10 @@ texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (66 pages, 1452542 bytes).
+Output written on bachproef-tin.pdf (66 pages, 1608431 bytes).
 PDF statistics:
- 1161 PDF objects out of 1200 (max. 8388607)
- 1000 compressed objects within 10 object streams
- 432 named destinations out of 1000 (max. 500000)
+ 1167 PDF objects out of 1200 (max. 8388607)
+ 1005 compressed objects within 11 object streams
+ 433 named destinations out of 1000 (max. 500000)
  38865 words of extra memory for PDF output out of 42996 (max. 10000000)
 

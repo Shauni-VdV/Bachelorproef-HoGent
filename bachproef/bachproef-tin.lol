@@ -45,4 +45,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {3.15}Personalized PageRank algoritme}{52}{lstlisting.3.15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.16}Personalized PageRank algoritme}{53}{lstlisting.3.16}% 
+\contentsline {lstlisting}{\numberline {3.16}Louvain algoritme}{53}{lstlisting.3.16}% 
