@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  14 MAY 2020 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.12.3)  15 MAY 2020 09:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1501,11 +1501,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'dutch'.
 
-(./bachproef-tin.aux
-
-LaTeX Warning: Label `sec:Conclusie Elasticsearch' multiply defined.
-
-)
+(./bachproef-tin.aux)
 \openout1 = `bachproef-tin.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -1523,7 +1519,8 @@ LaTeX Font Info:    ... okay on input line 80.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 80.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -1975,7 +1972,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 ]
 Hoofdstuk 2.
 [21]
-<img/e2fcfe784532c41a644e4465f535530d.png, id=346, 457.10776pt x 351.714pt>
+<img/e2fcfe784532c41a644e4465f535530d.png, id=343, 457.10776pt x 351.714pt>
 File: img/e2fcfe784532c41a644e4465f535530d.png Graphic file (type png)
 <use img/e2fcfe784532c41a644e4465f535530d.png>
 Package pdftex.def Info: img/e2fcfe784532c41a644e4465f535530d.png  used on inpu
@@ -1983,7 +1980,7 @@ t line 46.
 (pdftex.def)             Requested size: 426.79135pt x 328.39476pt.
  [22] [23 <./img/e2fcfe784532c41a644e4465f535530d.png>] [24]
 <img/Content-based-filtering-and-Collaborative-filtering-recommendation.png, id
-=366, 689.57625pt x 495.8525pt>
+=363, 689.57625pt x 495.8525pt>
 File: img/Content-based-filtering-and-Collaborative-filtering-recommendation.pn
 g Graphic file (type png)
 <use img/Content-based-filtering-and-Collaborative-filtering-recommendation.png
@@ -1998,7 +1995,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
  [25 <./img/Content-based-filtering-and-Collaborative-filtering-recommendation.
 png>] [26]
 [27]
-<img/Customer-Order-Example-Graph.png, id=394, 592.2125pt x 300.12125pt>
+<img/Customer-Order-Example-Graph.png, id=391, 592.2125pt x 300.12125pt>
 File: img/Customer-Order-Example-Graph.png Graphic file (type png)
 <use img/Customer-Order-Example-Graph.png>
 Package pdftex.def Info: img/Customer-Order-Example-Graph.png  used on input li
@@ -2010,14 +2007,14 @@ Underfull \hbox (badness 4266) in paragraph at lines 187--187
  []
 
 [29]
-<img/Google_Knowledge_Graph.jpeg, id=410, 943.525pt x 642.4pt>
+<img/Google_Knowledge_Graph.jpeg, id=407, 943.525pt x 642.4pt>
 File: img/Google_Knowledge_Graph.jpeg Graphic file (type jpg)
 <use img/Google_Knowledge_Graph.jpeg>
 Package pdftex.def Info: img/Google_Knowledge_Graph.jpeg  used on input line 19
 7.
 (pdftex.def)             Requested size: 426.79135pt x 290.58687pt.
  [30 <./img/Google_Knowledge_Graph.jpeg>] [31]
-<img/twitter_graph.png, id=425, 734.745pt x 513.92pt>
+<img/twitter_graph.png, id=422, 734.745pt x 513.92pt>
 File: img/twitter_graph.png Graphic file (type png)
 <use img/twitter_graph.png>
 Package pdftex.def Info: img/twitter_graph.png  used on input line 231.
@@ -2045,7 +2042,7 @@ ringsnieuws over British Petroleum.
  []
 
 [39] [40]
-<img/180321-EU-Cookie-Consent-Examples.jpg, id=605, 652.4375pt x 307.1475pt>
+<img/180321-EU-Cookie-Consent-Examples.jpg, id=602, 652.4375pt x 307.1475pt>
 File: img/180321-EU-Cookie-Consent-Examples.jpg Graphic file (type jpg)
 <use img/180321-EU-Cookie-Consent-Examples.jpg>
 Package pdftex.def Info: img/180321-EU-Cookie-Consent-Examples.jpg  used on inp
@@ -2056,34 +2053,34 @@ ut line 568.
 ]
 Hoofdstuk 3.
 [43] [44] [45]
-<img/elastic-license.png, id=689, 938.50626pt x 184.69pt>
+<img/elastic-license.png, id=686, 938.50626pt x 184.69pt>
 File: img/elastic-license.png Graphic file (type png)
 <use img/elastic-license.png>
 Package pdftex.def Info: img/elastic-license.png  used on input line 131.
 (pdftex.def)             Requested size: 405.45047pt x 79.78712pt.
  [46 <./img/elastic-license.png>] [47] [48]
-<img/full_graph_result.png, id=726, 1010.77625pt x 931.48pt>
+<img/full_graph_result.png, id=723, 1010.77625pt x 931.48pt>
 File: img/full_graph_result.png Graphic file (type png)
 <use img/full_graph_result.png>
-Package pdftex.def Info: img/full_graph_result.png  used on input line 219.
+Package pdftex.def Info: img/full_graph_result.png  used on input line 211.
 (pdftex.def)             Requested size: 405.45047pt x 373.63718pt.
  [49 <./img/full_graph_result.png>] [50]
-<img/pageRank_res_1.png, id=757, 1153.30875pt x 566.115pt>
+<img/pageRank_res_1.png, id=754, 1153.30875pt x 566.115pt>
 File: img/pageRank_res_1.png Graphic file (type png)
 <use img/pageRank_res_1.png>
-Package pdftex.def Info: img/pageRank_res_1.png  used on input line 318.
+Package pdftex.def Info: img/pageRank_res_1.png  used on input line 310.
 (pdftex.def)             Requested size: 405.45047pt x 199.0243pt.
  [51]
-<img/persPageRank_res_1.png, id=778, 1153.30875pt x 566.115pt>
+<img/persPageRank_res_1.png, id=775, 1153.30875pt x 566.115pt>
 File: img/persPageRank_res_1.png Graphic file (type png)
 <use img/persPageRank_res_1.png>
-Package pdftex.def Info: img/persPageRank_res_1.png  used on input line 347.
+Package pdftex.def Info: img/persPageRank_res_1.png  used on input line 339.
 (pdftex.def)             Requested size: 405.45047pt x 199.0243pt.
  [52 <./img/pageRank_res_1.png> <./img/persPageRank_res_1.png>]
-<img/Louvain_result.png, id=796, 767.86874pt x 693.59125pt>
+<img/Louvain_result.png, id=793, 767.86874pt x 693.59125pt>
 File: img/Louvain_result.png Graphic file (type png)
 <use img/Louvain_result.png>
-Package pdftex.def Info: img/Louvain_result.png  used on input line 372.
+Package pdftex.def Info: img/Louvain_result.png  used on input line 364.
 (pdftex.def)             Requested size: 405.45047pt x 366.23636pt.
 ) (./conclusie.tex [53] [54 <./img/Louvain_result.png>]
 Hoofdstuk 4.
@@ -2102,19 +2099,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
 (./bachproef-tin.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42700 strings out of 492616
- 789802 string characters out of 6129481
- 1492028 words of memory out of 5000000
- 45314 multiletter control sequences out of 15000+600000
+ 42698 strings out of 492616
+ 789780 string characters out of 6129481
+ 1491989 words of memory out of 5000000
+ 45313 multiletter control sequences out of 15000+600000
  599837 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1654b,3844s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2127,10 +2120,10 @@ texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (66 pages, 1608431 bytes).
+Output written on bachproef-tin.pdf (66 pages, 1607660 bytes).
 PDF statistics:
- 1167 PDF objects out of 1200 (max. 8388607)
- 1005 compressed objects within 11 object streams
- 433 named destinations out of 1000 (max. 500000)
- 38865 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1157 PDF objects out of 1200 (max. 8388607)
+ 997 compressed objects within 10 object streams
+ 432 named destinations out of 1000 (max. 500000)
+ 38857 words of extra memory for PDF output out of 42996 (max. 10000000)
 

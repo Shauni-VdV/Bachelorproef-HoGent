@@ -134,22 +134,14 @@ Jammer genoeg is deze plug-in enkel beschikbaar wanneer we beschikken over een P
 	\label{fig:elastic licenties overzicht graph}
 \end{figure}
 
-
-\subsection{Conclusie ElasticSearch}
-\label{sec:Conclusie Elasticsearch}
-
-Elasticsearch is zeer snel in het vinden van producten die relateren aan de gebruiker zelf, maar is wat moeilijker in omgang met het gebruik maken van data die personen aan elkaar linkt. Binnen dit onderzoek is er geen manier ontdekt waarbij er rekening kan gehouden worden met familiale verbanden. 
-
-Het rekening houden met andere variabelen van een persoon zoals geslacht, leeftijdscategorie, etc. zijn wel mogelijk bij het genereren van aanbevelingen bij een zoekopdracht. Dit kan door middel van gebruikers te vergelijken op basis van bijvoorbeeld hun gemeenschappelijke zoekopdrachten.
-
 \section{Uitwerking Neo4j}
 \label{sec:UItwerking Neo4j}
 
-Voor dit systeem wordt er een model opgesteld in een Graph databank, de gekozen technologie hiervoor is Neo4j. Op deze graaf kunnen dan zoekalgoritmes uitgevoerd worden, om zo tot correcte aanbevelingen te komen. In dit hoofdstuk zal verder uitgewerkt worden hoe dit precies in elkaar zit.
+Voor dit systeem wordt er een model opgesteld in een Graph databank, de gekozen technologie hiervoor is Neo4j. Op deze graaf kunnen dan zoekalgoritmen uitgevoerd worden, om zo tot correcte aanbevelingen te komen. In dit hoofdstuk zal verder uitgewerkt worden hoe dit precies in elkaar zit.
 
 \subsection{Model}
 \label{sec:Model}
-Relaties tussen producten en klanten zullen als volgt worden opgeslagen worden in deze Graph databank:
+Relaties tussen producten en klanten zullen als volgt worden opgeslagen in deze Graph databank:
 
 Er zijn 2 soorten nodes, dit zijn de knopen van een graaf, namelijk 'Gebruiker' en 'Product'. De relaties, aangeduid door lijnen tussen de knopen, zullen dan voorstellen wat de interactie van een gebruiker met een product is. Dit kan 'LIKES', 'BOUGHT', of 'LIVES\_TOGETHER' zijn. 'LIVES\_TOGETHER' zal dan aanduiden of 2 gebruikers familie of samenwonend zijn. 
 
