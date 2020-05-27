@@ -43,7 +43,14 @@ Deze methode van personalisatie is wat minder opvallend, aangezien het bij de ge
 
 Deze vorm van personalisatie wordt gebruikt om zakelijke gebruikers en bedrijven te kunnen identificeren op basis van hun IP-adres. Zo kan men zien of een bezoeker bij een bepaald bedrijf werkzaam is om deze direct aan te spreken op bijvoorbeeld de homepagina.
 
-	\includegraphics[width=\linewidth]{img/e2fcfe784532c41a644e4465f535530d}
+\begin{figure} [hbt!]
+	\centering
+		\includegraphics[width=\linewidth]{img/IP-based-personalization}
+\caption[Personalisatie op basis van IP adres]{ Personalisatie op basis van IP adres}
+		\floatfoot{Source: https://www.optimizely.com/optimization-glossary/account-based-marketing/} 
+	\label{fig:IPBasedPersonalization}
+\end{figure}
+
 
 Net zoals bij personalisatie op basis van locatie kan dit misleidende resultaten opleveren, bijvoorbeeld als de werknemer van thuis werkt of het IP-adres niet duidelijk aantoont vanuit welk bedrijf het webverkeer van de bezoeker afkomstig is. Ook voor performantie kan dit negatieve gevolgen hebben, aangezien deze vorm van personalisatie afhankelijk is van systemen van derden. 
 
@@ -57,6 +64,7 @@ Verder moet er ook inhoud gecreëerd worden voor elk bedrijf dat men specifiek w
  
 De werking van het aanbevelingssysteem van Amazon is gebaseerd op enkele complexe algoritmen. \autocite{Linden2003} Dit is natuurlijk verantwoord omdat zij een gigant zijn in de e-commerce industrie. Amazon werkt op zeer grote schaal en heeft veel geld geïnvesteerd in de ontwikkeling van hun systeem. 
 
+\newpage
 In de realiteit hoeven de technologieën voor aanbevelingen van producten niet zo complex te zijn voor gewone webshops en bedrijven, vaak is het voldoende om relaties te creëren tussen artikels en op basis van deze relaties nieuwe artikels aan te raden aan de gebruikers. 
 
 Een voorbeeld van een relatie tussen twee artikels is de welbekende 'Anderen bekeken ook' blok die vaak zichtbaar is bij het bekijken van een detailpagina van een product. 
@@ -79,7 +87,7 @@ In dit onderdeel zullen we kort wat dieper ingaan op de werking van dergelijke a
 \label{sec:Haalbaarheid}
 
 Een degelijk systeem biedt een grote meerwaarde voor een bedrijf, zo heeft Netflix een competitie gehouden die 1 miljoen dollar bood aan degene die een aanbevelingssysteem kon maken dat 10\% beter presteerde dan hun bestaande systeem. 
-
+\newpage
 Deze wedstrijd liep van oktober 2006 tot minstens oktober 2011. De wedstrijd werd de \cite{NetflixPrize} genoemd, Netflix stelde hiervoor een dataset beschikbaar. Enkele groepen hebben het doel behaald, maar het algoritme van de winnende groep is uiteindelijk nooit in productie gebracht, omdat de mogelijke opbrengst niet kon opwegen tegen de extra gevraagde rekenkracht. 
 
 Een aanbevelingssysteem moet dus niet enkel de juiste waarden kunnen aangeven, het moet ook realistisch en haalbaar zijn qua rekenkracht en extra bijkomende kosten voor onderhoud. Het ontwerpen van dergelijk systeem is dus geen eenvoudige klus.
@@ -89,7 +97,14 @@ Een aanbevelingssysteem moet dus niet enkel de juiste waarden kunnen aangeven, h
 
 We spreken over twee grote categorieën in algoritmen van aanbevelingssystemen: 'collaborative filtering'-algoritmen en 'content based'-algoritmen.  \autocite{Adamovicius2005} Door de evolutie en groeiende ontwikkeling van beter presterende systemen zijn er ondertussen ook enkele algoritmen die niet echt binnen een van deze twee koepels vallen. In de onderstaande figuur wordt een simpele representatie gegeven van de werking van deze soorten algoritmes.
 
+\begin{figure} [h!]
+	\centering
 	\includegraphics[width=\linewidth]{img/Content-based-filtering-and-Collaborative-filtering-recommendation}
+	\caption[Vergelijking Collaborative Filtering - Content-Based Filtering]{Vergelijking Collaborative Filtering - Content-Based Filtering}
+	\floatfoot{Source: https://www.researchgate.net/figure/Content-based-filtering-vs-Collaborative-filtering-Source\_fig5\_323726564} 
+	\label{fig:CollaborativeVsContentBased}
+\end{figure}
+
 	
 \subsubsection{Collaborative Filtering}
 \label{sec:Collaborative Filtering}
@@ -97,10 +112,9 @@ We spreken over twee grote categorieën in algoritmen van aanbevelingssystemen: 
 Het kernidee bij Collaborative Filtering \autocite{Schafera} is om aanbevelingen te maken gebaseerd op de voorkeuren van een andere gebruiker met een gelijkaardig gedrag. Zoals de figuur hierboven aantoont dat als gebruiker 1 en 2 hetzelfde artikel gelezen hebben, gebruiker 2 een artikel als aanbeveling zal krijgen dat gelezen werd door gebruiker 1. 
 Hetzelfde idee kan toegepast worden op allerlei interacties van de gebruikers met een website zoals likes, shares, verlanglijstjes, etc.
 
-In de praktijk geeft deze techniek zeer goede resultaten, maar zoals verwacht brengt deze techniek ook enkele problemen met zich mee. Het meest merkwaardige probleem is een zogenaamde cold start, dit komt onder andere voor bij de eerste interactie van een nieuwe gebruiker met een applicatie die aanbevelingen biedt. Het algoritme heeft dan onvoldoende informatie om een correcte en nuttige aanbeveling op te leveren aan de gebruiker. Een andere oorzaak kan zijn dat er een nieuw product wordt toegevoegd aan het systeem, er kan dan nog niet geweten zijn welk type gebruiker hierin geïnteresseerd zou kunnen zijn. 
+In de praktijk geeft deze techniek zeer goede resultaten, maar zoals verwacht brengt dit ook enkele problemen met zich mee. Een eerste merkwaardig probleem is een zogenaamde cold start, dit komt onder andere voor bij de eerste interactie van een nieuwe gebruiker met een applicatie die aanbevelingen biedt. Het algoritme heeft dan onvoldoende informatie om een correcte en nuttige aanbeveling op te leveren aan de gebruiker. Een andere oorzaak voor dit cold-start fenomeen kan zijn dat er een nieuw product wordt toegevoegd aan het systeem, er kan dan nog niet geweten zijn welk type gebruiker hierin geïnteresseerd zou kunnen zijn. 
 
-Een andere factor voor het succes van een Collaborative Filtering algoritme is het aantal gebruikers van een systeem, met andere woorden, hoe meer gebruikers er zijn, hoe correcter de aanbevelingen aan een specifieke gebruiker zal zijn. \autocite{Sarwar2001}. Een gebruiker met ongewone interesses zal logischerwijs in dergelijk klein systeem weinig gelijkaardige gebruikers hebben, en zal dus ook geen optimale aanbevelingen krijgen.
-
+Een tweede probleem die het succes van een Collaborative Filtering algoritme negatief kan beïnvloeden is het aantal gebruikers van een systeem. Met andere woorden, hoe meer gebruikers er zijn, hoe correcter de aanbevelingen aan een specifieke gebruiker zal zijn. \autocite{Sarwar2001}. Een gebruiker met ongewone interesses zal logischerwijs in een klein systeem weinig gelijkaardige gebruikers hebben, en zal dus ook geen optimale aanbevelingen krijgen.
 
 Een groot voordeel van Collaborative Filtering is dat er absoluut geen kennis hoeft te zijn van de toepassing van het systeem, de aanbevelingen worden gegenereerd op basis van het gedrag van de gebruikers en zijn interesses. De producten of hun attributen moeten dus niet gekend zijn om aanbevelingen te kunnen geven, dat maakt het eenvoudiger om een aanbevelingssysteem met de techniek van Collaborative Filtering te implementeren.
 
@@ -109,13 +123,15 @@ Een groot voordeel van Collaborative Filtering is dat er absoluut geen kennis ho
 
 Content Based aanbevelingssystemen \autocite{Lops2011} maken, in tegenstelling tot Collaborative Filtering, wel gebruik van de specifieke producten binnen het systeem en hun attributen. Op basis van deze attributen en de interesse van de gebruiker daarin, wordt per gebruiker een profiel opgezet, elk attribuut krijgt dan een score toegekend, een hogere score betekent grotere interesse. Een attribuut van een product kan dan bijvoorbeeld 'schoenen' of 'PS4 games' zijn, of zelfs een filmgenre.
 
-Een probleem van Content Based is, net zoals bij Collaborative Filtering, het cold start probleem. Als een nieuwe gebruiker het systeem gebruikt, is er voor deze gebruiker nog geen profiel opgesteld en kunnen er ook geen aanbevelingen gemaakt worden.
+Een eerste probleem bij Content Based algoritmen is, net zoals bij Collaborative Filtering, het cold start probleem. Als een nieuwe gebruiker het systeem gebruikt, is er voor deze gebruiker nog geen profiel opgesteld en kunnen er ook geen aanbevelingen gemaakt worden.
 
-Een ander probleem van Content Based wordt overspecialisatie genoemd, dit treedt op wanneer het systeem eigenlijk té accurate aanbevelingen doet. Het gevolg hiervan is dat slechts enkele producten voldoen aan de verwachtingen van het systeem, waardoor er geen nieuwe aanbevelingen aan de gebruiker naar voor gebracht worden, en de gebruiker enkel producten zal zien die hij reeds bekeken heeft. 
+\newpage
+Een tweede probleem van Content Based algoritmen wordt overspecialisatie genoemd, dit treedt op wanneer het systeem eigenlijk té accurate aanbevelingen doet. Het gevolg hiervan is dat slechts enkele producten voldoen aan de verwachtingen van het systeem, waardoor er geen nieuwe aanbevelingen aan de gebruiker naar voor gebracht worden, en de gebruiker enkel producten zal zien die hij reeds bekeken heeft. 
 
-Het andere probleem dat optreedt bij Collaborative Filtering, namelijk dat bij het toevoegen van nieuwe producten niet geweten kan zijn welke gebruikers hierin geïnteresseerd zouden zijn, is niet van toepassing bij Content Based. Het systeem maakt gebruik van de attributen van producten, dus nieuwe producten kunnen meteen belanden in de aanbevelingen van gebruikers die reeds interesse getoond hebben in andere producten met die attributen. Ook het aantal gebruikers binnen een systeem vormt om dezelfde reden geen probleem bij Content Based aanbevelingssystemen. 
+Een derde probleem bij Content Based algoritmen treedt op wanneer producten slecht gelabeld zijn, en hun attributen onvoldoende passen bij wat het product effectief is. Hierdoor kan het systeem deze producten niet goed vergelijken met andere. Dit is vooral een probleem wanneer de attributen van de producten van verschillende bronnen afkomstig zijn, of manueel slecht opgesteld zijn.
 
-Een grote boosdoener bij Content Based kan zijn dat producten slecht gelabeld zijn, en hun attributen onvoldoende passen bij wat het product effectief is. Hierdoor kan het systeem deze producten niet goed vergelijken met andere. Dit is vooral een probleem wanneer de attributen van de producten van verschillende bronnen afkomstig zijn, of manueel slecht opgesteld zijn.
+Het probleem bij Collaborative Filtering algoritmen waar bij het toevoegen van nieuwe producten niet geweten kan zijn welke gebruikers hierin geïnteresseerd zouden zijn, is niet van toepassing bij Content Based algoritmen. Het systeem maakt gebruik van de attributen van producten, dus nieuwe producten kunnen meteen belanden in de aanbevelingen van gebruikers die reeds interesse getoond hebben in andere producten met die attributen. Ook het aantal gebruikers binnen een systeem vormt om dezelfde reden geen probleem bij Content Based aanbevelingssystemen. 
+
 
 \subsubsection{Hybrides}
 \label{sec:Hybrides}
@@ -140,9 +156,16 @@ In de context van deze bachelorproef zal er met 'Graph' steeds verwezen worden n
 
 Graph is de databankstructuur die verder in dit onderzoek gebruikt zal worden. Deze structuur maakt gebruik van een wiskundige graaf om data op te slaan. Een graaf bestaat uit een aantal knopen (genaamd nodes) die al dan niet verbonden zijn. 
 
+\begin{figure} [ht]
+	\centering
 \includegraphics[width=\linewidth]{img/Customer-Order-Example-Graph.png}
+	\caption[Voorbeeld Graph model]{Voorbeeld Graph model}
+	\floatfoot{	Source: https://medium.com/@6point6ltd/use-cases-for-graph-databases-37ceb4903edd}
+	\label{fig:GraphModelExample}
+\end{figure}
 
-Relaties hebben de prioriteit bij een graph databank, dit betekend dat relaties tussen knopen gepersisteerd worden in de databank, en niet enkel tijdelijk berekend voor een enkele query, dit is de reden waarom er geen complexe JOIN query's of foreign keys nodig zijn.
+
+Relaties hebben de prioriteit bij een graph databank, dit betekent dat relaties tussen knopen gepersisteerd worden in de databank, en niet enkel tijdelijk berekend voor een enkele query, dit is de reden waarom er geen complexe JOIN query's of foreign keys nodig zijn.
 
 Graph databanken hebben dus een voordeel voor functionaliteiten zoals netwerken, aanbevelingen, etc. maar ook fraudedetectie. 
 
@@ -151,6 +174,7 @@ Graph databanken hebben dus een voordeel voor functionaliteiten zoals netwerken,
 
 Een groot voordeel van de graafstructuur die deze databanken gebruiken is dat deze sneller zijn dan relationele databanken omdat ze op zeer korte tijd naar een bepaalde node kunnen verwijzen, waarbij we bij een relationele databank een JOIN zouden moeten gebruiken. 
 
+\newpage
 Graph databanken zijn ook zeer flexibel in gebruik. Bij het veranderen van een model kan er steeds verder gebouwd worden op het bestaande model, zonder dat hierdoor reeds verwezenlijkte functionaliteiten verloren zou kunnen gaan.
 Dit is ook een voordeel bij het opstarten, er moet niet op voorhand grondig gediscussieerd worden over hoe het model er uiteindelijk uit zal moeten zien.
 
@@ -174,7 +198,7 @@ Een graph databank zal het toestaan om een relatie van het huisdier als 'werknem
 
 De voor- en nadelen van graph databanken worden nog even kort opgesomd in volgende tabel:
 
-\begin{center}
+\begin{table}
 	\begin{tabularx}{\textwidth}{|X|X|}
 		\hline
 		\textbf{Voordelen} & \textbf{Nadelen}  \\ 
@@ -185,7 +209,8 @@ De voor- en nadelen van graph databanken worden nog even kort opgesomd in volgen
 		- Opbouwen van Knowledge Graph & \\
 		\hline
 	\end{tabularx}
-\end{center}
+ \caption[Voor- en nadelen van Graph databanken]{Voor- en nadelen van Graph databanken}
+\end{table}
 
 \subsection{Knowledge Graphs}
 \label{sec:Knowledge Graphs}
@@ -194,7 +219,14 @@ Google startte in mei 2012 een initiatief genaamd \textit{Knowledge Graph} \auto
 
 De informatie uit deze Knowledge Graph is terug te vinden in een kader rechts van de gewone resultaten, zoals te zien is in volgende figuur. Dit kader werd door Google ook wel het \textit{'Knowledge Panel'} genoemd. 
 
-\includegraphics[width=\linewidth]{img/Google_Knowledge_Graph.jpeg}
+\begin{figure} [ht]
+	\centering
+	\includegraphics[width=\linewidth]{img/Google_Knowledge_Graph.png}
+	\caption[Visualisatie Google Knowledge Graph]{Visualisatie Google Knowledge Graph}
+	\floatfoot{	Source: https://letterzaken.nl/begrippenlijst/google-knowledge-graph-box/}
+	\label{fig:GoogleKnowledgeGraphVis}
+\end{figure}
+
 
 Sinds de uitvoering van de Google Knowledge Graph is deze term zelf bekend geraakt, en wordt deze algemeen gebruikt voor het representeren van kennis die gebaseerd is op een graaf.
 
@@ -215,6 +247,8 @@ Zo kunnen er bogen in de graaf toegevoegd worden die personen met bijvoorbeeld d
 
 Het is ook een mogelijkheid om gewichten toe te kennen aan deze relaties (bogen), zodat bijvoorbeeld interesse in genres harder doorweegt dan gelijkaardige leeftijd wanneer er een verband gelegd wordt tussen twee personen, op deze manier kunnen de aanbevelingen op maat gegenereerd worden voor andere toepassingen, zoals e-commerce, waar in sommige sectoren leeftijd misschien een belangrijkere relatie is dan regio.
 
+\newpage
+
 \subsection{Neo4j}
 \label{sec:Neo4j}
 
@@ -226,10 +260,17 @@ Walmart maakt gebruik van Neo4j om de aanbevelingen voor hun klanten op hun onli
 
 Neo4j maakt dus gebruik van wiskundige grafen om data weer te geven samen met hun onderlinge relaties. Een graaf kan gericht of ongericht zijn, ongericht wil zeggen dat er geen richting is waarin de relaties lopen, dus deze zijn onderling uitwisselbaar. 
 
-Een gerichte graaf is dan een graaf waarbij de relaties in een specifieke richting lopen, zoals volgers op Twitter: Persoon A volgt persoon B, maar persoon B volgt niet persoon A. Voor een voorbeeld van hoe een graaf voor Twitter er in simpele vorm uit zou kunnen zien, is zichtbaar in volgende figuur:
+Een gerichte graaf is dan een graaf waarbij de relaties in een specifieke richting lopen, zoals volgers op Twitter: Persoon A volgt persoon B, maar persoon B volgt niet persoon A. Voor een voorbeeld van hoe een graaf voor Twitter er in simpele vorm uit zou kunnen zien, is zichtbaar in Figuur \ref{fig:TwitterGraphExample}
 
-\includegraphics[width=\linewidth]{img/twitter_graph}
+\begin{figure} [hbt!]
+	\centering
+	\includegraphics[width=\linewidth]{img/twitter_graph}
+	\caption[Visualisatie gerichte graaf - netwerk]{Visualisatie gerichte graaf - netwerk}
+	\floatfoot{	Source: http://network.graphdemos.com/}
+	\label{fig:TwitterGraphExample}
+\end{figure}
 
+\newpage
 \subsubsection{Performantie}
 \label{subsubsec:Performantie}
 
@@ -237,7 +278,7 @@ In hoofdstuk één van het boek 'Neo4j in Action' \autocite{Vukotic2014} wordt e
 
 Het experiment bestaat eruit 'vrienden van vrienden' op te halen uit een databank, dit in zowel Neo4j als MySQL. De databank bestaat voor beide platformen uit 1 000 000 gebruikers, \textit{Execution Time} wordt uitgedrukt in seconden per 1000 gebruikers.
 
-In Tabel 2.1 worden de resultaten van dit experiment samengevat. De \textit{Depth} slaat hier op hoeveel vrienden een persoon van een andere persoon verwijderd zal zijn, voor een diepte drie is dit dus 'vrienden van vrienden van vrienden'.
+In Tabel \ref{tab:Neo4j - MySql Comparison} worden de resultaten van dit experiment samengevat. De \textit{Depth} slaat hier op hoeveel vrienden een persoon van een andere persoon verwijderd zal zijn, voor een diepte drie is dit dus 'vrienden van vrienden van vrienden'.
 
 	\begin{table}
 		\centering
@@ -282,6 +323,7 @@ De zoekmethode die hier als voorbeeld genomen werd maakt gebruik van de paramete
 }
 \end{lstlisting}
 
+\newpage
 Er kan ook op specifieke termen gezocht worden via \textit{term}. Daarbij kan dan gespecificeerd worden welk veld moet overeenkomen met de ingevoerde tekst. 
 Indien men wil zoeken op meerdere termen, kan de parameter \textit{term} vervangen worden door de parameter \textit{terms}, en zal er een array mee moeten gegeven worden als input in plaats van 'Audio' 
 
@@ -408,6 +450,7 @@ De parameter boost\_mode bepaalt hoe de score van de query en de functies gecomb
 
 De meeste opties verklaren zichzelf, \textit{``replace``} zal de score die toegekend werd aan het document bij het ophalen ( \textit{``query``}) overschrijven door de score die berekend werd door de functies. 
 
+\newpage
 Hieronder een voorbeeld van een function\_score query waar alle documenten opgehaald worden, daarna zal er een score van 4 toegekend worden aan de documenten indien 'name' overeenkomt met 'Kim', en een score van 2 indien 'age' overeenkomt met '23'.
 
 De scores van deze functies zullen worden opgeteld, en het resultaat hiervan zal de score die toegekend werd aan het resultaat bij het ophalen van het document overschrijven. 
@@ -490,6 +533,7 @@ De bovenstaande query zal de score van een document laten afnemen met 0.5 naar g
 
  In het artikel van \autocite{Vavliakis2019} wordt beweerd dat het systeem dat zij implementeerden op een performante manier de gewenste resultaten gaf, alsook dat dit een oplossing kan zijn voor real-time zoekopdrachten in commerciële toepassingen. Dit sluit dus al uit dat Elasticsearch geen oplossing zou kunnen bieden voor onze onderzoeksvraag.
  
+ \newpage
 \section{Filter Bubble}
 \label{sec:Filter Bubble}
 
@@ -555,6 +599,8 @@ Persoonlijke gegevens moeten gewist worden wanneer:
 
 De volledige lijst staat beschreven in Artikel 17 van de GDPR.
 
+De details van deze wetgeving worden niet verder uitgewerkt of toegepast in deze scriptie, aangezien dit te ver afwijkt van het onderzoek. De informatie die hier te vinden is, is louter een algemene conclusie die tracht de nodige aandachtspunten in verband met de GDPR in kaart te brengen.
+
 \subsection{Effect van de GDPR op e-commerce}
 \label{subsec: Effect van de GDPR op e-commerce}
 
@@ -564,8 +610,15 @@ Een gebruiker moet op transparante wijze ingelicht worden over hoe zijn gegevens
 
 Een evidente keuze hiervoor is om gebruik te maken van cookies, en hiervoor expliciete toestemming te vragen aan de gebruiker. Er zal dan een privacybeleid moeten worden opgesteld waar in duidelijke en heldere taal beschreven staat welke data verwerkt zal worden, en voor welke doeleinden. 
 
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=\linewidth]{img/180321-EU-Cookie-Consent-Examples}
+	\caption[Voorbeeld Cookie Consent]{Voorbeeld Cookie Consent}
+	\floatfoot{	Source: https://www.freeprivacypolicy.com/blog/cookie-consent-examples/}
+	\label{fig:CookieConsentExample}
+\end{figure}
 
-\includegraphics[width=\linewidth]{img/180321-EU-Cookie-Consent-Examples}
+
 
 Er mogen geen dubbelzinnigheden of onduidelijkheden terug te vinden zijn, en er mag geen informatie achterwege gelaten worden. Ook informatie over welke data naar derden gestuurd wordt, en voor welke redenen moet hier duidelijk vermeld worden.
 

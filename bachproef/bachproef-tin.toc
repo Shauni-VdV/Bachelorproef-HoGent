@@ -29,83 +29,85 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Algoritmen voor aanbevelingssystemen}{25}{subsection.2.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Collaborative Filtering}{25}{section*.7}% 
+\contentsline {subsubsection}{Collaborative Filtering}{26}{section*.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Content Based}{26}{section*.8}% 
+\contentsline {subsubsection}{Content Based}{26}{section*.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Hybrides}{27}{section*.9}% 
+\contentsline {subsubsection}{Hybrides}{27}{section*.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Wat is Graph?}{27}{section.2.3}% 
+\contentsline {section}{\numberline {2.3}Wat is Graph?}{28}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Graph}{27}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.1}Graph}{28}{subsection.2.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Voordelen}{28}{section*.10}% 
+\contentsline {subsubsection}{Voordelen}{28}{section*.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nadelen}{29}{section*.11}% 
+\contentsline {subsubsection}{Nadelen}{29}{section*.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Knowledge Graphs}{29}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.2}Knowledge Graphs}{30}{subsection.2.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Neo4j}{31}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.3}Neo4j}{32}{subsection.2.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Performantie}{32}{section*.12}% 
+\contentsline {subsubsection}{Performantie}{33}{section*.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Wat is ElasticSearch?}{33}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Wat is ElasticSearch?}{34}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Filter Bubble}{38}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}Filter Bubble}{40}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}GDPR}{39}{section.2.6}% 
+\contentsline {section}{\numberline {2.6}GDPR}{40}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Gegevensverwerking}{39}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.1}Gegevensverwerking}{41}{subsection.2.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Rechten van de gebruikers}{40}{subsection.2.6.2}% 
+\contentsline {subsection}{\numberline {2.6.2}Rechten van de gebruikers}{41}{subsection.2.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Effect van de GDPR op e-commerce}{41}{subsection.2.6.3}% 
+\contentsline {subsection}{\numberline {2.6.3}Effect van de GDPR op e-commerce}{42}{subsection.2.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{43}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}Methodologie}{45}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Uitwerking ElasticSearch}{43}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Uitwerking ElasticSearch}{45}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Producten}{43}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Producten}{45}{subsection.3.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Gebruikers}{44}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.2}Gebruikers}{46}{subsection.3.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Graph API Plug-in}{46}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.3}Graph API Plug-in}{48}{subsection.3.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Uitwerking Neo4j}{46}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Uitwerking Neo4j}{49}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Model}{47}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.1}Model}{49}{subsection.3.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Ophalen van data}{49}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.2}Ophalen van data}{51}{subsection.3.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Search}{50}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.3}Search}{52}{subsection.3.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}PageRank}{51}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.4}PageRank}{53}{subsection.3.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Personalized PageRank}{51}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.5}Personalized PageRank}{54}{subsection.3.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}Community Detection}{53}{subsection.3.2.6}% 
+\contentsline {subsection}{\numberline {3.2.6}Community Detection}{55}{subsection.3.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{55}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Conclusie}{57}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}GDPR}{55}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}GDPR}{57}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2} ElasticSearch}{56}{section.4.2}% 
+\contentsline {section}{\numberline {4.2} ElasticSearch}{58}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3} Neo4j}{56}{section.4.3}% 
+\contentsline {section}{\numberline {4.3} Neo4j}{58}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Resultaat}{57}{section.4.4}% 
+\contentsline {section}{\numberline {4.4}Resultaat}{59}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{59}{appendix.A}% 
+\contentsline {subsection}{\numberline {4.4.1}Conclusie}{59}{subsection.4.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{59}{section.A.1}% 
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{61}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}State-of-the-art}{59}{section.A.2}% 
+\contentsline {section}{\numberline {A.1}Introductie}{61}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{60}{section.A.3}% 
+\contentsline {section}{\numberline {A.2}State-of-the-art}{61}{section.A.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{61}{section.A.4}% 
+\contentsline {section}{\numberline {A.3}Methodologie}{62}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{61}{section.A.5}% 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{63}{section.A.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{63}{appendix*.19}% 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{63}{section.A.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografie}{65}{appendix*.27}% 
 \contentsfinish 

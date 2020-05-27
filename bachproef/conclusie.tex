@@ -55,8 +55,42 @@ Zowel het gebruik van de graaf, als het zoeken op basis van een tekstveld zijn m
 \section{Resultaat}
 \label{sec:Resultaat}
 
-Er kan dus geconcludeerd worden dat elk van deze technieken uitblinkt in zijn eigen branche, de literatuurstudie wees ook uit dat een Knowledge Graph gebruikt kan worden om aanvullende informatie te verschaffen bij het genereren van gepersonaliseerde zoekresultaten. 
+Er kan dus geconcludeerd worden dat elk van deze technieken uitblinkt in zijn eigen branche. De resultaten worden nog eens opgesomd in volgende tabel, waar al snel duidelijk wordt dat ze zeer sterk tegen elkaar opwegen. Toch is het zo dat de ene technologie de andere niet kan vervangen op gebied van performantie en eenvoud.
+
+\begin{table}[hbt!]
+	\begin{tabular}{l|l|l|}
+		\cline{2-3}
+		& \cellcolor[HTML]{C0C0C0}Neo4j & \cellcolor[HTML]{C0C0C0}Elasticsearch \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}Gebruiksgemak (subjectief)}      & 8/10                          & 7/10                                  \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}Simpel zoeken}                   & Ja                            & Ja                                    \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}Geavanceerd zoeken}              & Ja, niet zo performant        & Ja                                    \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}Relaties tussen producten ontdekken}              & Ja, meerdere algoritmen       & Nee                    \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}Persoonsgegevens gebruiken}              & Ja    & Ja                    \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}Familierelaties gebruiken}       & Ja, eenvoudig \& snel         & Nee          \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{EFEFEF}Gebruik maken van productkennis} & Ja                            & Ja, maar licentie nodig               \\ \hline
+	\end{tabular}
+	\caption{\label{tab: Bevindingen Neo4j & Elasticsearch} Bevindingen Neo4j \& Elasticsearch}
+\end{table}
+
+
+\subsection{Conclusie}
+\label{subsec:finalConclusie}
+
+Het doel van dit onderzoek was om te achterhalen of een van deze technologieën een oplossing biedt voor het implementeren van gepersonaliseerde zoekopdrachten in e-commerce toepassingen. In dit hoofdstuk worden de onderzoeksvragen concreet beantwoord op basis van het onderzoek en de conclusies, en worden deze kort toegelicht.
+
+
+Het opstellen van dergelijk systeem wordt als legaal aanzien onder de wetgeving rond GDPR, indien er aan de voorwaarden wordt voldaan zoals besproken in hoofdstuk 4.1, hiermee wordt de eerste onderzoeksvraag beantwoordt.
+	
+Beide technologieën bieden een mogelijkheid om een gepersonaliseerd zoeksysteem uit te werken. Neo4j kan dit zonder problemen  door gebruik te maken van enkel de relaties en nodes, en een query met een tekstveld naar de databank te sturen.
+In ElasticSearch kunnen we gebruik maken van enkele meer geavanceerde filters, maar zijn we beperkt tot de informatie die we over de gebruiker hebben. Deze informatie omvat bijvoorbeeld leeftijd, geslacht, etc. of voorkeuren die deze gebruiker zelf heeft ingesteld. Dit biedt een antwoord op de tweede onderzoeksvraag.
+	
+Om een antwoord te geven op de derde onderzoeksvraag, kan er uit de vorige paragraaf afgeleid worden dat beide technologieën de mogelijkheid verschaffen om productdata te combineren met persoonlijke data zoals geslacht, leeftijd, provincie, etc. 
+
+Uit het onderzoek bleek dat Elasticsearch als basis niet geschikt is voor het leggen van connecties tussen personen, en dus ook niet voor het leggen van connecties tussen producten. Indien men een licentie aankoopt kan er wel gebruikt gemaakt worden van Graph functionaliteiten. Hiermee wordt de laatste onderzoeksvraag beantwoord.
+
+\newpage
+De literatuurstudie wees ook uit dat een Knowledge Graph gebruikt kan worden om aanvullende informatie te verschaffen bij het genereren van gepersonaliseerde zoekresultaten. 
 
 Een optie is dus om beide platformen te combineren, en elkaar te laten aanvullen. Een voorbeeld hier van is om de resultaten van een zoekalgoritme in Neo4 te combineren met de scores die gevonden werden in Elasticsearch. 
 
-Deze ontdekking zet de weg open tot verder onderzoek in hoe deze twee platformen efficiënt samen gebruikt kunnen worden, en hoe de modellen die in dit onderzoek werden opgebouwd, verder gespecialiseerd kunnen worden om deze combinatie mogelijk te maken. 
+Deze ontdekking zet de weg open naar verder onderzoek in hoe deze twee platformen efficiënt samen gebruikt kunnen worden, en hoe de modellen die in dit onderzoek werden opgebouwd, verder gespecialiseerd kunnen worden om deze combinatie mogelijk te maken. 

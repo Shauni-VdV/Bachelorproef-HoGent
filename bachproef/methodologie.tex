@@ -7,7 +7,7 @@
 \label{ch:methodologie}
 
 
-Rekeninghoudend met de bevindingen uit de literatuurstudie, zal hier verder besproken worden hoe we een systeem gaan opstellen dat gepaste aanbevelingen kan maken. Gezien we twee verschillende werkwijzen en technologieën zullen vergelijken, zal voor beide systemen een werkwijze voorgesteld worden.
+Rekeninghoudend met de bevindingen uit de literatuurstudie, zal hier verder besproken worden hoe we een systeem gaan opstellen dat gepaste aanbevelingen kan maken. Gezien we twee verschillende werkwijzen en technologieën zullen vergelijken, zal voor beide systemen een werkwijze voorgesteld worden. Deze werkwijze zal ook in dit hoofdstuk verder uitgewerkt worden.
 
 \section{Uitwerking ElasticSearch}
 \label{sec:Uitwerking ElasticSearch}
@@ -20,6 +20,7 @@ In Elasticsearch worden items opgeslagen als een document met enkele waarden, ty
 \label{sec:Producten}
 Voor het aanmaken van de product data zullen enkele query's uitgevoerd worden die er als volgt uitzien:
 
+\newpage
 \begin{lstlisting}[caption={Query om één enkel product aan te maken},captionpos=b]
 POST http://35.233.112.106:9200/products/product/1 
 { 
@@ -64,7 +65,9 @@ POST http://35.233.112.106:9200/users/user/1
 }
 \end{lstlisting}
 
-Bij deze gebruiker kunnen we bijvoorbeeld verwachten dat als deze 'deodorant' opzoekt, zij die van het merk Nivea bovenaan de resultaten zal zien. Een voorbeeld van zo'n zoekopdracht, waarbij sommige velden ingevuld zijn op basis van onze persoon van de query hierboven, gaat als volgt:
+Bij deze gebruiker kunnen we bijvoorbeeld verwachten dat als deze 'deodorant' opzoekt, zij die van het merk Nivea bovenaan de resultaten zal zien. 
+
+Een voorbeeld van zo'n zoekopdracht, waarbij sommige velden ingevuld zijn op basis van onze persoon van de query hierboven, gaat als volgt:
 
 \begin{lstlisting}[caption={Query om een zoekopdracht met term 'Deodorant' uit te voeren, met filters en een score op basis van informatie van een gebruiker}]
 POST http://35.233.112.106:9200/products/_search
@@ -109,6 +112,7 @@ In de realiteit zal de informatie over 'brand', 'categories', en 'searches' opge
 
 In deze query wordt een score toegekend aan de resultaten die voldoen aan bovenstaande verwachting, namelijk dat het woord 'deodorant' terug te vinden moet zijn in een van de velden van het product (naam, merk, categorie)
 
+\newpage
 Die score wordt toegekend op basis van de informatie over een persoon, hieruit verstaan we dat dit gaat over de merken die deze persoon reeds gekocht heeft, in welke categorieën deze persoon reeds gekocht heeft, en een historiek van zoekopdrachten. Deze hebben elk een gewicht toegekend gekregen, respectievelijk drie, twee en één. 
 
 In de query zijn drie filters te zien die de score van een resultaat zullen beïnvloeden. Bij elk van deze filters wordt het score vermenigvuldigd met het gewicht. \textit{score\textunderscore mode : sum} zorgt ervoor dat de resultaten van de scores opgeteld worden.
@@ -134,6 +138,7 @@ Jammer genoeg is deze plug-in enkel beschikbaar wanneer we beschikken over een P
 	\label{fig:elastic licenties overzicht graph}
 \end{figure}
 
+\newpage
 \section{Uitwerking Neo4j}
 \label{sec:UItwerking Neo4j}
 
@@ -172,14 +177,10 @@ CREATE
 (shauni:Customer {name: 'Shauni', address: 'Exterkenstraat 14'}),
 (lynn:Customer {name: 'Lynn', address: 'Exterkenstraat 14'}),
 (angelo:Customer {name: 'Angelo', address: 'Arbeidstraat 14'}), 
-(kenzo:Customer {name: 'Kenzo', address: 'Kouter 3'}), 
-(wendy:Customer {name: 'Wendy', address: 'Arbeidstraat 14'}), 
 ...
 (prod1:Product{id: '1', name:'Hairbrush', brand:'Syoss'}), 
 (prod2:Product{id: '2', name:'Instant Chocolate Milk', brand:'Nesquick'}), 
 (prod3:Product{id: '3', name:'Toilet Paper', brand: 'Boni'}), 
-(prod4:Product{id: '4', name:'Pen', brand:'Stabilo'}), 
-(prod5:Product{id: '5', name:'Roller Deodorant', brand: 'Sanex'}), 
 ...
 \end{lstlisting}
 
@@ -203,7 +204,7 @@ Om de relatie van Gebruikers die op eenzelfde adres wonen aan te maken, gebruike
 	CREATE (a)-[:LIVES\_TOGETHER]->(b); 
 \end{lstlisting}
 
-De uiteindelijke graaf die voor dit zeer klein voorbeeld opgebouwd werd, zal al snel een beter inzicht geven in hoe deze data aan elkaar vast hangt. Dit is ook een van de troeven van Neo4j, het voorstellen van duidelijke visuele beelden die het eenvoudig maken om te begrijpen wat er zich op de achtergrond afspeelt. De graaf is te zien in \autoref{fig:neo4jfullgraph}
+De uiteindelijke graaf die voor dit zeer klein voorbeeld opgebouwd werd, zal al snel een beter inzicht geven in hoe deze data aan elkaar vast hangt. Dit is ook een van de troeven van Neo4j, het voorstellen van duidelijke visuele beelden die het eenvoudig maken om te begrijpen wat er zich op de achtergrond afspeelt. De graaf is te zien in Figuur \ref{fig:neo4jfullgraph}
 \newpage
 
 \begin{figure} [h!]
@@ -294,7 +295,7 @@ CALL gds.graph.create.cypher(
 )
 \end{lstlisting}
 
-Vervolgens kunnen we het pageRank algoritme uitvoeren op deze graaf, die een lijst van productnamen zal weergeven met daarnaast een score.
+Vervolgens kunnen we het PageRank algoritme uitvoeren op deze graaf, die een lijst van productnamen zal weergeven met daarnaast een score.
 
 \begin{lstlisting}[caption={PageRank algoritme uitvoeren}]
 CALL gds.pageRank.stream('boughtGraph', { maxIterations: 3, dampingFactor: 0.85 })
@@ -303,7 +304,7 @@ RETURN gds.util.asNode(nodeId).name AS name, score
 ORDER BY score DESC, name ASC
 \end{lstlisting}
 
-Het resultaat van dit algoritme (\autoref{fig:simplePageRankResult}) toont ons dat ``Wireless Mouse`` de belangrijkste knoop is in deze graaf, met andere woorden dat als er door de graaf gelopen wordt, deze knoop de grootste kans heeft om bereikt te worden. 
+Het resultaat van dit algoritme (Figuur \ref{fig:simplePageRankResult}) toont ons dat ``Wireless Mouse`` de belangrijkste knoop is in deze graaf, met andere woorden dat als er door de graaf gelopen wordt, deze knoop de grootste kans heeft om bereikt te worden. 
 
 \begin{figure} [ht]
 	\centering
@@ -312,7 +313,7 @@ Het resultaat van dit algoritme (\autoref{fig:simplePageRankResult}) toont ons d
 	\label{fig:simplePageRankResult}
 \end{figure}
 
-
+\newpage
 \subsection{Personalized PageRank}
 \label{sec:Personalized PageRank}
 
@@ -332,7 +333,7 @@ RETURN gds.util.asNode(nodeId).name AS name, score
 ORDER BY score DESC, name ASC
 \end{lstlisting}
 
-In het resultaat van deze query zien we dat de resultaten voor deze gebruiker in dezelfde lijn lopen als de algemene resultaten, maar dat er toch enkele producten bovenaan de lijst te vinden zijn die bij het gewone PageRank algoritme niet aan bod komen.
+In het resultaat van deze query (Figuur \ref{fig:personalizedPageRankResult}) zien we dat de resultaten voor deze gebruiker in dezelfde lijn lopen als de algemene resultaten, maar dat er toch enkele producten bovenaan de lijst te vinden zijn die bij het gewone PageRank algoritme niet aan bod komen.
 
 \begin{figure} [ht]
 	\centering
@@ -341,6 +342,7 @@ In het resultaat van deze query zien we dat de resultaten voor deze gebruiker in
 	\label{fig:personalizedPageRankResult}
 \end{figure}
 
+\newpage
 \subsection{Community Detection}
 \label{subsec: Community Detection}
 
@@ -357,7 +359,7 @@ RETURN gds.util.asNode(nodeId).name AS name, communityId, intermediateCommunityI
 ORDER BY communityId DESC
 \end{lstlisting}
 
-Uit de resultaten worden enkele clusters ontdekt, deze zijn aangeduid op \autoref{fig:LouvainResult}.
+Uit de resultaten worden enkele clusters ontdekt, deze zijn aangeduid op Figuur \ref{fig:LouvainResult}.
 
 \begin{figure} [ht]
 	\centering
