@@ -75,6 +75,15 @@ Dit is een klassiek voorbeeld van de probleemstelling van dit onderzoek. De zoek
 
 Over de mogelijkheden van het personaliseren van zoekresultaten gaan we dieper in in het volgende hoofdstuk van deze literatuurstudie.
 
+ \subsection{Personalisatie op basis van gebruikersprofiel}
+\label{subsec:Personalisatie op basis van gebruikersprofiel}
+
+Net zoals bij personalisatie op basis van IP adres, waar een bedrijf de inhoud die ze aanbiedt op haar website aanpast naargelang welk bedrijf er naartoe surft, kan er per individuele gebruiker andere inhoud getoond worden. 
+
+Een voorbeeld hiervan is dat klant A andere promo's te zien zal krijgen dan klant B, afhankelijk van de informatie die over deze twee personen beschikbaar is. Een persoon die bijvoorbeeld enkel voor telefonie klant is bij een telecombedrijf, zal eerder promo's krijgen voor pakketten waar telefonie gecombineerd wordt met een ander product.
+
+Deze vorm van personalisatie is enkel mogelijk wanneer de gebruiker een account heeft aangemaakt bij een bepaalde website, zodat er geweten kan zijn van welke producten deze klant reeds gebruik maakt. Dit brengt ons dichter bij het gebied van aanbevelingssystemen, wat uitvoerig besproken zal worden in het volgende hoofdstuk.
+
 \section{Recommender Systems}
 \label{sec:Recommender Systems}
 Recommender Systems \autocite{Resnick1997} zijn aanbevelingen vanuit het systeem die rekening houden met de beschikbare informatie van gebruikers en hun voorkeuren om zo een filter te plaatsen op de informatie die weergegeven wordt. Verder zullen we deze benoemen aan de hand  van hun Nederlandse naam 'aanbevelingssystemen'.
@@ -87,7 +96,7 @@ In dit onderdeel zullen we kort wat dieper ingaan op de werking van dergelijke a
 \label{sec:Haalbaarheid}
 
 Een degelijk systeem biedt een grote meerwaarde voor een bedrijf, zo heeft Netflix een competitie gehouden die 1 miljoen dollar bood aan degene die een aanbevelingssysteem kon maken dat 10\% beter presteerde dan hun bestaande systeem. 
-\newpage
+
 Deze wedstrijd liep van oktober 2006 tot minstens oktober 2011. De wedstrijd werd de \cite{NetflixPrize} genoemd, Netflix stelde hiervoor een dataset beschikbaar. Enkele groepen hebben het doel behaald, maar het algoritme van de winnende groep is uiteindelijk nooit in productie gebracht, omdat de mogelijke opbrengst niet kon opwegen tegen de extra gevraagde rekenkracht. 
 
 Een aanbevelingssysteem moet dus niet enkel de juiste waarden kunnen aangeven, het moet ook realistisch en haalbaar zijn qua rekenkracht en extra bijkomende kosten voor onderhoud. Het ontwerpen van dergelijk systeem is dus geen eenvoudige klus.
@@ -104,6 +113,7 @@ We spreken over twee grote categorieën in algoritmen van aanbevelingssystemen: 
 	\floatfoot{Source: https://www.researchgate.net/figure/Content-based-filtering-vs-Collaborative-filtering-Source\_fig5\_323726564} 
 	\label{fig:CollaborativeVsContentBased}
 \end{figure}
+\newpage
 
 	
 \subsubsection{Collaborative Filtering}
@@ -114,6 +124,7 @@ Hetzelfde idee kan toegepast worden op allerlei interacties van de gebruikers me
 
 In de praktijk geeft deze techniek zeer goede resultaten, maar zoals verwacht brengt dit ook enkele problemen met zich mee. Een eerste merkwaardig probleem is een zogenaamde cold start, dit komt onder andere voor bij de eerste interactie van een nieuwe gebruiker met een applicatie die aanbevelingen biedt. Het algoritme heeft dan onvoldoende informatie om een correcte en nuttige aanbeveling op te leveren aan de gebruiker. Een andere oorzaak voor dit cold-start fenomeen kan zijn dat er een nieuw product wordt toegevoegd aan het systeem, er kan dan nog niet geweten zijn welk type gebruiker hierin geïnteresseerd zou kunnen zijn. 
 
+\newpage
 Een tweede probleem die het succes van een Collaborative Filtering algoritme negatief kan beïnvloeden is het aantal gebruikers van een systeem. Met andere woorden, hoe meer gebruikers er zijn, hoe correcter de aanbevelingen aan een specifieke gebruiker zal zijn. \autocite{Sarwar2001}. Een gebruiker met ongewone interesses zal logischerwijs in een klein systeem weinig gelijkaardige gebruikers hebben, en zal dus ook geen optimale aanbevelingen krijgen.
 
 Een groot voordeel van Collaborative Filtering is dat er absoluut geen kennis hoeft te zijn van de toepassing van het systeem, de aanbevelingen worden gegenereerd op basis van het gedrag van de gebruikers en zijn interesses. De producten of hun attributen moeten dus niet gekend zijn om aanbevelingen te kunnen geven, dat maakt het eenvoudiger om een aanbevelingssysteem met de techniek van Collaborative Filtering te implementeren.
@@ -125,7 +136,6 @@ Content Based aanbevelingssystemen \autocite{Lops2011} maken, in tegenstelling t
 
 Een eerste probleem bij Content Based algoritmen is, net zoals bij Collaborative Filtering, het cold start probleem. Als een nieuwe gebruiker het systeem gebruikt, is er voor deze gebruiker nog geen profiel opgesteld en kunnen er ook geen aanbevelingen gemaakt worden.
 
-\newpage
 Een tweede probleem van Content Based algoritmen wordt overspecialisatie genoemd, dit treedt op wanneer het systeem eigenlijk té accurate aanbevelingen doet. Het gevolg hiervan is dat slechts enkele producten voldoen aan de verwachtingen van het systeem, waardoor er geen nieuwe aanbevelingen aan de gebruiker naar voor gebracht worden, en de gebruiker enkel producten zal zien die hij reeds bekeken heeft. 
 
 Een derde probleem bij Content Based algoritmen treedt op wanneer producten slecht gelabeld zijn, en hun attributen onvoldoende passen bij wat het product effectief is. Hierdoor kan het systeem deze producten niet goed vergelijken met andere. Dit is vooral een probleem wanneer de attributen van de producten van verschillende bronnen afkomstig zijn, of manueel slecht opgesteld zijn.
@@ -174,7 +184,6 @@ Graph databanken hebben dus een voordeel voor functionaliteiten zoals netwerken,
 
 Een groot voordeel van de graafstructuur die deze databanken gebruiken is dat deze sneller zijn dan relationele databanken omdat ze op zeer korte tijd naar een bepaalde node kunnen verwijzen, waarbij we bij een relationele databank een JOIN zouden moeten gebruiken. 
 
-\newpage
 Graph databanken zijn ook zeer flexibel in gebruik. Bij het veranderen van een model kan er steeds verder gebouwd worden op het bestaande model, zonder dat hierdoor reeds verwezenlijkte functionaliteiten verloren zou kunnen gaan.
 Dit is ook een voordeel bij het opstarten, er moet niet op voorhand grondig gediscussieerd worden over hoe het model er uiteindelijk uit zal moeten zien.
 
@@ -196,7 +205,7 @@ Een voordeel dat eigenlijk als nadeel kan aanzien worden is dat de data niet con
 Bij relationele databanken zijn deze objecten gebonden aan een schema van tabellen waar de relaties vooraf gedefinieerd zijn. Hierin wordt dus afgedwongen dat een Persoon werkzaam kan zijn bij een bedrijf, en een persoon een huisdier kan hebben. Het is dus niet mogelijk om een huisdier in te voeren als werkzaam zijnde bij een bedrijf.
 Een graph databank zal het toestaan om een relatie van het huisdier als 'werknemer' te leggen naar het bedrijf, aangezien dit soort databank niet gebonden is aan een schema. Dit is natuurlijk niet wenselijk.
 
-De voor- en nadelen van graph databanken worden nog even kort opgesomd in volgende tabel:
+De voor- en nadelen van graph databanken worden nog even kort opgesomd in Tabel \ref{tab:procongraph}
 
 \begin{table}
 	\begin{tabularx}{\textwidth}{|X|X|}
@@ -210,13 +219,14 @@ De voor- en nadelen van graph databanken worden nog even kort opgesomd in volgen
 		\hline
 	\end{tabularx}
  \caption[Voor- en nadelen van Graph databanken]{Voor- en nadelen van Graph databanken}
+ \label{tab:procongraph}
 \end{table}
 
 \subsection{Knowledge Graphs}
 \label{sec:Knowledge Graphs}
 
 Google startte in mei 2012 een initiatief genaamd \textit{Knowledge Graph} \autocite{GoogleKnowledgeGraph}. Deze graaf wordt door Google gebruikt om de resultaten van de Google zoekmachine aan te vullen met informatie uit verscheidene bronnen, om zo beknopt aan de gebruikers de meest belangrijke informatie te kunnen tonen zonder dat zij zelf op verschillende resultaten moeten klikken om hun antwoord te vinden. 
-
+\newpage
 De informatie uit deze Knowledge Graph is terug te vinden in een kader rechts van de gewone resultaten, zoals te zien is in volgende figuur. Dit kader werd door Google ook wel het \textit{'Knowledge Panel'} genoemd. 
 
 \begin{figure} [ht]
@@ -237,7 +247,7 @@ Op dezelfde manier dat Google zijn eigen Knowledge Graph gebruikt om haar zoekre
 Aangezien het doorlopen van een graaf zoals eerder besproken zeer snel kan gebeuren, is dit een ideale troef om gepersonaliseerde zoekresultaten te kunnen aanbieden aan gebruikers. \autocite{E-CommerceKnowledgeGraph}
 
 Door middel van een graaf kan geanalyseerd worden welke soorten producten vaak samen gekocht of bekeken worden, alsook ontdekken in welke producten gebruikers van e-commerce toepassingen geïnteresseerd zijn. Op basis hiervan kunnen aanbevelingen berekend en aan de gebruiker getoond worden. 
-
+\newpage
 In de context van aanbevelingssystemen worden knowledge graphs vooral gebruikt om extra kennis toe te voegen aan een graaf met relaties tussen klanten en producten, waardoor er onderling meer connecties kunnen gelegd worden tussen klanten en producten, hierdoor zijn de mogelijkheden voor aanbevelingen plots enorm veel groter.
  
 Het cold-start probleem dat eerder bij het puntje aanbevelingssystemen besproken werd, wordt hier ook deels mee opgelost. Als er weinig relaties zijn tussen klant en product, of in het geval van een cold-start zelfs geen, kan de knowledge graph, die kennis heeft over de producten en hoe populair deze zijn, hier een handje bij toesteken om toch succesvol aanbevelingen aan de gebruiker te bieden.
@@ -246,8 +256,6 @@ In het onderzoek van \cite{Grad-Gyenge2015} wordt een model voorgesteld waar att
 Zo kunnen er bogen in de graaf toegevoegd worden die personen met bijvoorbeeld dezelfde interesses en leeftijd groeperen. 
 
 Het is ook een mogelijkheid om gewichten toe te kennen aan deze relaties (bogen), zodat bijvoorbeeld interesse in genres harder doorweegt dan gelijkaardige leeftijd wanneer er een verband gelegd wordt tussen twee personen, op deze manier kunnen de aanbevelingen op maat gegenereerd worden voor andere toepassingen, zoals e-commerce, waar in sommige sectoren leeftijd misschien een belangrijkere relatie is dan regio.
-
-\newpage
 
 \subsection{Neo4j}
 \label{sec:Neo4j}
@@ -301,12 +309,13 @@ Uit deze resultaten wordt al snel duidelijk dat Neo4j drastisch beter presteert 
 \section{Wat is ElasticSearch?}
 \label{sec:wat is ElasticSearch?}
 
-Elasticsearch op zichzelf is eigenlijk een zoekmachine die data kan analyseren, of dit nu nummers, tekst, gestructureerd of ongestructureerd is. 
+Elasticsearch op zichzelf is eigenlijk een zoek- en analyse-engine die data kan analyseren, of dit nu nummers, tekst, gestructureerd of ongestructureerd is. 
 
 Elasticsearch is een component van de Elastic stack, ook wel ELK-Stack genoemd. Dit staat voor Elasticsearch, Logstash en Kibana. Logstash wordt gebruikt om data te verwerken uit meerdere bronnen en te versturen naar Elasticsearch. Kibana is een tool om de gebruikers een visueel beeld te geven van de data in de vorm van grafieken of tabellen.
 
 Data wordt in Elasticsearch opgeslagen als een document in JSON-formaat in een index. Aangezien dit een zoekmachine is, is Elasticsearch dus gespecialiseerd in het zoeken van data, bijvoorbeeld een query om alle producten op te halen waar het woord 'switch' in voorkomt zal zeer snel resultaten opleveren.  
 
+\newpage
 Elasticsearch ondersteunt ook meerdere methodes voor het zoeken, eentje ervan is zoals hierboven beschreven het zoeken op een stukje tekst, waarbij alle documenten geretourneerd worden waar de tekst in een van de velden voorkomt, dit wordt tekst-gebaseerd zoeken genoemd.  Hieronder enkele voorbeelden van zoekmethodes:  
 
 De zoekmethode die hier als voorbeeld genomen werd maakt gebruik van de parameter \textit{query\textunderscore string}. Als een van de velden van een document overeenkomt met de ingevoerde tekst, zal dit document in de lijst van resultaten terechtkomen.
@@ -323,7 +332,6 @@ De zoekmethode die hier als voorbeeld genomen werd maakt gebruik van de paramete
 }
 \end{lstlisting}
 
-\newpage
 Er kan ook op specifieke termen gezocht worden via \textit{term}. Daarbij kan dan gespecificeerd worden welk veld moet overeenkomen met de ingevoerde tekst. 
 Indien men wil zoeken op meerdere termen, kan de parameter \textit{term} vervangen worden door de parameter \textit{terms}, en zal er een array mee moeten gegeven worden als input in plaats van 'Audio' 
 
@@ -340,7 +348,7 @@ Indien men wil zoeken op meerdere termen, kan de parameter \textit{term} vervang
 \end{lstlisting}
 
 Een andere manier om te zoeken op basis van tekst is \textit{match}. Hierbij worden alle woorden van alle velden van een document bekeken, en wordt er een score toegekend voor elke keer dit woord in het document voorkomt, op deze manier zullen resultaten waarbij dit woord het vaakst voorkomt, bovenaan in de lijst van resultaten terechtkomen. 
-
+\newpage
 \begin{lstlisting}[caption={Tekst-gebaseerd zoeken: Query die de resultaten sorteert op basis van hoe vaak het woord 'accepted' voorkomt in het veld 'message' van een document }]
 {
 	"query" : 
@@ -378,7 +386,7 @@ Het is ook mogelijk om query's te combineren, dit kan verwezenlijkt worden door 
 	\item \textit{``must``} : De meegegeven waarde moet in het document voorkomen en de score van deze query zal meetellen voor de totale score. Dit is een strikte voorwaarde, als hier niet aan voldaan wordt zal het document niet opgenomen worden in de resultaten.	
 	\item \textit{``filter``} : De meegegeven waarde moet in het document voorkomen. De score van deze query zal niet meetellen voor de totale score. Alle documenten die niet aan de voorwaarden van de filter voldoen, zullen net zoals bij 'must' niet opgenomen worden in de resultaten.	
 	\item \textit{``should``} : Als de gegeven waarde voorkomt in het document, zal de score van het document verhoogd worden, maar dit is geen strikte voorwaarde. De parameter \textit{``minimum\textunderscore should\textunderscore match``} geeft aan aan hoeveel voorwaarden voldaan moet worden om het document op te nemen in de resultaten. De \textit{``boost``} parameter laat toe bepaalde overeenkomsten een hogere score te laten genereren.
-	\item \textit{``must\textunderscore not``} : Het omgekeerde van 'must'. De meegegeven waarde mag niet voorkomen in het document. Net zoals bij 'filter' zal de score voor deze query niet meetellen. 
+	\item \textit{``must\textunderscore not``} : Het omgekeerde van 'must'. De meegegeven waarde mag niet voorkomen in het document. De score voor deze query zal ook niet meetellen. 
 \end{itemize}
 
 \begin{lstlisting}[caption={Combineren: Voorbeeld van een 'bool' query}]
@@ -435,7 +443,7 @@ En er aan minstens twee van deze drie voorwaarden voldaan wordt:
 \end{itemize}
 
 
-
+\newpage
 In Elasticsearch is het dus mogelijk gewichten toe te kennen aan de resultaten van een zoekopdracht, zo kunnen meer relevante resultaten hoger in de lijst staan, dit is een belangrijke factor in dit onderzoek, namelijk of deze technologie gebruikt kan worden in E-Commerce toepassingen.
 
 Een alternatieve en meer uitgebreide manier om scores toe te kennen aan resultaten is via een \textit{``function\_score``}. Het bovenste deel van deze query (\textit{``query``}) zal bepalen welke documenten opgenomen moeten worden, en het onderste deel ( \textit{``functions``}) zal een lijst van functies vormen. 
@@ -450,11 +458,11 @@ De parameter boost\_mode bepaalt hoe de score van de query en de functies gecomb
 
 De meeste opties verklaren zichzelf, \textit{``replace``} zal de score die toegekend werd aan het document bij het ophalen ( \textit{``query``}) overschrijven door de score die berekend werd door de functies. 
 
-\newpage
 Hieronder een voorbeeld van een function\_score query waar alle documenten opgehaald worden, daarna zal er een score van 4 toegekend worden aan de documenten indien 'name' overeenkomt met 'Kim', en een score van 2 indien 'age' overeenkomt met '23'.
 
 De scores van deze functies zullen worden opgeteld, en het resultaat hiervan zal de score die toegekend werd aan het resultaat bij het ophalen van het document overschrijven. 
 
+\newpage
 \begin{lstlisting}[caption={Scoring: voorbeeld van een function\_score query}]
 {
 	"query" : {

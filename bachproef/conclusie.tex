@@ -73,8 +73,7 @@ Er kan dus geconcludeerd worden dat elk van deze technieken uitblinkt in zijn ei
 \end{table}
 
 
-\subsection{Conclusie}
-\label{subsec:finalConclusie}
+
 
 Het doel van dit onderzoek was om te achterhalen of een van deze technologieën een oplossing biedt voor het implementeren van gepersonaliseerde zoekopdrachten in e-commerce toepassingen. In dit hoofdstuk worden de onderzoeksvragen concreet beantwoord op basis van het onderzoek en de conclusies, en worden deze kort toegelicht.
 
@@ -88,9 +87,30 @@ Om een antwoord te geven op de derde onderzoeksvraag, kan er uit de vorige parag
 
 Uit het onderzoek bleek dat Elasticsearch als basis niet geschikt is voor het leggen van connecties tussen personen, en dus ook niet voor het leggen van connecties tussen producten. Indien men een licentie aankoopt kan er wel gebruikt gemaakt worden van Graph functionaliteiten. Hiermee wordt de laatste onderzoeksvraag beantwoord.
 
-\newpage
+
+\subsection{Conclusie}
+\label{subsec:finalConclusie}
+
+In de context van een bedrijf die met behulp van één van deze twee technologieën een gepersonaliseerd zoeksysteem wil uitwerken, is ElasticSearch de beste optie. Een bedrijf zal gebruik maken van een Enterprise licentie, waar de Graph API functionaliteit beschikbaar is.
+
+Elasticsearch biedt dus alle functionaliteit van Neo4j in de vorm van een Graph databank, met daar bovenop nog eens de mogelijkheid om complexe zoekopdrachten met verscheidene filters zeer snel te verwerken. 
+
+Elastic geeft ook duidelijk aan hoe snel er support verwacht kan worden afhankelijk van de licentie. Voor Enterprise gebruikers is dit bijvoorbeeld één uur voor zeer dringende zaken. 
+Een compleet overzicht hiervan is te vinden in Figuur \ref{fig:elasticSupport}
+
+\begin{figure} [ht]
+	\centering
+	\includegraphics[width=0.95\textwidth]{img/elastic-support}
+	\caption{Elastic.co Support}
+	\floatfoot{Source: elastic.co/support/welcome}
+	\label{fig:elasticSupport}
+\end{figure}
+
+
+
+\subsection{Alternatief}
 De literatuurstudie wees ook uit dat een Knowledge Graph gebruikt kan worden om aanvullende informatie te verschaffen bij het genereren van gepersonaliseerde zoekresultaten. 
 
-Een optie is dus om beide platformen te combineren, en elkaar te laten aanvullen. Een voorbeeld hier van is om de resultaten van een zoekalgoritme in Neo4 te combineren met de scores die gevonden werden in Elasticsearch. 
+Een alternatieve optie is dus om beide platformen te combineren, en elkaar te laten aanvullen. Een voorbeeld hier van is om de resultaten van een zoekalgoritme in Neo4 te combineren met de scores die gevonden werden in Elasticsearch. 
 
 Deze ontdekking zet de weg open naar verder onderzoek in hoe deze twee platformen efficiënt samen gebruikt kunnen worden, en hoe de modellen die in dit onderzoek werden opgebouwd, verder gespecialiseerd kunnen worden om deze combinatie mogelijk te maken. 
